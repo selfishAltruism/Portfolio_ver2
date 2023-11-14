@@ -1,0 +1,73 @@
+#timebar {
+  position: absolute;
+  z-index: 99;
+
+  left: 4vw;
+
+  width: 1vw;
+
+  border-radius: 3px 3px;
+}
+
+#title,
+#startTime {
+  position: absolute;
+
+  font-size: 21px;
+}
+
+#DetailBlock {
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+
+  position: absolute;
+
+  right: 4vw;
+
+  height: 34px;
+  width: 130px;
+
+  color: white;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3px 3px;
+}
+
+#DetailBlock:hover {
+  font-weight: bold;
+}
+
+#startTimeLine {
+  position: absolute;
+
+  left: 4vw;
+
+  width: 90vw;
+  height: 3px;
+
+  border-radius: 1.5px 1.5px;
+}
+
+p {
+  text-align: center;
+}
+
+#loadingBlock {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0.25;
+
+  right: 4vw;
+
+  height: 34px;
+
+  border-radius: 5px 5px;
+}

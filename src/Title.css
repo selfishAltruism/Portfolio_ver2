@@ -1,0 +1,103 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+#container {
+  position: absolute;
+  z-index: 100;
+
+  top: 0px;
+  left: 0px;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #323232;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#colorBlock {
+  position: absolute;
+  z-index: 100;
+
+  top: 100vh;
+  left: 0px;
+
+  width: 100vw;
+  height: 310px;
+
+  background-color: #323232;
+}
+
+#titleText1 {
+  z-index: 101;
+
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+}
+
+#titleText2 {
+  z-index: 101;
+
+  color: white;
+  font-size: 8vw;
+}
+
+#block {
+  z-index: 101;
+
+  height: 20vh;
+}
+
+#cilckBlock1 {
+  position: absolute;
+  z-index: 102;
+
+  height: 8vh;
+  width: 120vw;
+  background-color: #ffa500;
+
+  transform: rotate(-4deg);
+
+  color: black;
+  font-size: 6vh;
+
+  overflow: hidden;
+}
+
+#cilckBlock2 {
+  position: absolute;
+  z-index: 102;
+
+  height: 8vh;
+  width: 120vw;
+  background-color: #ffa500;
+
+  transform: rotate(5deg);
+
+  color: black;
+  font-size: 6vh;
+
+  overflow: hidden;
+}
+
+#gitLink {
+  position: absolute;
+  z-index: 102;
+
+  bottom: 0px;
+
+  width: 100vw;
+  height: 7vh;
+
+  color: #828282;
+}
+
+p {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+#militaryEnlistmentBlock {
+  position: absolute;
+  z-index: 60;
+
+  right: 4vw;
+
+  width: 90vw;
+
+  border-radius: 3px 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#study0,
+#study1,
+#study2 {
+  height: 220px;
+}
+
+#block4 {
+  height: 20px;
+}
+
+#block5,
+#block6 {
+  width: 10px;
+}
+
+span {
+  white-space: pre-line;
+
+  color: white;
+}

@@ -1,0 +1,46 @@
+#studentCouncilDetailBlock {
+  position: absolute;
+  z-index: 80;
+
+  right: 4vw;
+
+  width: 90vw;
+
+  border-radius: 3px 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#councilImg {
+  width: 170px;
+}
+
+#block2 {
+  width: 32px;
+}
+
+#block3 {
+  height: 20px;
+}
+
+#unidImg {
+  width: 340px;
+}
+
+span {
+  white-space: pre-line;
+
+  color: white;
+}
+#bold {
+  font-weight: bold;
+}

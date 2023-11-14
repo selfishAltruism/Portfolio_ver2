@@ -1,0 +1,32 @@
+#universityDetailBlock {
+  position: absolute;
+  z-index: 90;
+
+  right: 4vw;
+
+  width: 90vw;
+
+  border-radius: 3px 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cauImg {
+  width: 130px;
+}
+
+#block1 {
+  width: 30px;
+}
+
+span {
+  white-space: pre-line;
+
+  color: white;
+}
+
+#bold {
+  font-weight: bold;
+}

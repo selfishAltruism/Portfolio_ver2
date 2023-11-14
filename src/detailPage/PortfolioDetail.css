@@ -1,0 +1,50 @@
+#portfolioBlock {
+  position: absolute;
+  z-index: 40;
+
+  right: 4vw;
+
+  width: 90vw;
+
+  border-radius: 3px 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#block12 {
+  height: 20px;
+}
+
+#gitlink {
+  background-color: black;
+
+  height: 50px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  border-radius: 3px 3px;
+}
+
+#gitlink:hover {
+  border: 2px solid white;
+  height: 46px;
+}
+
+span {
+  white-space: pre-line;
+
+  color: white;
+}
+
+#bold {
+  font-weight: bold;
+}

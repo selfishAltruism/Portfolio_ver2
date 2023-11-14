@@ -1,0 +1,62 @@
+#IT_DADetailBlock {
+  position: absolute;
+  z-index: 70;
+
+  right: 4vw;
+
+  width: 90vw;
+
+  border-radius: 3px 3px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#it_da_logoImg {
+  width: 300px;
+}
+
+#it_daYouTube {
+  border: 3px solid rgb(1, 68, 1);
+}
+
+#container4,
+#container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#it_da_opencv,
+#it_da_page {
+  height: 150px;
+}
+
+#it_da_page:hover {
+  border: 2px solid white;
+  height: 148px;
+}
+
+#block7 {
+  width: 10px;
+}
+
+#block8 {
+  height: 7px;
+}
+
+#block9 {
+  width: 110px;
+}
+
+span {
+  white-space: pre-line;
+
+  color: white;
+}
+
+#bold {
+  font-weight: bold;
+}

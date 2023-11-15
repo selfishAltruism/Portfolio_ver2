@@ -2,9 +2,9 @@ import * as React from "react";
 import { useState, useEffect, useRef, useContext } from "react";
 import { context } from "./App";
 
-import "./Title.css";
+import "./FirstPage.css";
 
-function Title() {
+function FirstPage() {
   const { setPageChangeState } = useContext(context);
 
   const [cilckBlock1TopState, setCilckBlock1TopState] = useState("70vh");
@@ -95,4 +95,4 @@ function Title() {
   );
 }
 
-export default Title;
+export default FirstPage;

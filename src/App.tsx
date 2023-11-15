@@ -3,7 +3,7 @@ import { useState, createContext, useReducer } from "react";
 
 import "./App.css";
 
-import Title from "./Title";
+import FirstPage from "./FirstPage";
 import Portfolio from "./Portfolio";
 
 export const context = createContext<{
@@ -20,7 +20,7 @@ function App() {
           setPageChangeState,
         }}
       >
-        {pageChangeState === 0 ? <Title /> : <Portfolio />}
+        {pageChangeState === 0 ? <FirstPage /> : <Portfolio />}
       </context.Provider>
     </>
   );

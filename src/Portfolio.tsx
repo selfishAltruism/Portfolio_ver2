@@ -53,6 +53,7 @@ function Portfolio() {
 
   return (
     <>
+      <div className="defaulttimebar"></div>
       <ditailContext.Provider
         value={{
           TimePointDetailLength,
@@ -65,70 +66,48 @@ function Portfolio() {
         }}
       >
         <Timepoint
-          barColor="dodgerblue"
-          barTop={0}
-          barLength={MAXLENGTH_TIMEBAR}
-          startTime="2020.03.01 ~ today"
-          title="중앙대학교 소프트웨어학과 입학"
-          setState={setUniversityDetailState}
-        />
-
-        <UniversityDetail barColor="dodgerblue" barTop={0} />
-
-        <Timepoint
-          barColor="#0AC9FF"
-          barTop={50}
-          barLength={97}
-          startTime="2021.01.01 ~ 2021.12.31"
-          title="소프트웨어학부 학생회 교육부장 활동"
-          setState={setStudentCouncilDetailState}
-        />
-
-        <StudentCouncilDetail barColor="#0AC9FF" barTop={50} />
-
-        <Timepoint
           barColor="#0A6E0A"
-          barTop={100}
+          barTop={10}
           barLength={43}
           startTime="2021.06.23 ~ 2021.12.20"
           title="IT_DA Project"
           setState={setIt_daDetailState}
         />
 
-        <IT_DADetail barColor="#0A6E0A" barTop={100} />
+        <IT_DADetail barColor="#0A6E0A" barTop={10} />
 
         <Timepoint
           barColor="#389561"
-          barTop={150}
+          barTop={60}
           barLength={97}
           startTime="2021.01.17 ~ 2023.06.15"
           title="대한민국 군대 입대"
           setState={setMilitaryEnlistmentDetailState}
         />
 
-        <MilitaryEnlistmentDetail barColor="#389561" barTop={150} />
+        <MilitaryEnlistmentDetail barColor="#389561" barTop={60} />
 
         <Timepoint
           barColor="#4646CD"
-          barTop={200}
+          barTop={107}
           barLength={43}
           startTime="2023.02.21~2023.02.25"
           title="Ship List Program Development"
           setState={setShipListDetailState}
         />
 
-        <ShipListDetail barColor="#4646CD" barTop={200} />
+        <ShipListDetail barColor="#4646CD" barTop={107} />
 
         <Timepoint
           barColor="#323232"
-          barTop={250}
+          barTop={165}
           barLength={50}
           startTime="2023.07.10 ~ 2023.07.11"
-          title="Portfoilo wed page Development"
+          title="Portfoilo Ver I wed page Development"
           setState={setPortfolioDetailState}
         />
 
-        <PortfolioDetail barColor="#323232" barTop={250} />
+        <PortfolioDetail barColor="#323232" barTop={165} />
 
         <div
           id="portfolioTitle"
@@ -136,7 +115,7 @@ function Portfolio() {
             setPageChangeState!(0);
           }}
         >
-          <p>Kang Min Kyu's Portfolio</p>
+          <p>Kang Min Kyu's Portfolio Ver II</p>
         </div>
 
         <div id="gitLink2">

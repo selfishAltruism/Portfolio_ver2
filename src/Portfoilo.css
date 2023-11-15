@@ -3,6 +3,20 @@ body {
   margin: 0px;
 }
 
+.defaulttimebar {
+  position: absolute;
+
+  left: 4vw;
+  top: 70px;
+
+  width: 1vw;
+
+  border-radius: 3px 3px;
+  background: rgb(203, 203, 203);
+
+  height: 1000px;
+}
+
 #portfolioTitle {
   -webkit-touch-callout: none;
   user-select: none;

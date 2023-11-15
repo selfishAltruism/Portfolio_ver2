@@ -20,7 +20,9 @@ function App() {
           setPageChangeState,
         }}
       >
-        {pageChangeState === 0 ? <FirstPage /> : <Portfolio />}
+        {/* {pageChangeState === 0 ? <FirstPage /> : } */}
+        {/* <Portfolio /> */}
+        <FirstPage />
       </context.Provider>
     </>
   );

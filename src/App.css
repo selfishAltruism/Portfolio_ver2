@@ -12,3 +12,8 @@
 * {
   font-family: "NotoSerifKR-Regular", "PlayfairDisplay-Regular";
 }
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}

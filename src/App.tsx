@@ -10,11 +10,6 @@ export const context = createContext<{
   setPageChangeState?: React.Dispatch<React.SetStateAction<number>>;
 }>({});
 
-function ChangePage(props: any) {
-  if (props.pageChangeState === 0) return <Title />;
-  return <></>;
-}
-
 function App() {
   const [pageChangeState, setPageChangeState] = useState(0);
 
@@ -25,8 +20,7 @@ function App() {
           setPageChangeState,
         }}
       >
-        <ChangePage pageChangeState={pageChangeState} />
-        <Portfolio />
+        {pageChangeState === 0 ? <Title /> : <Portfolio />}
       </context.Provider>
     </>
   );

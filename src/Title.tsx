@@ -71,7 +71,7 @@ function Title() {
   };
 
   return (
-    <div onClick={mainClickHandler}>
+    <div className="titleBody" onClick={mainClickHandler}>
       <div id="container" style={containerStyle}>
         <div id="titleText1">Kang Min Kyu</div>
         <div id="titleText2">Portfolio</div>
@@ -91,8 +91,6 @@ function Title() {
       <div id="gitLink">
         <p>Made by https://github.com/selfishAltruism</p>
       </div>
-
-      <div id="colorBlock" style={colorBlockStyle}></div>
     </div>
   );
 }

@@ -28,9 +28,12 @@ function PortfolioDetail(props: Props) {
   } else {
     return (
       <div id="portfolioBlock" style={portfolioBlockStyle}>
-        <span id="bold">보고 계신 웹 페이지입니다.</span>
+        <span id="bold">보고 계신 웹 페이지의 이전 버전입니다.</span>
         <span>
-          이틀 정도를 투자해서 스스로 디자인하고 React를 사용해서 개발하였는데,
+          인턴 준비 과정에서 이틀 정도를 투자해서 스스로 디자인하고 React를
+          사용해서 개발하였는데,
+        </span>
+        <span>
           이론이 어느 정도 갖춰져 있어서 훨씬 수월하게 결과물을 만들 수
           있었습니다.
         </span>

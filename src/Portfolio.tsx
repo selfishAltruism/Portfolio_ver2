@@ -3,8 +3,6 @@ import { useState, createContext, useContext, useReducer } from "react";
 import { context } from "./App";
 
 import Timepoint from "./Timepoint";
-import UniversityDetail from "./detailPage/UniversityDetail";
-import StudentCouncilDetail from "./detailPage/StudentCouncilDetail";
 import IT_DADetail from "./detailPage/IT_DADetail";
 import MilitaryEnlistmentDetail from "./detailPage/MilitaryEnlistmentDetail";
 import ShipListDetail from "./detailPage/ShipListDetail";
@@ -100,8 +98,8 @@ function Portfolio() {
 
         <Timepoint
           barColor="#323232"
-          barTop={165}
-          barLength={50}
+          barTop={175}
+          barLength={40}
           startTime="2023.07.10 ~ 2023.07.11"
           title="Portfoilo Ver I wed page Development"
           setState={setPortfolioDetailState}
@@ -117,10 +115,29 @@ function Portfolio() {
         >
           <p>Kang Min Kyu's Portfolio Ver II</p>
         </div>
+        <a href="https://github.com/selfishAltruism">
+          <div id="gitLink2">
+            <p>Made by https://github.com/selfishAltruism</p>
+          </div>
+        </a>
 
-        <div id="gitLink2">
-          <p>Made by https://github.com/selfishAltruism</p>
-        </div>
+        <Timepoint
+          barColor="#00008C"
+          barTop={218}
+          barLength={70}
+          startTime="2023.09.08 ~ 2023.11.10"
+          title="Grid Project"
+          setState={() => {}}
+        />
+
+        <Timepoint
+          barColor="#8c008c"
+          barTop={289}
+          barLength={35}
+          startTime="2023.11.11 ~ 2023.11.12"
+          title="Talent Save Project"
+          setState={() => {}}
+        />
       </ditailContext.Provider>
 
       <span id="toBeContinued">

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState, createContext, useReducer } from "react";
+import { BrowserView, MobileView } from "react-device-detect";
 
 import "./App.css";
 
@@ -20,9 +21,13 @@ function App() {
           setPageChangeState,
         }}
       >
+        <BrowserView>
+          <Portfolio />
+        </BrowserView>
+        <MobileView>모바일 브라우져!</MobileView>
         {/* {pageChangeState === 0 ? <FirstPage /> : } */}
         {/* <Portfolio /> */}
-        <FirstPage />
+        {/*  <FirstPage /> */}
       </context.Provider>
     </>
   );

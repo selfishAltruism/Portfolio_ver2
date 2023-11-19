@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState, createContext, useContext, useReducer } from "react";
-import { context } from "./App";
+import { context } from "../App";
 
-import Timepoint from "./Timepoint";
+import TimepointM from "./TimepointM";
 import IT_DADetail from "./detailPage/IT_DADetail";
 import MilitaryEnlistmentDetail from "./detailPage/MilitaryEnlistmentDetail";
 import ShipListDetail from "./detailPage/ShipListDetail";
@@ -63,7 +63,7 @@ function Portfolio() {
           portfolioDetailState,
         }}
       >
-        <Timepoint
+        <TimepointM
           barColor="#0A6E0A"
           barTop={10}
           barLength={43}
@@ -74,7 +74,7 @@ function Portfolio() {
 
         <IT_DADetail barColor="#0A6E0A" barTop={10} />
 
-        <Timepoint
+        <TimepointM
           barColor="#389561"
           barTop={60}
           barLength={97}
@@ -85,7 +85,7 @@ function Portfolio() {
 
         <MilitaryEnlistmentDetail barColor="#389561" barTop={60} />
 
-        <Timepoint
+        <TimepointM
           barColor="#4646CD"
           barTop={107}
           barLength={43}
@@ -96,7 +96,7 @@ function Portfolio() {
 
         <ShipListDetail barColor="#4646CD" barTop={107} />
 
-        <Timepoint
+        <TimepointM
           barColor="#323232"
           barTop={175}
           barLength={40}
@@ -121,7 +121,7 @@ function Portfolio() {
           </div>
         </a>
 
-        <Timepoint
+        <TimepointM
           barColor="#00008C"
           barTop={218}
           barLength={70}
@@ -130,7 +130,7 @@ function Portfolio() {
           setState={() => {}}
         />
 
-        <Timepoint
+        <TimepointM
           barColor="#8c008c"
           barTop={289}
           barLength={35}

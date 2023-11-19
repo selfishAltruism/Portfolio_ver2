@@ -5,7 +5,7 @@ import { BrowserView, MobileView } from "react-device-detect";
 import "./App.css";
 
 import FirstPage from "./FirstPage";
-import Portfolio from "./Portfolio";
+import Portfolio from "./browser/Portfolio";
 
 export const context = createContext<{
   setPageChangeState?: React.Dispatch<React.SetStateAction<number>>;

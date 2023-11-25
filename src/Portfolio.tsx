@@ -105,7 +105,7 @@ function Portfolio() {
           setState={setPortfolioDetailState}
         />
 
-        <PortfolioDetail barColor="#323232" barTop={165} />
+        <PortfolioDetail barColor="#323232" barTop={175} />
 
         <div
           id="portfolioTitle"
@@ -115,11 +115,6 @@ function Portfolio() {
         >
           <p>Kang Min Kyu's Portfolio Ver II</p>
         </div>
-        <a href="https://github.com/selfishAltruism">
-          <div id="gitLink2">
-            <p>Made by https://github.com/selfishAltruism</p>
-          </div>
-        </a>
 
         <Timepoint
           barColor="#00008C"
@@ -139,6 +134,12 @@ function Portfolio() {
           setState={() => {}}
         />
       </ditailContext.Provider>
+
+      <a href="https://github.com/selfishAltruism">
+        <div id="gitLink2">
+          <p>Made by https://github.com/selfishAltruism</p>
+        </div>
+      </a>
 
       <span id="toBeContinued">
         To Be Continued.. To Be Continued.. To Be Continued.. To Be Continued..

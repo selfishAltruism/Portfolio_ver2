@@ -13,5 +13,8 @@ Basic Framework: React, TypeScript
 
 - readme 접근성 있게 변경
 - 자기소개란 추가하기 -> "안전지대를 넘어가는 개발자"
+- 반응형 구현
+
+1. 첫 화면 모바일에서는 제거. (스크롤 컨트롤 어려움) - 완
 
 (Ver1 is other Repositorie)

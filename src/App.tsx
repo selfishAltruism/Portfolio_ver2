@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState, createContext, useReducer } from "react";
-import { BrowserView, MobileView } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
 
 import "./App.css";
 
@@ -13,6 +13,9 @@ export const context = createContext<{
 
 function App() {
   const [pageChangeState, setPageChangeState] = useState(0);
+  const isMobile = useMediaQuery({
+    query: "(max-width:768px)",
+  });
 
   return (
     <>
@@ -21,11 +24,7 @@ function App() {
           setPageChangeState,
         }}
       >
-        <BrowserView>
-          <Portfolio />
-        </BrowserView>
-        <MobileView>모바일 브라우져!</MobileView>
-        {/* {pageChangeState === 0 ? <FirstPage /> : } */}
+        {pageChangeState === 0 && !isMobile ? <FirstPage /> : <Portfolio />}
         {/* <Portfolio /> */}
         {/*  <FirstPage /> */}
       </context.Provider>

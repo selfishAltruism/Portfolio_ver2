@@ -1,5 +1,4 @@
-import * as React from "react";
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useContext } from "react";
 import { context } from "./App";
 
 import "./FirstPage.css";

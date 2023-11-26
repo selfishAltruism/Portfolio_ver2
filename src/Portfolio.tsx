@@ -3,12 +3,6 @@ import { useState, createContext, useContext, useReducer } from "react";
 import { context } from "./App";
 import "./Portfoilo.css";
 
-import Timepoint from "./Timepoint";
-import IT_DADetail from "./detailPage/IT_DADetail";
-import MilitaryEnlistmentDetail from "./detailPage/MilitaryEnlistmentDetail";
-import ShipListDetail from "./detailPage/ShipListDetail";
-import PortfolioDetail from "./detailPage/PortfolioDetail";
-
 import Profile from "./Profile";
 
 export const MAXLENGTH_TIMEBAR = 750;
@@ -42,16 +36,16 @@ function Portfolio() {
     portfolio: 200,
   };
 
-  const [universityDetailState, setUniversityDetailState] = useState(0);
-  const [studentCouncilDetailState, setStudentCouncilDetailState] = useState(0);
-  const [it_daDetailState, setIt_daDetailState] = useState(0);
-  const [militaryEnlistmentDetailState, setMilitaryEnlistmentDetailState] =
-    useState(0);
-  const [shipListDetailState, setShipListDetailState] = useState(0);
-  const [portfolioDetailState, setPortfolioDetailState] = useState(0);
-
   return (
     <>
+      <div
+        id="portfolioTitle"
+        onClick={() => {
+          setPageChangeState!(0);
+        }}
+      >
+        <p>Kang Min Kyu's Portfolio Ver II</p>
+      </div>
       <Profile />
 
       {/*       <div className="defaulttimebar"></div>
@@ -91,14 +85,7 @@ function Portfolio() {
         setState={setPortfolioDetailState}
       />
 
-      <div
-        id="portfolioTitle"
-        onClick={() => {
-          setPageChangeState!(0);
-        }}
-      >
-        <p>Kang Min Kyu's Portfolio Ver II</p>
-      </div>
+      
 
       <Timepoint
         barColor="#00008C"

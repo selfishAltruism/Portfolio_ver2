@@ -16,5 +16,7 @@ Basic Framework: React, TypeScript
 - 반응형 구현
 
 1. 첫 화면 모바일에서는 제거. (스크롤 컨트롤 어려움) - 완
+2. main page에서 글들 모바일로 잘 보이게 배치 (세부 내용은 제외)
+3. 자기소개 작성 반응형으로
 
 (Ver1 is other Repositorie)

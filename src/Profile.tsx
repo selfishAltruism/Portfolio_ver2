@@ -17,7 +17,9 @@ function Profile() {
         </span>
         <span className="stack-label"></span>
         <div className="stacks">
-          <div className="stack">JavaScript</div>
+          <div className="stack">Java Script</div>
+          <div className="stack">React</div>
+          <div className="stack">Redux</div>
         </div>
       </div>
       <Avatar

@@ -44,4 +44,27 @@
 }
 
 .profile-contianer .stacks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 10px;
+}
+
+.profile-contianer .stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8.5%;
+  height: 27px;
+
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+
+  background-color: #323232;
+
+  border-radius: 3px;
+  margin-right: 7px;
 }

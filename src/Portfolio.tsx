@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState, createContext, useContext, useReducer } from "react";
 import { context } from "./App";
+import "./Portfoilo.css";
 
 import Timepoint from "./Timepoint";
 import IT_DADetail from "./detailPage/IT_DADetail";
@@ -8,7 +9,7 @@ import MilitaryEnlistmentDetail from "./detailPage/MilitaryEnlistmentDetail";
 import ShipListDetail from "./detailPage/ShipListDetail";
 import PortfolioDetail from "./detailPage/PortfolioDetail";
 
-import "./Portfoilo.css";
+import Profile from "./Profile";
 
 export const MAXLENGTH_TIMEBAR = 750;
 
@@ -51,89 +52,71 @@ function Portfolio() {
 
   return (
     <>
-      <div className="defaulttimebar"></div>
-      <ditailContext.Provider
-        value={{
-          TimePointDetailLength,
-          universityDetailState,
-          studentCouncilDetailState,
-          it_daDetailState,
-          militaryEnlistmentDetailState,
-          shipListDetailState,
-          portfolioDetailState,
+      <Profile />
+
+      {/*       <div className="defaulttimebar"></div>
+      <Timepoint
+        barColor="#0A6E0A"
+        barTop={10}
+        barLength={43}
+        startTime="21.06.23 ~ 21.12.20"
+        title="IT_DA Project"
+        setState={setIt_daDetailState}
+      />
+
+      <Timepoint
+        barColor="#389561"
+        barTop={60}
+        barLength={97}
+        startTime="21.01.17 ~ 23.06.15"
+        title="대한민국 군대 입대"
+        setState={setMilitaryEnlistmentDetailState}
+      />
+
+      <Timepoint
+        barColor="#4646CD"
+        barTop={107}
+        barLength={43}
+        startTime="23.02.21~23.02.25"
+        title="Ship List Program Development"
+        setState={setShipListDetailState}
+      />
+
+      <Timepoint
+        barColor="#323232"
+        barTop={175}
+        barLength={40}
+        startTime="23.07.10 ~ 23.07.11"
+        title="Portfoilo Ver I wed page Development"
+        setState={setPortfolioDetailState}
+      />
+
+      <div
+        id="portfolioTitle"
+        onClick={() => {
+          setPageChangeState!(0);
         }}
       >
-        <Timepoint
-          barColor="#0A6E0A"
-          barTop={10}
-          barLength={43}
-          startTime="2021.06.23 ~ 2021.12.20"
-          title="IT_DA Project"
-          setState={setIt_daDetailState}
-        />
+        <p>Kang Min Kyu's Portfolio Ver II</p>
+      </div>
 
-        <IT_DADetail barColor="#0A6E0A" barTop={10} />
+      <Timepoint
+        barColor="#00008C"
+        barTop={218}
+        barLength={70}
+        startTime="23.09.08 ~ 23.11.10"
+        title="Grid Project"
+        setState={() => {}}
+      />
 
-        <Timepoint
-          barColor="#389561"
-          barTop={60}
-          barLength={97}
-          startTime="2021.01.17 ~ 2023.06.15"
-          title="대한민국 군대 입대"
-          setState={setMilitaryEnlistmentDetailState}
-        />
-
-        <MilitaryEnlistmentDetail barColor="#389561" barTop={60} />
-
-        <Timepoint
-          barColor="#4646CD"
-          barTop={107}
-          barLength={43}
-          startTime="2023.02.21~2023.02.25"
-          title="Ship List Program Development"
-          setState={setShipListDetailState}
-        />
-
-        <ShipListDetail barColor="#4646CD" barTop={107} />
-
-        <Timepoint
-          barColor="#323232"
-          barTop={175}
-          barLength={40}
-          startTime="2023.07.10 ~ 2023.07.11"
-          title="Portfoilo Ver I wed page Development"
-          setState={setPortfolioDetailState}
-        />
-
-        <PortfolioDetail barColor="#323232" barTop={175} />
-
-        <div
-          id="portfolioTitle"
-          onClick={() => {
-            setPageChangeState!(0);
-          }}
-        >
-          <p>Kang Min Kyu's Portfolio Ver II</p>
-        </div>
-
-        <Timepoint
-          barColor="#00008C"
-          barTop={218}
-          barLength={70}
-          startTime="2023.09.08 ~ 2023.11.10"
-          title="Grid Project"
-          setState={() => {}}
-        />
-
-        <Timepoint
-          barColor="#8c008c"
-          barTop={289}
-          barLength={35}
-          startTime="2023.11.11 ~ 2023.11.12"
-          title="Talent Save Project"
-          setState={() => {}}
-        />
-      </ditailContext.Provider>
+      <Timepoint
+        barColor="#8c008c"
+        barTop={289}
+        barLength={35}
+        startTime="23.11.11 ~ 23.11.12"
+        title="Talent Save Project"
+        setState={() => {}}
+      /> */}
 
       <a href="https://github.com/selfishAltruism">
         <div id="gitLink2">

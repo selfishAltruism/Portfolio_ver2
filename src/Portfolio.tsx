@@ -4,6 +4,7 @@ import { context } from "./App";
 import "./Portfoilo.css";
 
 import Profile from "./Profile";
+import Projects from "./Projects";
 
 export const MAXLENGTH_TIMEBAR = 750;
 
@@ -46,64 +47,10 @@ function Portfolio() {
       >
         <p>Kang Min Kyu's Portfolio Ver II</p>
       </div>
+
       <Profile />
 
-      {/*       <div className="defaulttimebar"></div>
-      <Timepoint
-        barColor="#0A6E0A"
-        barTop={10}
-        barLength={43}
-        startTime="21.06.23 ~ 21.12.20"
-        title="IT_DA Project"
-        setState={setIt_daDetailState}
-      />
-
-      <Timepoint
-        barColor="#389561"
-        barTop={60}
-        barLength={97}
-        startTime="21.01.17 ~ 23.06.15"
-        title="대한민국 군대 입대"
-        setState={setMilitaryEnlistmentDetailState}
-      />
-
-      <Timepoint
-        barColor="#4646CD"
-        barTop={107}
-        barLength={43}
-        startTime="23.02.21~23.02.25"
-        title="Ship List Program Development"
-        setState={setShipListDetailState}
-      />
-
-      <Timepoint
-        barColor="#323232"
-        barTop={175}
-        barLength={40}
-        startTime="23.07.10 ~ 23.07.11"
-        title="Portfoilo Ver I wed page Development"
-        setState={setPortfolioDetailState}
-      />
-
-      
-
-      <Timepoint
-        barColor="#00008C"
-        barTop={218}
-        barLength={70}
-        startTime="23.09.08 ~ 23.11.10"
-        title="Grid Project"
-        setState={() => {}}
-      />
-
-      <Timepoint
-        barColor="#8c008c"
-        barTop={289}
-        barLength={35}
-        startTime="23.11.11 ~ 23.11.12"
-        title="Talent Save Project"
-        setState={() => {}}
-      /> */}
+      <Projects />
 
       <a href="https://github.com/selfishAltruism">
         <div id="gitLink2">

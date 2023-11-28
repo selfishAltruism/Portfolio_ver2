@@ -5,6 +5,7 @@ import "./Portfoilo.css";
 
 import Profile from "./Profile";
 import Projects from "./Projects";
+import Layout from "./Layout";
 
 export const MAXLENGTH_TIMEBAR = 750;
 
@@ -38,16 +39,7 @@ function Portfolio() {
   };
 
   return (
-    <>
-      <div
-        id="portfolioTitle"
-        onClick={() => {
-          setPageChangeState!(0);
-        }}
-      >
-        <p>Kang Min Kyu's Portfolio Ver II</p>
-      </div>
-
+    <Layout>
       <Profile />
 
       <Projects />
@@ -62,7 +54,7 @@ function Portfolio() {
         To Be Continued.. To Be Continued.. To Be Continued.. To Be Continued..
         To Be Continued.. To Be Continued..
       </span>
-    </>
+    </Layout>
   );
 }
 

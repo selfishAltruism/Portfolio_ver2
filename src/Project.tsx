@@ -20,14 +20,20 @@ function Project(prop: Prop) {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
 
     background-color: #323232;
 
-    margin-top: 10px;
+    margin-top: 20px;
+
+    border-radius: 5px;
   `;
 
-  return <Container />;
+  return (
+    <Container>
+      <ColumnBar height="84%" />
+    </Container>
+  );
 }
 
 export default Project;

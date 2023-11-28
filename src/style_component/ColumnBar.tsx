@@ -2,11 +2,13 @@ import styled from "@emotion/styled";
 
 const ColumnBar = ({ height }: { height: string }) => {
   const Bar = styled.div`
-    width: 1px;
+    width: 3px;
     height: ${height};
-    background-color: #323232;
+    background-color: white;
 
-    margin-right: 8px;
+    margin-left: 7px;
+
+    border-radius: 1px;
   `;
   return <Bar />;
 };

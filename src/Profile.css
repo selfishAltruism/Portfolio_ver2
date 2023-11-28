@@ -49,6 +49,7 @@
   align-items: center;
 
   width: 8.5%;
+
   height: 27px;
 
   color: white;
@@ -56,6 +57,47 @@
   font-weight: bold;
 
   background-color: #323232;
+  border: 2px solid #323232;
+
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.profile-contianer .sub-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8.5%;
+
+  height: 27px;
+
+  color: #323232;
+  font-size: 14px;
+  font-weight: bold;
+
+  background-color: white;
+  border: 2px solid #323232;
+
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.profile-contianer .sub-stack-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8.5%;
+
+  height: 27px;
+
+  color: #323232;
+  font-size: 10px;
+  font-weight: bold;
+
+  background-color: white;
+  border: 2px solid #323232;
 
   border-radius: 3px;
   margin-right: 7px;

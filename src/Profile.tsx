@@ -25,9 +25,13 @@ function Profile() {
         <span className="stack-label"></span>
         <div className="stacks">
           <div className="stack">Java Script</div>
+          <div className="stack">Type Script</div>
           <div className="stack">React</div>
           <div className="stack">Redux</div>
-          <div className="stack">Next</div>
+          <div className="stack">Next.js</div>
+          <div className="sub-stack-small">react-hook-form</div>
+          <div className="sub-stack-small">styled-component</div>
+          <div className="sub-stack">NextAuth.js</div>
         </div>
       </div>
       <Avatar

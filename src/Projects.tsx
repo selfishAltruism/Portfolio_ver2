@@ -23,7 +23,13 @@ const Projects = () => {
   return (
     <Container>
       <Title>Development Record</Title>
-      <Project period="" title="" content="" githubURL="" notionURL="" />
+      <Project
+        period="During internship, 2023.11.21~2023.11.31"
+        title="Severless social login Development"
+        content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 serverless social login system 구현"
+        githubURL="none"
+        notionURL=""
+      />
       <Project period="" title="" content="" githubURL="" notionURL="" />
     </Container>
   );

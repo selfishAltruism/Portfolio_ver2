@@ -38,7 +38,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/grid"
+              path="/sociallogin"
               element={
                 pageChangeState === 0 && !isMobile ? (
                   <FirstPage />

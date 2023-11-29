@@ -7,7 +7,6 @@ import "./App.css";
 
 import FirstPage from "./FirstPage";
 import Portfolio from "./Portfolio";
-import DetailPage from "./DetailPage";
 
 export const context = createContext<{
   setPageChangeState?: React.Dispatch<React.SetStateAction<number>>;
@@ -29,19 +28,13 @@ function App() {
         <Router>
           <Routes>
             <Route
-              path="/"
+              path="*"
               element={
                 pageChangeState === 0 && !isMobile ? (
                   <FirstPage />
                 ) : (
                   <Portfolio />
                 )
-              }
-            ></Route>
-            <Route
-              path="/sociallogin"
-              element={
-                <DetailPage notionID="458b881bf2984563ac951bb4f9d7e9ba?pvs=4" />
               }
             ></Route>
           </Routes>

@@ -91,7 +91,7 @@ function Project(prop: Prop) {
       <StyleDetailButton
         variant="contained"
         color="error"
-        onClick={() => navigate(notionURL)}
+        onClick={() => window.open(notionURL)}
       >
         Detail Page
       </StyleDetailButton>

@@ -28,7 +28,7 @@ const Projects = () => {
         title="Severless social login Development"
         content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 serverless social login system 구현"
         githubURL="none"
-        notionURL=""
+        notionURL="/sociallogin"
       />
       <Project period="" title="" content="" githubURL="" notionURL="" />
     </Container>

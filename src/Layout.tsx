@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { useContext } from "react";
 import { context } from "./App";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   children: React.ReactNode;
@@ -8,6 +9,7 @@ type Props = {
 
 function Layout({ children }: Props) {
   const { setPageChangeState } = useContext(context);
+  const navigate = useNavigate();
 
   const PortfolioTitle = styled.div`
     -webkit-touch-callout: none;
@@ -29,11 +31,12 @@ function Layout({ children }: Props) {
 
     color: white;
   `;
+
   return (
     <>
       <PortfolioTitle
         onClick={() => {
-          setPageChangeState!(0);
+          navigate("/");
         }}
       >
         <p>Kang Min Kyu's Portfolio Ver II</p>

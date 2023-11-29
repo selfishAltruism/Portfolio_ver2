@@ -1,5 +1,6 @@
 import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
+import { useNavigate } from "react-router-dom";
 
 import ColumnBar from "./style_component/ColumnBar";
 
@@ -13,6 +14,7 @@ type Prop = {
 
 function Project(prop: Prop) {
   const { period, title, content, notionURL, githubURL } = prop;
+  const navigate = useNavigate();
 
   const Container = styled.div`
     width: 100%;
@@ -86,7 +88,11 @@ function Project(prop: Prop) {
         </StyleGitButton>
       )}
 
-      <StyleDetailButton variant="contained" color="error">
+      <StyleDetailButton
+        variant="contained"
+        color="error"
+        onClick={() => navigate(notionURL)}
+      >
         Detail Page
       </StyleDetailButton>
     </Container>

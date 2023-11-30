@@ -20,7 +20,7 @@ function Project(prop: Prop) {
 
   const Container = styled.div`
     width: 100%;
-    height: 110px;
+    height: 120px;
 
     display: flex;
     flex-direction: row;
@@ -48,6 +48,8 @@ function Project(prop: Prop) {
   const Period = styled.span`
     color: white;
     opacity: 0.8;
+
+    margin-bottom: -2px;
   `;
 
   const Title = styled.span`
@@ -58,8 +60,10 @@ function Project(prop: Prop) {
   `;
 
   const SubTitle = styled.span`
-    font-size: 15px;
+    font-size: 14px;
     color: white;
+
+    margin-top: 8px;
   `;
 
   const StyleGitButton = styled(Button)`

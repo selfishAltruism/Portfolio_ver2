@@ -74,7 +74,6 @@ function FirstPage() {
       <div id="container" style={containerStyle}>
         <div id="titleText1">Kang Min Kyu</div>
         <div id="titleText2">Portfolio</div>
-        <div id="titleText1">Ver II</div>
         <div id="block"></div>
       </div>
 

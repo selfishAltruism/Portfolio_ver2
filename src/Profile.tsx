@@ -14,7 +14,7 @@ function Profile() {
           Front-End Developer / officialkyus@gmail.com
         </span>
         <RowBar width="85%" />
-        <span className="main-content">안전지대를 벗어나는 개발자</span>
+        <span className="main-content">안전지대를 넘어서는 개발자</span>
         <span className="sub-content">
           변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, 강민규입니다.
         </span>

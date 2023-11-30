@@ -1,16 +1,7 @@
-@font-face {
-  font-family: "NotoSerifKR-Regular";
-  src: url(./fonts/NotoSerifKR-Regular.otf);
-  unicode-range: U+AC00-D7A3;
-}
-
-@font-face {
-  font-family: "PlayfairDisplay-Regular";
-  src: url(./fonts/PlayfairDisplay-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Red+Hat+Display:wght@300&display=swap");
 
 * {
-  font-family: "NotoSerifKR-Regular", "PlayfairDisplay-Regular";
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {

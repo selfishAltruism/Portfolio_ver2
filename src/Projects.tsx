@@ -24,7 +24,7 @@ const Projects = () => {
     <Container>
       <Title>Development Record</Title>
       <Project
-        period="During internship, 2023.11.21~2023.11.31"
+        period="During internship, 2023.11.21~2023.11.29"
         title="Severless social login Development"
         content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 Serverless social login system 구현"
         githubURL="none"
@@ -33,7 +33,7 @@ const Projects = () => {
       <Project
         period="During internship, 2023.09.08~2023.11.10"
         title="Grid Project"
-        content="타사 Grid library 사용으로 인한 고정 지출 해소와 Excel 활용 업무 개선을 위한 다기능 Grid 개발"
+        content="타사 Grid library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
       />
@@ -55,7 +55,7 @@ const Projects = () => {
       <Project
         period="2023.11.25~now"
         title="Portfolio ver II"
-        content="현재 Page, 자기소개와 개발 기록을 반응형 Web으로 개발"
+        content="현재 Page, 자기소개와 개발 기록을 포함한 반응형 Web 개발"
         githubURL="https://github.com/selfishAltruism/Portfolio_ver2"
         notionURL="https://www.notion.so/officialkyus/Portfolio-53c3fa8d76d64c3a825b789d66978a73"
         isSub={true}
@@ -71,7 +71,7 @@ const Projects = () => {
       <Project
         period="During army, 2023.02.21~2023.02.25"
         title="ShipList Development"
-        content="군대 내부에서 사용되는 선박일지 Web 개발"
+        content="군대 내부에서 사용되는 선박일지를 Web으로 구현"
         githubURL="https://github.com/selfishAltruism/ShipList"
         notionURL="https://www.notion.so/officialkyus/ShipList-4fc012ceae984959a73ca235dc42d444"
         isSub={true}

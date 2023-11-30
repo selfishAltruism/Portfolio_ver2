@@ -94,7 +94,7 @@ function Project(prop: Prop) {
       ) : (
         <StyleGitButton
           variant="outlined"
-          color="error"
+          color="secondary"
           onClick={() => window.open(githubURL)}
         >
           {isHalfScreen ? "Git" : "Git Hub"}
@@ -103,7 +103,7 @@ function Project(prop: Prop) {
 
       <StyleDetailButton
         variant="contained"
-        color="error"
+        color="secondary"
         onClick={() => window.open(notionURL)}
       >
         {isHalfScreen ? "Detail" : "Detail Page"}

@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 import "./Profile.css";
 
-import RowBar from "./style_component/RowBar";
+import RowBar from "./styled_component/RowBar";
 
 function Profile() {
   return (
@@ -28,7 +28,7 @@ function Profile() {
           <div className="stack">React</div>
           <div className="stack">Redux</div>
           <div className="stack">Next.js</div>
-          <div className="sub stack">React Context</div>
+          <div className="small sub stack">React Context</div>
           <div className="small sub stack">React Hook Form</div>
           <div className="small sub stack">styled-component</div>
           <div className="sub stack">NextAuth.js</div>

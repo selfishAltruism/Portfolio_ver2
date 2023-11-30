@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 import ColumnBar from "./style_component/ColumnBar";
 
@@ -14,7 +15,7 @@ type Prop = {
 
 function Project(prop: Prop) {
   const { period, title, content, notionURL, githubURL } = prop;
-  const navigate = useNavigate();
+  const isHalfScreen = useMediaQuery({ query: "(max-width: 1100px)" });
 
   const Container = styled.div`
     width: 100%;
@@ -23,6 +24,7 @@ function Project(prop: Prop) {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 
     background-color: #323232;
 
@@ -60,15 +62,17 @@ function Project(prop: Prop) {
   `;
 
   const StyleGitButton = styled(Button)`
-    width: 100px;
+    width: ${isHalfScreen ? "50px" : "100px"};
     color: white;
     margin-left: 8px;
     border-color: white;
   `;
 
   const StyleDetailButton = styled(Button)`
+    width: ${isHalfScreen ? "50px" : "130px"};
     color: #323232;
     margin-left: 8px;
+    margin-right: 20px;
     background-color: white;
   `;
 
@@ -81,10 +85,10 @@ function Project(prop: Prop) {
         <SubTitle>{content}</SubTitle>
       </Content>
       {githubURL === "none" ? (
-        <div style={{ width: "108px" }}></div>
+        <div style={{ width: isHalfScreen ? "58px" : "108px" }}></div>
       ) : (
         <StyleGitButton variant="outlined" color="error">
-          Git Hub
+          {isHalfScreen ? "Git" : "Git Hub"}
         </StyleGitButton>
       )}
 
@@ -93,7 +97,7 @@ function Project(prop: Prop) {
         color="error"
         onClick={() => window.open(notionURL)}
       >
-        Detail Page
+        {isHalfScreen ? "Detail" : "Detail Page"}
       </StyleDetailButton>
     </Container>
   );

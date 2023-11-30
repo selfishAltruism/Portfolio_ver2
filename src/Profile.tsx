@@ -22,16 +22,16 @@ function Profile() {
           즐겁게 코딩하는 자세와, 의사소통할 수 있는 능력이 개발의 본질이라고
           생각합니다.
         </span>
-        <span className="stack-label"></span>
         <div className="stacks">
           <div className="stack">Java Script</div>
           <div className="stack">Type Script</div>
           <div className="stack">React</div>
           <div className="stack">Redux</div>
           <div className="stack">Next.js</div>
-          <div className="sub-stack-small">react-hook-form</div>
-          <div className="sub-stack-small">styled-component</div>
-          <div className="sub-stack">NextAuth.js</div>
+          <div className="sub stack">React Context</div>
+          <div className="small sub stack">React Hook Form</div>
+          <div className="small sub stack">styled-component</div>
+          <div className="sub stack">NextAuth.js</div>
         </div>
       </div>
       <Avatar

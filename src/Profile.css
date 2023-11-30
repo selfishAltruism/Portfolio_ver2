@@ -40,7 +40,9 @@
   display: flex;
   flex-direction: row;
 
-  margin-top: 15px;
+  margin-top: 8px;
+
+  flex-wrap: wrap;
 }
 
 .profile-contianer .stack {
@@ -49,56 +51,28 @@
   align-items: center;
 
   width: 90px;
-
   height: 27px;
 
+  border-radius: 3px;
+  margin-right: 7px;
+  margin-top: 7px;
+
+  font-weight: bold;
   color: white;
   font-size: 14px;
-  font-weight: bold;
 
   background-color: #323232;
   border: 2px solid #323232;
-
-  border-radius: 3px;
-  margin-right: 7px;
 }
 
-.profile-contianer .sub-stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 90px;
-
-  height: 27px;
-
+.profile-contianer .sub {
   color: #323232;
   font-size: 14px;
-  font-weight: bold;
 
   background-color: white;
   border: 2px solid #323232;
-
-  border-radius: 3px;
-  margin-right: 7px;
 }
 
-.profile-contianer .sub-stack-small {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 90px;
-
-  height: 27px;
-
-  color: #323232;
+.profile-contianer .small {
   font-size: 10px;
-  font-weight: bold;
-
-  background-color: white;
-  border: 2px solid #323232;
-
-  border-radius: 3px;
-  margin-right: 7px;
 }

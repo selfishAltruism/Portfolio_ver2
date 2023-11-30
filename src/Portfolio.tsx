@@ -41,9 +41,7 @@ function Portfolio() {
   return (
     <Layout>
       <Profile />
-
       <Projects />
-
       <a href="https://github.com/selfishAltruism">
         <div id="gitLink2">
           <p>Made by https://github.com/selfishAltruism</p>

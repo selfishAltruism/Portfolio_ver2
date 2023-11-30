@@ -12,7 +12,7 @@ const Projects = () => {
 
     width: 80%;
 
-    top: 320px;
+    top: 340px;
     left: 50%;
     transform: translate(-50%, 0%);
 
@@ -30,7 +30,13 @@ const Projects = () => {
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
       />
-      <Project period="" title="" content="" githubURL="" notionURL="" />
+      <Project
+        period="During internship, 2023.11.21~2023.11.31"
+        title="Severless social login Development"
+        content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 serverless social login system 구현"
+        githubURL=""
+        notionURL=""
+      />
     </Container>
   );
 };

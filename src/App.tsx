@@ -1,11 +1,12 @@
 import * as React from "react";
 import { useState, createContext, useReducer } from "react";
-import { BrowserView, MobileView } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
 import FirstPage from "./FirstPage";
-import Portfolio from "./browser/Portfolio";
+import Portfolio from "./Portfolio";
 
 export const context = createContext<{
   setPageChangeState?: React.Dispatch<React.SetStateAction<number>>;
@@ -13,6 +14,9 @@ export const context = createContext<{
 
 function App() {
   const [pageChangeState, setPageChangeState] = useState(0);
+  const isMobile = useMediaQuery({
+    query: "(max-width:768px)",
+  });
 
   return (
     <>
@@ -21,13 +25,20 @@ function App() {
           setPageChangeState,
         }}
       >
-        <BrowserView>
-          <Portfolio />
-        </BrowserView>
-        <MobileView>모바일 브라우져!</MobileView>
-        {/* {pageChangeState === 0 ? <FirstPage /> : } */}
-        {/* <Portfolio /> */}
-        {/*  <FirstPage /> */}
+        <Router>
+          <Routes>
+            <Route
+              path="*"
+              element={
+                pageChangeState === 0 && !isMobile ? (
+                  <FirstPage />
+                ) : (
+                  <Portfolio />
+                )
+              }
+            ></Route>
+          </Routes>
+        </Router>
       </context.Provider>
     </>
   );

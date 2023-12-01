@@ -1,5 +1,4 @@
-import * as React from "react";
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useContext } from "react";
 import { context } from "./App";
 
 import "./FirstPage.css";
@@ -75,7 +74,6 @@ function FirstPage() {
       <div id="container" style={containerStyle}>
         <div id="titleText1">Kang Min Kyu</div>
         <div id="titleText2">Portfolio</div>
-        <div id="titleText1">Ver II</div>
         <div id="block"></div>
       </div>
 

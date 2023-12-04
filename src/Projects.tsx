@@ -29,7 +29,6 @@ const Projects = () => {
         content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 Serverless social login system 구현"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
-        isStudy={true}
       />
       <Project
         period="During internship, 2023.09.08~2023.11.10"
@@ -39,11 +38,11 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
       />
       <Project
-        period="During internship, 2023.12.04"
-        title="Severless social login Development"
-        content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 Serverless social login system 구현"
+        period="2023.12.04"
+        title="TDD Study"
+        content="Next.js 환경에서 Jest, React testing library, Cypress를 이용한 TDD 환경 구축"
         githubURL="none"
-        notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
+        notionURL="https://officialkyus.notion.site/TDD-898b4841483f45c9946b45dd2abb80e4?pvs=4"
         isStudy={true}
       />
       <Project

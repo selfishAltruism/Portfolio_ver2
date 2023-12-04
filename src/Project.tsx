@@ -12,10 +12,11 @@ type Prop = {
   notionURL: string;
   githubURL: string;
   isSub?: boolean;
+  isStudy?: boolean;
 };
 
 function Project(prop: Prop) {
-  const { period, title, content, notionURL, githubURL, isSub } = prop;
+  const { period, title, content, notionURL, githubURL, isSub, isStudy } = prop;
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1100px)" });
 
   const Container = styled.div`
@@ -27,7 +28,7 @@ function Project(prop: Prop) {
     align-items: center;
     justify-content: space-between;
 
-    background-color: ${isSub ? "#5e5e5e" : "#323232"};
+    background-color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
 
     margin-top: 20px;
 

@@ -29,6 +29,7 @@ const Projects = () => {
         content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 Serverless social login system 구현"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
+        isStudy={true}
       />
       <Project
         period="During internship, 2023.09.08~2023.11.10"
@@ -36,6 +37,14 @@ const Projects = () => {
         content="타사 Grid library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
+      />
+      <Project
+        period="During internship, 2023.12.04"
+        title="Severless social login Development"
+        content="NextAuth.js를 활용하여 kakao, google, naver 계정으로 로그인 가능한 Serverless social login system 구현"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
+        isStudy={true}
       />
       <Project
         period="2021.06.23~2021.12.20"

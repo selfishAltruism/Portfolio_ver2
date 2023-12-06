@@ -18,9 +18,13 @@ function Project(prop: Prop) {
   const { period, title, content, notionURL, githubURL, isSub, isStudy } = prop;
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1100px)" });
 
+  const isMobile = useMediaQuery({
+    query: "(max-width:700px)",
+  });
+
   const Container = styled.div`
     width: 100%;
-    height: 120px;
+    height: ${isMobile ? "250px" : "120px"};
 
     display: flex;
     flex-direction: row;
@@ -35,7 +39,7 @@ function Project(prop: Prop) {
   `;
 
   const Content = styled.div`
-    width: 71%;
+    width: ${isMobile ? "90%" : "71%"};
     height: 80%;
 
     display: flex;

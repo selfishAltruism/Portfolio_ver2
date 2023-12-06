@@ -1,18 +1,23 @@
 import styled from "@emotion/styled";
-
+import { useMediaQuery } from "react-responsive";
 import Project from "./Project";
 
 const Projects = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width:700px)",
+  });
+
   const Title = styled.span`
     font-size: 28px;
     font-weight: bold;
   `;
+
   const Container = styled.div`
     position: absolute;
 
     width: 80%;
 
-    top: 340px;
+    top: ${isMobile ? "450px" : "340px"};
     left: 50%;
     transform: translate(-50%, 0%);
 
@@ -84,6 +89,7 @@ const Projects = () => {
         notionURL="https://www.notion.so/officialkyus/ShipList-4fc012ceae984959a73ca235dc42d444"
         isSub={true}
       />
+      <div style={{ height: "80px" }}></div>
     </Container>
   );
 };

@@ -5,6 +5,10 @@ import { useMediaQuery } from "react-responsive";
 import RowBar from "./styled_component/RowBar";
 
 function Profile() {
+  const isMobile = useMediaQuery({
+    query: "(max-width:700px)",
+  });
+
   const Container = styled.div`
     position: absolute;
 
@@ -20,9 +24,9 @@ function Profile() {
 
   const Img = styled(Avatar)`
     position: absolute;
-    top: 85px;
+    top: ${isMobile ? "70px" : "85px"};
 
-    left: 80%;
+    right: ${isMobile ? "10%" : "10%"};
   `;
 
   const Name = styled.span`
@@ -31,7 +35,7 @@ function Profile() {
   `;
 
   const Info = styled.span`
-    font-size: 15px;
+    font-size: ${isMobile ? "12px" : "15px"};
     color: gray;
   `;
 
@@ -42,7 +46,7 @@ function Profile() {
 
   const SubContent = styled.span`
     color: #323232;
-    font-size: 17px;
+    font-size: ${isMobile ? "15px" : "17px"};
   `;
 
   const Stacks = styled.div`
@@ -92,7 +96,7 @@ function Profile() {
       <Container>
         <Name>강민규</Name>
         <Info>Front-End Developer / officialkyus@gmail.com</Info>
-        <RowBar width="85%" />
+        <RowBar width={isMobile ? "100%" : "85%"} />
         <MainContent>안전지대를 넘어서는 개발자</MainContent>
         <SubContent>
           변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, 강민규입니다.
@@ -118,7 +122,7 @@ function Profile() {
         className="profile-img"
         alt="Kang Min Kyu"
         src="img/profile.jpg"
-        sx={{ width: 100, height: 100 }}
+        sx={{ width: isMobile ? 70 : 100, height: isMobile ? 70 : 100 }}
       />
     </>
   );

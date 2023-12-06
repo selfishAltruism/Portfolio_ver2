@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState, createContext, useContext, useReducer } from "react";
 import "./Portfoilo.css";
+import { useMediaQuery } from "react-responsive";
 
 import Profile from "./Profile";
 import Projects from "./Projects";
@@ -26,6 +27,10 @@ export const ditailContext = createContext<{
 }>({});
 
 function Portfolio() {
+  const isMobile = useMediaQuery({
+    query: "(max-width:768px)",
+  });
+
   const TimePointDetailLength = {
     university: 200,
     studentCouncil: 460,
@@ -44,11 +49,12 @@ function Portfolio() {
           <p>Made by https://github.com/selfishAltruism</p>
         </div>
       </a>
-
-      <span id="toBeContinued">
-        To Be Continued.. To Be Continued.. To Be Continued.. To Be Continued..
-        To Be Continued.. To Be Continued..
-      </span>
+      {isMobile ? null : (
+        <span id="toBeContinued">
+          To Be Continued.. To Be Continued.. To Be Continued.. To Be
+          Continued.. To Be Continued.. To Be Continued..
+        </span>
+      )}
     </Layout>
   );
 }

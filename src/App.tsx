@@ -15,7 +15,7 @@ export const context = createContext<{
 function App() {
   const [pageChangeState, setPageChangeState] = useState(0);
   const isMobile = useMediaQuery({
-    query: "(max-width:768px)",
+    query: "(max-width:700px)",
   });
 
   return (

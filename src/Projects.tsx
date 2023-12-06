@@ -31,7 +31,7 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
       />
       <Project
-        period="During internship, 2023.09.08~2023.11.10"
+        period="During internship, 2023.09.08~2023.11.10, 2023.12.04~"
         title="Grid Project"
         content="타사 Grid library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
         githubURL="none"

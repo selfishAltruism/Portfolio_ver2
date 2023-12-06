@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
-import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 import ColumnBar from "./styled_component/ColumnBar";

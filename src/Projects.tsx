@@ -8,7 +8,7 @@ const Projects = () => {
   });
 
   const Title = styled.span`
-    font-size: 28px;
+    font-size: ${isMobile ? "22px" : "28px"};
     font-weight: bold;
   `;
 

@@ -35,7 +35,7 @@ function Profile() {
   `;
 
   const Info = styled.span`
-    font-size: ${isMobile ? "12px" : "15px"};
+    font-size: ${isMobile ? "10px" : "15px"};
     color: gray;
   `;
 
@@ -46,7 +46,7 @@ function Profile() {
 
   const SubContent = styled.span`
     color: #323232;
-    font-size: ${isMobile ? "9px" : "17px"};
+    font-size: ${isMobile ? "8px" : "17px"};
   `;
 
   const Stacks = styled.div`
@@ -64,8 +64,8 @@ function Profile() {
     justify-content: center;
     align-items: center;
 
-    width: 90px;
-    height: 27px;
+    width: ${isMobile ? "60px" : "90px"};
+    height: ${isMobile ? "20px" : "27px"};
 
     border-radius: 3px;
     margin-right: 7px;
@@ -73,7 +73,7 @@ function Profile() {
 
     font-weight: bold;
     color: white;
-    font-size: 14px;
+    font-size: ${isMobile ? "10px" : "14px"};
 
     background-color: #323232;
     border: 2px solid #323232;
@@ -81,14 +81,13 @@ function Profile() {
 
   const SubStack = styled(Stack)`
     color: #323232;
-    font-size: 14px;
 
     background-color: white;
     border: 2px solid #323232;
   `;
 
   const SmallSubStack = styled(SubStack)`
-    font-size: 10px;
+    font-size: ${isMobile ? "7px" : "10px"};
   `;
 
   return (

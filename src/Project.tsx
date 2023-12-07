@@ -24,12 +24,12 @@ function Project(prop: Prop) {
 
   const Container = styled.div`
     width: 100%;
-    height: ${isMobile ? "250px" : "120px"};
+    height: ${isMobile ? "150px" : "120px"};
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: ${isMobile ? "center" : "space-between"};
 
     background-color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
 
@@ -40,11 +40,11 @@ function Project(prop: Prop) {
 
   const Content = styled.div`
     width: ${isMobile ? "90%" : "71%"};
-    height: 80%;
+    height: ${isMobile ? "80%" : "70%"};
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     margin-left: 8px;
   `;
@@ -54,17 +54,19 @@ function Project(prop: Prop) {
     opacity: 0.8;
 
     margin-bottom: -2px;
+
+    font-size: ${isMobile ? "11px" : "16px"};
   `;
 
   const Title = styled.span`
     color: white;
-    font-size: 22px;
+    font-size: ${isMobile ? "17px" : "22px"};
 
     font-weight: bold;
   `;
 
   const SubTitle = styled.span`
-    font-size: 14px;
+    font-size: ${isMobile ? "9px" : "14px"};
     color: white;
 
     margin-top: 8px;
@@ -108,6 +110,15 @@ function Project(prop: Prop) {
     </StyleDetailButton>
   );
 
+  const ButtonDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+
+    margin-top: 10px;
+  `;
+
   return (
     <Container>
       <ColumnBar height="84%" />
@@ -116,14 +127,14 @@ function Project(prop: Prop) {
         <Title>{title}</Title>
         <SubTitle>{content}</SubTitle>
         {isMobile ? (
-          <>
+          <ButtonDiv>
             <GitButton />
             <DetailButton />
-          </>
+          </ButtonDiv>
         ) : null}
       </Content>
 
-      {isMobile! ? (
+      {!isMobile ? (
         <>
           <GitButton />
           <DetailButton />

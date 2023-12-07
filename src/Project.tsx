@@ -24,12 +24,12 @@ function Project(prop: Prop) {
 
   const Container = styled.div`
     width: 100%;
-    height: ${isMobile ? "150px" : "120px"};
+    height: ${isMobile ? "140px" : "120px"};
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: ${isMobile ? "center" : "space-between"};
+    justify-content: space-between;
 
     background-color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
 
@@ -40,7 +40,7 @@ function Project(prop: Prop) {
 
   const Content = styled.div`
     width: ${isMobile ? "90%" : "71%"};
-    height: ${isMobile ? "80%" : "70%"};
+    height: 70%;
 
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ function Project(prop: Prop) {
 
     margin-bottom: -2px;
 
-    font-size: ${isMobile ? "11px" : "16px"};
+    font-size: ${isMobile ? "12px" : "16px"};
   `;
 
   const Title = styled.span`
@@ -66,7 +66,7 @@ function Project(prop: Prop) {
   `;
 
   const SubTitle = styled.span`
-    font-size: ${isMobile ? "9px" : "14px"};
+    font-size: ${isMobile ? "17px" : "14px"};
     color: white;
 
     margin-top: 8px;
@@ -125,13 +125,15 @@ function Project(prop: Prop) {
       <Content>
         <Period>{period}</Period>
         <Title>{title}</Title>
-        <SubTitle>{content}</SubTitle>
+
         {isMobile ? (
           <ButtonDiv>
             <GitButton />
             <DetailButton />
           </ButtonDiv>
-        ) : null}
+        ) : (
+          <SubTitle>{content}</SubTitle>
+        )}
       </Content>
 
       {!isMobile ? (

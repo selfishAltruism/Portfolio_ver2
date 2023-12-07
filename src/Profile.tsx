@@ -41,12 +41,12 @@ function Profile() {
 
   const MainContent = styled.span`
     color: #323232;
-    font-size: 23px;
+    font-size: ${isMobile ? "17px" : "23px"};
   `;
 
   const SubContent = styled.span`
     color: #323232;
-    font-size: ${isMobile ? "15px" : "17px"};
+    font-size: ${isMobile ? "9px" : "17px"};
   `;
 
   const Stacks = styled.div`

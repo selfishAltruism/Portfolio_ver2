@@ -17,7 +17,7 @@ const Projects = () => {
 
     width: 80%;
 
-    top: ${isMobile ? "450px" : "340px"};
+    top: ${isMobile ? "400px" : "340px"};
     left: 50%;
     transform: translate(-50%, 0%);
 

@@ -24,7 +24,7 @@ function Project(prop: Prop) {
 
   const Container = styled.div`
     width: 100%;
-    height: ${isMobile ? "140px" : "120px"};
+    height: ${isMobile ? "90px" : "120px"};
 
     display: flex;
     flex-direction: row;
@@ -33,18 +33,20 @@ function Project(prop: Prop) {
 
     background-color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
 
-    margin-top: 20px;
+    margin-top: ${isMobile ? "10px" : "20px"};
 
     border-radius: 5px;
   `;
 
   const Content = styled.div`
-    width: ${isMobile ? "90%" : "71%"};
-    height: 70%;
+    position: relative;
+
+    width: ${isMobile ? "95%" : "71%"};
+    height: 80%;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: ${isMobile ? "" : "center"};
 
     margin-left: 8px;
   `;
@@ -74,6 +76,7 @@ function Project(prop: Prop) {
 
   const StyleGitButton = styled(Button)`
     width: ${isHalfScreen ? "50px" : "130px"};
+    height: ${isHalfScreen ? "22px" : ""};
     color: white;
     margin-left: 8px;
     border-color: white;
@@ -81,6 +84,7 @@ function Project(prop: Prop) {
 
   const StyleDetailButton = styled(Button)`
     width: ${isHalfScreen ? "50px" : "130px"};
+    height: ${isHalfScreen ? "22px" : ""};
     color: #323232;
     margin-left: 8px;
     margin-right: 20px;
@@ -111,6 +115,10 @@ function Project(prop: Prop) {
   );
 
   const ButtonDiv = styled.div`
+    position: absolute;
+    right: -10px;
+    bottom: 0px;
+
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -85,6 +85,29 @@ function Project(prop: Prop) {
     background-color: white;
   `;
 
+  const GitButton = () =>
+    githubURL === "none" ? (
+      <div style={{ width: isHalfScreen ? "58px" : "138px" }}></div>
+    ) : (
+      <StyleGitButton
+        variant="outlined"
+        color="secondary"
+        onClick={() => window.open(githubURL)}
+      >
+        {isHalfScreen ? "Git" : "Git Hub"}
+      </StyleGitButton>
+    );
+
+  const DetailButton = () => (
+    <StyleDetailButton
+      variant="contained"
+      color="secondary"
+      onClick={() => window.open(notionURL)}
+    >
+      {isHalfScreen ? "Detail" : "Detail Page"}
+    </StyleDetailButton>
+  );
+
   return (
     <Container>
       <ColumnBar height="84%" />
@@ -92,26 +115,20 @@ function Project(prop: Prop) {
         <Period>{period}</Period>
         <Title>{title}</Title>
         <SubTitle>{content}</SubTitle>
+        {isMobile ? (
+          <>
+            <GitButton />
+            <DetailButton />
+          </>
+        ) : null}
       </Content>
-      {githubURL === "none" ? (
-        <div style={{ width: isHalfScreen ? "58px" : "138px" }}></div>
-      ) : (
-        <StyleGitButton
-          variant="outlined"
-          color="secondary"
-          onClick={() => window.open(githubURL)}
-        >
-          {isHalfScreen ? "Git" : "Git Hub"}
-        </StyleGitButton>
-      )}
 
-      <StyleDetailButton
-        variant="contained"
-        color="secondary"
-        onClick={() => window.open(notionURL)}
-      >
-        {isHalfScreen ? "Detail" : "Detail Page"}
-      </StyleDetailButton>
+      {isMobile! ? (
+        <>
+          <GitButton />
+          <DetailButton />
+        </>
+      ) : null}
     </Container>
   );
 }

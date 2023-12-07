@@ -43,14 +43,6 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
       />
       <Project
-        period="2023.12.04"
-        title="TDD Study"
-        content="Next.js 환경에서 Jest, React testing library, Cypress를 이용한 TDD 환경 구축"
-        githubURL="none"
-        notionURL="https://officialkyus.notion.site/TDD-898b4841483f45c9946b45dd2abb80e4?pvs=4"
-        isStudy={true}
-      />
-      <Project
         period="2021.06.23~2021.12.20"
         title="IT_DA Project"
         content="대학생 카페 공부를 돕는 카페 빈자리 공유 서비스 개발"
@@ -88,6 +80,14 @@ const Projects = () => {
         githubURL="https://github.com/selfishAltruism/ShipList"
         notionURL="https://www.notion.so/officialkyus/ShipList-4fc012ceae984959a73ca235dc42d444"
         isSub={true}
+      />
+      <Project
+        period="2023.12.04"
+        title="TDD Study"
+        content="Next.js 환경에서 Jest, React testing library, Cypress를 이용한 TDD 환경 구축"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/TDD-898b4841483f45c9946b45dd2abb80e4?pvs=4"
+        isStudy={true}
       />
       <div style={{ height: "80px" }}></div>
     </Container>

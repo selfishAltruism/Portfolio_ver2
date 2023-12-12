@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 
-import ColumnBar from "./styled_component/ColumnBar";
+import ColumnBar from "./style/component/ColumnBar";
 
 type Prop = {
   period: string;
@@ -33,7 +33,7 @@ function Project(prop: Prop) {
 
     background-color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
 
-    margin-top: ${isMobile ? "10px" : "20px"};
+    margin-bottom: ${isMobile ? "5px" : "10px"};
 
     border-radius: 5px;
   `;

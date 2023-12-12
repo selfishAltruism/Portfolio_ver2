@@ -2,7 +2,8 @@ import Avatar from "@mui/material/Avatar";
 import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 
-import RowBar from "./styled_component/RowBar";
+import RowBar from "./style/component/RowBar";
+import { Title1 } from "./style/title";
 
 function Profile() {
   const isMobile = useMediaQuery({
@@ -10,7 +11,7 @@ function Profile() {
   });
 
   const Container = styled.div`
-    margin-top: 20px;
+    margin-top: -10px;
     width: 80%;
 
     display: flex;
@@ -23,11 +24,6 @@ function Profile() {
     top: ${isMobile ? "20px" : "35px"};
 
     right: ${isMobile ? "10%" : "10%"};
-  `;
-
-  const Name = styled.span`
-    font-size: 28px;
-    font-weight: bold;
   `;
 
   const Info = styled.span`
@@ -50,8 +46,6 @@ function Profile() {
     display: flex;
     flex-direction: row;
 
-    margin-top: 8px;
-
     flex-wrap: wrap;
   `;
 
@@ -60,16 +54,18 @@ function Profile() {
     justify-content: center;
     align-items: center;
 
-    width: ${isMobile ? "60px" : "90px"};
+    margin-bottom: 6px;
+
+    width: ${isMobile ? "60px" : "120px"};
     height: ${isMobile ? "22px" : "27px"};
 
-    border-radius: 3px;
+    border-radius: 2px;
     margin-right: 7px;
-    margin-top: 7px;
+    margin-top: 0px;
 
     font-weight: bold;
     color: white;
-    font-size: ${isMobile ? "9px" : "14px"};
+    font-size: ${isMobile ? "9px" : "16px"};
 
     background-color: #323232;
     border: 2px solid #323232;
@@ -83,13 +79,13 @@ function Profile() {
   `;
 
   const SmallSubStack = styled(SubStack)`
-    font-size: ${isMobile ? "7px" : "10px"};
+    font-size: ${isMobile ? "7px" : "13px"};
   `;
 
   return (
     <>
       <Container>
-        <Name>강민규</Name>
+        <Title1>강민규</Title1>
         <Info>Front-End Developer / officialkyus@gmail.com</Info>
         <RowBar width={isMobile ? "100%" : "85%"} />
         <MainContent>안전지대를 넘어서는 개발자</MainContent>
@@ -100,15 +96,18 @@ function Profile() {
           즐겁게 코딩하는 자세와, 의사소통할 수 있는 능력이 개발의 본질이라고
           생각합니다.
         </SubContent>
+        <Title1>Tech Stack</Title1>
         <Stacks>
           <Stack>Java Script</Stack>
           <Stack>Type Script</Stack>
           <Stack>React</Stack>
           <Stack>Redux</Stack>
-          <Stack>Next.js</Stack>
+        </Stacks>
+        <Stacks>
+          <SubStack>Next.js</SubStack>
           <SmallSubStack>React Context</SmallSubStack>
           <SmallSubStack>React Hook Form</SmallSubStack>
-          <SmallSubStack>styled component</SmallSubStack>
+          <SmallSubStack>styled-component</SmallSubStack>
           <SubStack>NextAuth.js</SubStack>
           <SubStack>Cypress</SubStack>
         </Stacks>

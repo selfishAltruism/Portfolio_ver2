@@ -2,28 +2,23 @@ import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 import Project from "./Project";
 
+import { Title1 } from "./style/title";
+
 const Projects = () => {
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
   });
 
-  const Title = styled.span`
-    font-size: ${isMobile ? "22px" : "28px"};
-    font-weight: bold;
-  `;
-
   const Container = styled.div`
     width: 80%;
-
-    margin-top: ${isMobile ? "20px" : "30px"};
-
     display: flex;
     flex-direction: column;
     justify-content: center;
   `;
+
   return (
     <Container>
-      <Title>Development Record</Title>
+      <Title1>Dev Record</Title1>
       <Project
         period="During internship, 2023.11.21~2023.11.29"
         title="Severless social login Development"

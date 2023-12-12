@@ -55,7 +55,7 @@ function Profile() {
     align-items: center;
 
     width: ${isMobile ? "85px" : "120px"};
-    height: ${isMobile ? "22px" : "27px"};
+    height: ${isMobile ? "22px" : "28px"};
 
     border-radius: 2px;
     margin-right: 5px;

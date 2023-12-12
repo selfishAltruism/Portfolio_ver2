@@ -32,6 +32,17 @@ function Layout({ children }: Props) {
     color: white;
   `;
 
+  const MainContent = styled.div`
+    width: 100%;
+    position: absolute;
+    top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `;
+
   return (
     <>
       <PortfolioTitle
@@ -41,7 +52,7 @@ function Layout({ children }: Props) {
       >
         <p>Kang Min Kyu's Portfolio Ver II</p>
       </PortfolioTitle>
-      {children}
+      <MainContent>{children}</MainContent>
     </>
   );
 }

@@ -13,13 +13,9 @@ const Projects = () => {
   `;
 
   const Container = styled.div`
-    position: absolute;
-
     width: 80%;
 
-    top: ${isMobile ? "330px" : "340px"};
-    left: 50%;
-    transform: translate(-50%, 0%);
+    margin-top: ${isMobile ? "20px" : "30px"};
 
     display: flex;
     flex-direction: column;

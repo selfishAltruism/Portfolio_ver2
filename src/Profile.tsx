@@ -10,11 +10,7 @@ function Profile() {
   });
 
   const Container = styled.div`
-    position: absolute;
-
-    left: 10%;
-    top: 80px;
-
+    margin-top: 20px;
     width: 80%;
 
     display: flex;
@@ -24,7 +20,7 @@ function Profile() {
 
   const Img = styled(Avatar)`
     position: absolute;
-    top: ${isMobile ? "70px" : "85px"};
+    top: ${isMobile ? "20px" : "35px"};
 
     right: ${isMobile ? "10%" : "10%"};
   `;
@@ -65,7 +61,7 @@ function Profile() {
     align-items: center;
 
     width: ${isMobile ? "60px" : "90px"};
-    height: ${isMobile ? "20px" : "27px"};
+    height: ${isMobile ? "22px" : "27px"};
 
     border-radius: 3px;
     margin-right: 7px;
@@ -73,7 +69,7 @@ function Profile() {
 
     font-weight: bold;
     color: white;
-    font-size: ${isMobile ? "10px" : "14px"};
+    font-size: ${isMobile ? "9px" : "14px"};
 
     background-color: #323232;
     border: 2px solid #323232;
@@ -112,7 +108,7 @@ function Profile() {
           <Stack>Next.js</Stack>
           <SmallSubStack>React Context</SmallSubStack>
           <SmallSubStack>React Hook Form</SmallSubStack>
-          <SmallSubStack>styled-component</SmallSubStack>
+          <SmallSubStack>styled component</SmallSubStack>
           <SubStack>NextAuth.js</SubStack>
           <SubStack>Cypress</SubStack>
         </Stacks>
@@ -121,7 +117,7 @@ function Profile() {
         className="profile-img"
         alt="Kang Min Kyu"
         src="img/profile.jpg"
-        sx={{ width: isMobile ? 70 : 100, height: isMobile ? 70 : 100 }}
+        sx={{ width: isMobile ? 70 : 120, height: isMobile ? 70 : 120 }}
       />
     </>
   );

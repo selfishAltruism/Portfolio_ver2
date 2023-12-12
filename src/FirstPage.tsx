@@ -72,8 +72,12 @@ function FirstPage() {
   return (
     <div className="titleBody" onClick={mainClickHandler}>
       <div id="container" style={containerStyle}>
-        <div id="titleText1">Kang Min Kyu</div>
-        <div id="titleText2">Portfolio</div>
+        <div id="titleText2">Welcome!</div>
+        {/*         <div id="titleText2">Kang MinKyu's Portfolio</div> */}
+        <div id="titleText1">
+          프론트 엔드 개발자, <span className="borderText">강민규</span>{" "}
+          포트폴리오입니다.
+        </div>
         <div id="block"></div>
       </div>
 

@@ -20,16 +20,23 @@
   z-index: 101;
 
   color: rgb(255, 255, 255);
-  font-size: 3vw;
+  font-size: 25px;
+
+  margin-top: -10px;
 }
 
 #titleText2 {
   z-index: 101;
 
   color: white;
-  font-size: 8vw;
+  font-size: 105px;
+  font-weight: bold;
 
-  margin-top: -30px;
+  margin-top: 0px;
+}
+
+.borderText {
+  font-weight: bold;
 }
 
 #block {

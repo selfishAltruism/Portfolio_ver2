@@ -3,7 +3,7 @@ import { useState, createContext, useReducer } from "react";
 import { useMediaQuery } from "react-responsive";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import "./App.css";
+import "./style/App.css";
 
 import FirstPage from "./FirstPage";
 import Portfolio from "./Portfolio";

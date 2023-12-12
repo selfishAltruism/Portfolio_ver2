@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState, createContext, useContext, useReducer } from "react";
-import "./Portfoilo.css";
+import "./style/Portfoilo.css";
 import { useMediaQuery } from "react-responsive";
 
 import Profile from "./Profile";

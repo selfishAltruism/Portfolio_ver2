@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { context } from "./App";
 
-import "./FirstPage.css";
+import "./style/FirstPage.css";
 
 function FirstPage() {
   const { setPageChangeState } = useContext(context);

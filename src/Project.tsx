@@ -137,25 +137,35 @@ function Project(prop: Prop) {
     margin-top: 10px;
   `;
 
-  const Stack = styled.div`
+  const Stacks = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 6px;
+    margin-bottom: -10px;
+
+    flex-wrap: wrap;
+  `;
+
+  const Stack = styled.div`
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 85px;
-    height: 22px;
+    width: 83px;
+    height: 17px;
 
     border-radius: 2px;
     margin-right: 5px;
     margin-top: 0px;
     margin-bottom: 5px;
 
+    font-weight: bold;
     color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
-    font-size: 12px;
+    font-size: 13px;
 
     background-color: white;
-    border: 2px solid ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
+    border: 2px solid white;
   `;
 
   return (
@@ -165,11 +175,13 @@ function Project(prop: Prop) {
         <Period>{period}</Period>
         <Title>{title}</Title>
 
-        {!isHalfScreen && techStack
-          ? techStack.map((tech) => {
+        {!isHalfScreen && techStack ? (
+          <Stacks>
+            {techStack.map((tech) => {
               return <Stack>{tech}</Stack>;
-            })
-          : null}
+            })}
+          </Stacks>
+        ) : null}
 
         {isMobile ? (
           <ButtonDiv>

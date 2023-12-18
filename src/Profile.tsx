@@ -103,11 +103,13 @@ function Profile() {
           <Stack>Redux</Stack>
         </Stacks>
         <Stacks>
+          <SubStack>Axios</SubStack>
           <SubStack>Next.js</SubStack>
           <SmallSubStack>React Context</SmallSubStack>
           <SmallSubStack>React Hook Form</SmallSubStack>
           <SmallSubStack>styled-component</SmallSubStack>
           <SubStack>NextAuth.js</SubStack>
+          <SmallSubStack>react-responsive</SmallSubStack>
           <SubStack>Cypress</SubStack>
         </Stacks>
       </Container>

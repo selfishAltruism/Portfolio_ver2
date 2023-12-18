@@ -12,10 +12,20 @@ type Prop = {
   githubURL: string;
   isSub?: boolean;
   isStudy?: boolean;
+  techStack?: string[];
 };
 
 function Project(prop: Prop) {
-  const { period, title, content, notionURL, githubURL, isSub, isStudy } = prop;
+  const {
+    period,
+    title,
+    content,
+    notionURL,
+    githubURL,
+    isSub,
+    isStudy,
+    techStack,
+  } = prop;
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1100px)" });
 
   const isMobile = useMediaQuery({
@@ -127,12 +137,39 @@ function Project(prop: Prop) {
     margin-top: 10px;
   `;
 
+  const Stack = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 85px;
+    height: 22px;
+
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
+    font-size: 12px;
+
+    background-color: white;
+    border: 2px solid ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
+  `;
+
   return (
     <Container>
       <ColumnBar height="84%" />
       <Content>
         <Period>{period}</Period>
         <Title>{title}</Title>
+
+        {!isHalfScreen && techStack
+          ? techStack.map((tech) => {
+              return <Stack>{tech}</Stack>;
+            })
+          : null}
 
         {isMobile ? (
           <ButtonDiv>

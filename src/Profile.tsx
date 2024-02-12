@@ -101,15 +101,18 @@ function Profile() {
           <Stack>Type Script</Stack>
           <Stack>React</Stack>
           <Stack>Redux</Stack>
+          <Stack>Axios</Stack>
         </Stacks>
         <Stacks>
-          <SubStack>Axios</SubStack>
           <SubStack>Next.js</SubStack>
+          <SubStack>MobX</SubStack>
+          <SubStack>React Router</SubStack>
           <SmallSubStack>React Context</SmallSubStack>
           <SmallSubStack>React Hook Form</SmallSubStack>
           <SmallSubStack>styled-component</SmallSubStack>
           <SubStack>NextAuth.js</SubStack>
           <SmallSubStack>react-responsive</SmallSubStack>
+          <SubStack>Playwright</SubStack>
           <SubStack>Cypress</SubStack>
         </Stacks>
       </Container>

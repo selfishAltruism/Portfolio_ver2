@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 
 import RowBar from "./style/component/RowBar";
-import { Title1 } from "./style/title";
+import { Title1, Title2 } from "./style/title";
 
 function Profile() {
   const isMobile = useMediaQuery({
@@ -96,6 +96,7 @@ function Profile() {
           생각합니다.
         </SubContent>
         <Title1>Tech Stack</Title1>
+        <Title2>Well Used</Title2>
         <Stacks>
           <Stack>Java Script</Stack>
           <Stack>Type Script</Stack>
@@ -103,6 +104,7 @@ function Profile() {
           <Stack>Redux</Stack>
           <Stack>Axios</Stack>
         </Stacks>
+        <Title2>Ever Used</Title2>
         <Stacks>
           <SubStack>Next.js</SubStack>
           <SubStack>MobX</SubStack>

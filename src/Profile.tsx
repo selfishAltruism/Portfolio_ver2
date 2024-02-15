@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import RowBar from "./style/component/RowBar";
 import { Title1, Title2 } from "./style/title";
 
+import Button from "@mui/material/Button";
+
 function Profile() {
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
@@ -49,7 +51,15 @@ function Profile() {
     flex-wrap: wrap;
   `;
 
-  const Stack = styled.div`
+  const Stack = styled.a`
+    &:hover {
+      background-color: #626262;
+      border-color: #626262;
+      transition: all ease 0.3s;
+    }
+
+    text-decoration-line: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +80,15 @@ function Profile() {
     border: 2px solid #323232;
   `;
 
+  const SmallStack = styled(Stack)`
+    font-size: ${isMobile ? "8px" : "13px"};
+  `;
+
   const SubStack = styled(Stack)`
+    &:hover {
+      color: white;
+      transition: all ease 0.3s;
+    }
     color: #323232;
 
     background-color: white;
@@ -98,24 +116,39 @@ function Profile() {
         <Title1>Tech Stack</Title1>
         <Title2>Well Used</Title2>
         <Stacks>
-          <Stack>Java Script</Stack>
-          <Stack>Type Script</Stack>
-          <Stack>React</Stack>
-          <Stack>Redux</Stack>
-          <Stack>Axios</Stack>
+          <Stack href="https://ecma-international.org/">Java Script</Stack>
+          <Stack href="https://www.typescriptlang.org/docs/">Type Script</Stack>
+          <Stack href="https://ko.legacy.reactjs.org/docs/getting-started.html">
+            React
+          </Stack>
+          <Stack href="https://ko.redux.js.org/introduction/getting-started/">
+            Redux
+          </Stack>
+          <Stack href="https://axios-http.com/kr/docs/intro">Axios</Stack>
+          <Stack href="https://reactrouter.com/en/main">React Router</Stack>
+          <SmallStack href="https://styled-components.com/docs">
+            styled-component
+          </SmallStack>
+          <SmallStack href="https://react-hook-form.com/get-started">
+            React Hook Form
+          </SmallStack>
         </Stacks>
         <Title2>Ever Used</Title2>
         <Stacks>
-          <SubStack>Next.js</SubStack>
-          <SubStack>MobX</SubStack>
-          <SubStack>React Router</SubStack>
-          <SmallSubStack>React Context</SmallSubStack>
-          <SmallSubStack>React Hook Form</SmallSubStack>
-          <SmallSubStack>styled-component</SmallSubStack>
-          <SubStack>NextAuth.js</SubStack>
-          <SmallSubStack>react-responsive</SmallSubStack>
-          <SubStack>Playwright</SubStack>
-          <SubStack>Cypress</SubStack>
+          <SubStack href="https://nextjs.org/docs">Next.js</SubStack>
+          <SubStack href="https://ko.mobx.js.org/README.html">MobX</SubStack>
+          <SubStack href="https://next-auth.js.org/getting-started/example">
+            NextAuth.js
+          </SubStack>
+          <SmallSubStack href="https://www.npmjs.com/package/react-responsive">
+            react-responsive
+          </SmallSubStack>
+          <SubStack href="https://playwright.dev/docs/intro">
+            Playwright
+          </SubStack>
+          <SubStack href="https://docs.cypress.io/guides/overview/why-cypress">
+            Cypress
+          </SubStack>
         </Stacks>
       </Container>
       <Img

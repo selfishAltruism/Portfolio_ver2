@@ -153,23 +153,23 @@ function Project(prop: Prop) {
     align-items: center;
 
     width: 80px;
-    height: 15px;
+    height: 16px;
 
-    border-radius: 2px;
+    border-radius: 1px;
     margin-right: 5px;
     margin-top: 0px;
     margin-bottom: 5px;
 
     font-weight: bold;
     color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
-    font-size: 12px;
+    font-size: 13px;
 
     background-color: white;
     border: 2px solid white;
   `;
 
   const SmallStack = styled(Stack)`
-    font-size: 9px;
+    font-size: 10px;
   `;
 
   return (
@@ -182,7 +182,7 @@ function Project(prop: Prop) {
         {!isHalfScreen && techStack ? (
           <Stacks>
             {techStack.map((tech) => {
-              return tech.length >= 9 ? (
+              return tech.length >= 12 ? (
                 <SmallStack>{tech}</SmallStack>
               ) : (
                 <Stack>{tech}</Stack>

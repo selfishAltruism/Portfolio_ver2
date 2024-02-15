@@ -152,8 +152,8 @@ function Project(prop: Prop) {
     justify-content: center;
     align-items: center;
 
-    width: 83px;
-    height: 17px;
+    width: 80px;
+    height: 15px;
 
     border-radius: 2px;
     margin-right: 5px;
@@ -162,10 +162,14 @@ function Project(prop: Prop) {
 
     font-weight: bold;
     color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
-    font-size: 13px;
+    font-size: 12px;
 
     background-color: white;
     border: 2px solid white;
+  `;
+
+  const SmallStack = styled(Stack)`
+    font-size: 9px;
   `;
 
   return (
@@ -178,7 +182,11 @@ function Project(prop: Prop) {
         {!isHalfScreen && techStack ? (
           <Stacks>
             {techStack.map((tech) => {
-              return <Stack>{tech}</Stack>;
+              return tech.length >= 9 ? (
+                <SmallStack>{tech}</SmallStack>
+              ) : (
+                <Stack>{tech}</Stack>
+              );
             })}
           </Stacks>
         ) : null}

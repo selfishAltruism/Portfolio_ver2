@@ -25,7 +25,14 @@ const Projects = () => {
         content="중앙대학교 소프트웨어학과생이 학과 생활에 도움을 받을 수 있는 각종 서비스를 제공하는 동문 네트워크 서비스 프론트 개발"
         githubURL="https://github.com/CAUCSE/CAUSW_frontend"
         notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
-        techStack={["MobX", "Playwright", "React", "React Router", "Emotion"]}
+        techStack={[
+          "MobX",
+          "Playwright",
+          "React",
+          "React Router",
+          "Emotion",
+          "Vite",
+        ]}
       />
       <Project
         period="During internship, 2023.11.21~2023.11.29"
@@ -45,6 +52,7 @@ const Projects = () => {
           "Redux",
           "React",
           "React Context",
+          "React Hook Form",
           "TypeScripts",
           "JavaScript",
         ]}
@@ -55,7 +63,7 @@ const Projects = () => {
         content="대학생 카페 공부를 돕는 카페 빈자리 공유 서비스 개발"
         githubURL="https://github.com/selfishAltruism/IT_DA_web_front"
         notionURL="https://officialkyus.notion.site/IT_DA-0977623d68144f3fbb70cd32f5fa7977?pvs=4"
-        techStack={["JavaScript", "OpenCV"]}
+        techStack={["JavaScript", "OpenCV", "Google Apps Script"]}
       />
       <Project
         period="During hackathon, 2023.11.12~2023.11.13"

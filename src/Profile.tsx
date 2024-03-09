@@ -34,12 +34,12 @@ function Profile() {
   `;
 
   const MainContent = styled.span`
-    color: #323232;
+    color: #434343;
     font-size: ${isMobile ? "17px" : "23px"};
   `;
 
   const SubContent = styled.span`
-    color: #323232;
+    color: #434343;
     font-size: ${isMobile ? "11px" : "17px"};
   `;
 
@@ -76,8 +76,10 @@ function Profile() {
     color: white;
     font-size: ${isMobile ? "12px" : "16px"};
 
-    background-color: #323232;
-    border: 2px solid #323232;
+    background-color: #434343;
+    border: 2px solid #434343;
+
+    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
 
   const SmallStack = styled(Stack)`
@@ -89,10 +91,10 @@ function Profile() {
       color: white;
       transition: all ease 0.3s;
     }
-    color: #323232;
+    color: #434343;
 
     background-color: white;
-    border: 2px solid #323232;
+    border: 2px solid #434343;
   `;
 
   const SmallSubStack = styled(SubStack)`

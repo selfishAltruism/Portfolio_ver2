@@ -41,11 +41,12 @@ function Project(prop: Prop) {
     align-items: center;
     justify-content: space-between;
 
-    background-color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
+    background-color: ${isStudy ? "#9b9b9b" : isSub ? "#6d6d6d" : "#434343"};
 
-    margin-bottom: ${isMobile ? "5px" : "10px"};
+    margin-bottom: ${isMobile ? "7px" : "10px"};
 
     border-radius: 5px;
+    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
 
   const Content = styled.div`
@@ -85,20 +86,37 @@ function Project(prop: Prop) {
   `;
 
   const StyleGitButton = styled(Button)`
+    &:hover {
+      color: #434343;
+      background-color: white;
+      border-color: white;
+      transition: all ease 0.3s;
+    }
+
     width: ${isHalfScreen ? "50px" : "130px"};
     height: ${isHalfScreen ? "22px" : ""};
     color: white;
     margin-left: 8px;
     border-color: white;
+    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
 
   const StyleDetailButton = styled(Button)`
+    &:hover {
+      color: white;
+      background-color: #${isStudy ? "#9b9b9b" : isSub ? "#6d6d6d" : "#434343"};
+      border-color: white;
+      transition: all ease 0.3s;
+    }
+
     width: ${isHalfScreen ? "50px" : "130px"};
     height: ${isHalfScreen ? "22px" : ""};
-    color: #323232;
+    color: #434343;
     margin-left: 8px;
     margin-right: 20px;
     background-color: white;
+    border-color: white;
+    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
 
   const GitButton = () =>
@@ -116,7 +134,7 @@ function Project(prop: Prop) {
 
   const DetailButton = () => (
     <StyleDetailButton
-      variant="contained"
+      variant="outlined"
       color="secondary"
       onClick={() => window.open(notionURL)}
     >
@@ -161,7 +179,7 @@ function Project(prop: Prop) {
     margin-bottom: 5px;
 
     font-weight: bold;
-    color: ${isStudy ? "#838383" : isSub ? "#5d5d5d" : "#323232"};
+    color: ${isStudy ? "#9b9b9b" : isSub ? "#6d6d6d" : "#434343"};
     font-size: 13px;
 
     background-color: white;

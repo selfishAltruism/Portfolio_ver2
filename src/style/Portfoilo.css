@@ -28,7 +28,7 @@
   width: 100vw;
   height: 50px;
 
-  background-color: #323232;
+  background-color: #434343;
 
   color: white;
 }
@@ -68,4 +68,5 @@ p {
   font-size: 6vh;
 
   overflow: hidden;
+  box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
 }

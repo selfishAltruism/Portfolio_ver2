@@ -27,7 +27,8 @@ function Layout({ children }: Props) {
     width: 100vw;
     height: 50px;
 
-    background-color: #323232;
+    background-color: #434343;
+    font-weight: bold;
 
     color: white;
   `;

@@ -109,8 +109,17 @@ const Projects = () => {
         techStack={["JavaScript"]}
       />
       <Project
+        period="2024.03.14 ~ Now"
+        title="Back-end Framework Study"
+        content="Node.js Framework Nest.js 공부"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Back-Practice-06dcbdca382f4f578e9b9c695bfff833?pvs=4"
+        isStudy={true}
+        techStack={["Node.js", "Nest.js"]}
+      />
+      <Project
         period="2023.12.04"
-        title="Front TDD Study"
+        title="Front-end TDD Study"
         content="Next.js 환경에서 Jest, React Testing Library, Cypress를 이용한 TDD 환경 구축 공부"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/TDD-898b4841483f45c9946b45dd2abb80e4?pvs=4"

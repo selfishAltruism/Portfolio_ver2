@@ -22,7 +22,7 @@ const Projects = () => {
       <Project
         period="2023.12.23 ~ Now"
         title="CAUSW Project"
-        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 각종 서비스를 제공하는 동문 네트워크 서비스, Web Front-end 개발"
+        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 각종 서비스를 제공하는 동문 네트워크 서비스, Web App Front-end 개발"
         githubURL="https://github.com/CAUCSE/CAUSW_frontend"
         notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
         techStack={[
@@ -32,6 +32,38 @@ const Projects = () => {
           "React Hook Form",
           "Playwright",
           "Emotion",
+          "Vite",
+        ]}
+      />
+      <Project
+        period="During Capstone, 2023.02.13 ~ Now"
+        title="Dyslexia Zoo Project"
+        content="난독증 소아 치료 웹 게임 서비스, Web Front-end 개발"
+        githubURL="https://github.com/Capstone-team02-Dyslexia-Cure-Service/Dyslexia_Zoo_FE"
+        notionURL="https://officialkyus.notion.site/Dyslexia-Zoo-Project-68e0f0aadb614bd192e501bc77575dad?pvs=4"
+        techStack={[
+          "Zustand",
+          "React",
+          "React Router",
+          "React Hook Form",
+          "Emotion",
+          "MSW",
+          "Vite",
+        ]}
+      />
+      <Project
+        period="2024.04.01 ~ Now"
+        title="Convo Persona Project"
+        content="Chat GPT와 성격 분석 모델을 활용한 사적 대화 서비스, Web Front-end 개발"
+        githubURL="https://github.com/2024-1-Open-source-Project-team11/Convo_Persona_FE"
+        notionURL="https://officialkyus.notion.site/Convo-Persona-Project-7d91b4ce9be54f1db0446424f073d351?pvs=4"
+        techStack={[
+          "Zustand",
+          "React",
+          "React Router",
+          "React Hook Form",
+          "Emotion",
+          "MSW",
           "Vite",
         ]}
       />
@@ -109,13 +141,22 @@ const Projects = () => {
         techStack={["JavaScript"]}
       />
       <Project
-        period="2024.03.14 ~ Now"
-        title="Back-end Framework Study"
-        content="Node.js Framework Nest.js 공부"
+        period="2024.04.20 ~ 2024.04.24"
+        title="Chat GPT Detail Study"
+        content="Chat GPT 활용 서비스 개발을 위한 Prompt, LLM 공부"
         githubURL="none"
-        notionURL="https://officialkyus.notion.site/Back-Practice-06dcbdca382f4f578e9b9c695bfff833?pvs=4"
+        notionURL="https://officialkyus.notion.site/GPT-Practice-ddef649016a6425194b4641fac9fd3e5?pvs=4"
         isStudy={true}
-        techStack={["Node.js", "Nest.js"]}
+        techStack={["Chat GPT", "Prompt", "NLP"]}
+      />
+      <Project
+        period="2024.04.02 ~ Now"
+        title="Algorithm Study"
+        content="Sort, Dynamic Programming 등 다방면 Algorithm 공부"
+        githubURL="https://github.com/selfishAltruism/2024_Algorithm_Assignment"
+        notionURL="https://officialkyus.notion.site/Algorithm-324d3a8ff3f74234b17c2e5d074f91da?pvs=4"
+        isStudy={true}
+        techStack={["Ubuntu", "Python", "JavaScript"]}
       />
       <Project
         period="2023.12.04"
@@ -125,6 +166,15 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/TDD-898b4841483f45c9946b45dd2abb80e4?pvs=4"
         isStudy={true}
         techStack={["Jest", "Cypress"]}
+      />
+      <Project
+        period="2024.03.14 ~ 2024.03.20"
+        title="Back-end Framework Study"
+        content="Node.js Framework Nest.js 공부"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Back-Practice-06dcbdca382f4f578e9b9c695bfff833?pvs=4"
+        isStudy={true}
+        techStack={["Node.js", "Nest.js"]}
       />
       <div style={{ height: "80px" }}></div>
     </Container>

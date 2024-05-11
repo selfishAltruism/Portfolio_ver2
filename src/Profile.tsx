@@ -118,37 +118,73 @@ function Profile() {
         <Title1>Tech Stack</Title1>
         <Title2>Well Used</Title2>
         <Stacks>
-          <Stack href="https://ecma-international.org/">Java Script</Stack>
-          <Stack href="https://www.typescriptlang.org/docs/">Type Script</Stack>
-          <Stack href="https://ko.legacy.reactjs.org/docs/getting-started.html">
+          <Stack href="https://ecma-international.org/" target="_blank">
+            Java Script
+          </Stack>
+          <Stack href="https://www.typescriptlang.org/docs/" target="_blank">
+            Type Script
+          </Stack>
+          <Stack
+            href="https://ko.legacy.reactjs.org/docs/getting-started.html"
+            target="_blank"
+          >
             React
           </Stack>
-          <Stack href="https://ko.redux.js.org/introduction/getting-started/">
+          <Stack
+            href="https://ko.redux.js.org/introduction/getting-started/"
+            target="_blank"
+          >
             Redux
           </Stack>
-          <Stack href="https://axios-http.com/kr/docs/intro">Axios</Stack>
-          <Stack href="https://reactrouter.com/en/main">React Router</Stack>
-          <SmallStack href="https://styled-components.com/docs">
+          <Stack href="https://axios-http.com/kr/docs/intro" target="_blank">
+            Axios
+          </Stack>
+          <Stack href="https://reactrouter.com/en/main" target="_blank">
+            React Router
+          </Stack>
+          <SmallStack href="https://styled-components.com/docs" target="_blank">
             styled-component
           </SmallStack>
-          <SmallStack href="https://react-hook-form.com/get-started">
+          <SmallStack
+            href="https://react-hook-form.com/get-started"
+            target="_blank"
+          >
             React Hook Form
           </SmallStack>
+          <Stack href="https://zustand-demo.pmnd.rs/" target="_blank">
+            Zustand
+          </Stack>
+          <Stack href="https://mswjs.io/" target="_blank">
+            MSW
+          </Stack>
         </Stacks>
         <Title2>Ever Used</Title2>
         <Stacks>
-          <SubStack href="https://nextjs.org/docs">Next.js</SubStack>
-          <SubStack href="https://ko.mobx.js.org/README.html">MobX</SubStack>
-          <SubStack href="https://next-auth.js.org/getting-started/example">
+          <SubStack href="https://nextjs.org/docs" target="_blank">
+            Next.js
+          </SubStack>
+          <SubStack href="https://ko.mobx.js.org/README.html" target="_blank">
+            MobX
+          </SubStack>
+          <SubStack
+            href="https://next-auth.js.org/getting-started/example"
+            target="_blank"
+          >
             NextAuth.js
           </SubStack>
-          <SmallSubStack href="https://www.npmjs.com/package/react-responsive">
+          <SmallSubStack
+            href="https://www.npmjs.com/package/react-responsive"
+            target="_blank"
+          >
             react-responsive
           </SmallSubStack>
-          <SubStack href="https://playwright.dev/docs/intro">
+          <SubStack href="https://playwright.dev/docs/intro" target="_blank">
             Playwright
           </SubStack>
-          <SubStack href="https://docs.cypress.io/guides/overview/why-cypress">
+          <SubStack
+            href="https://docs.cypress.io/guides/overview/why-cypress"
+            target="_blank"
+          >
             Cypress
           </SubStack>
         </Stacks>

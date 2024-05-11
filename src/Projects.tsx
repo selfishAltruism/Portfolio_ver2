@@ -32,6 +32,7 @@ const Projects = () => {
           "React Hook Form",
           "Playwright",
           "Emotion",
+          "MSW",
           "Vite",
         ]}
       />
@@ -63,7 +64,6 @@ const Projects = () => {
           "React Router",
           "React Hook Form",
           "Emotion",
-          "MSW",
           "Vite",
         ]}
       />
@@ -88,6 +88,7 @@ const Projects = () => {
         content="NextAuth.js를 활용하여 Kakao, Google, Naver 계정으로 로그인 가능한 Serverless Social Login System 구현"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
+        isSub={true}
         techStack={["Next.js", "Redux", "React", "TypeScripts"]}
       />
       <Project
@@ -147,7 +148,7 @@ const Projects = () => {
         githubURL="none"
         notionURL="https://officialkyus.notion.site/GPT-Practice-ddef649016a6425194b4641fac9fd3e5?pvs=4"
         isStudy={true}
-        techStack={["Chat GPT", "Prompt", "NLP"]}
+        techStack={["Chat GPT", "Prompt", "NLP", "ML"]}
       />
       <Project
         period="2024.04.02 ~ Now"

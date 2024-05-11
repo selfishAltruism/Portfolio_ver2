@@ -187,6 +187,9 @@ function Profile() {
           >
             Cypress
           </SubStack>
+          <SubStack href="https://recharts.org/en-US/" target="_blank">
+            Recharts
+          </SubStack>
         </Stacks>
       </Container>
       <Img

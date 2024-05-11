@@ -48,6 +48,7 @@ const Projects = () => {
           "React Router",
           "React Hook Form",
           "Emotion",
+          "Recharts",
           "MSW",
           "Vite",
         ]}

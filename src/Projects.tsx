@@ -93,6 +93,15 @@ const Projects = () => {
         techStack={["Next.js", "Redux", "React", "TypeScripts"]}
       />
       <Project
+        period="During OS Subject, 2024.04.28 ~ 2024.05.05"
+        title="Multi Thread Automated Logistics Center Simulator System"
+        content="PintOS 환경에서 Multi Thread 구조를 구성하고, 이를 바탕으로 자동화 물류 센터 시뮬레이터 개발"
+        githubURL="https://github.com/selfishAltruism/2024_OS_Assignment"
+        notionURL="https://officialkyus.notion.site/2024-OS-1st-Assignment-Report-79b42cdeb81d48da89cccef575f04b83?pvs=4"
+        isSub={true}
+        techStack={["Ubuntu", "C", "PintOS"]}
+      />
+      <Project
         period="2021.06.23 ~ 2021.12.20"
         title="IT_DA Project"
         content="대학생 카페 공부를 돕는 카페 빈자리 공유 서비스 개발"

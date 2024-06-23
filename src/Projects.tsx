@@ -22,7 +22,7 @@ const Projects = () => {
       <Project
         period="2023.12.23 ~ Now"
         title="CAUSW Project"
-        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 각종 서비스를 제공하는 동문 네트워크 서비스, Web App Front-end 개발"
+        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 서비스를 제공하는 동문 네트워크 서비스, Web App Front-end 개발"
         githubURL="https://github.com/CAUCSE/CAUSW_frontend"
         notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
         techStack={[

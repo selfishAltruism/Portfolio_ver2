@@ -6,7 +6,8 @@ import { useMediaQuery } from "react-responsive";
 import Profile from "./Profile";
 import Projects from "./Projects";
 import Layout from "./Layout";
-import PcContainer from "./style/PcContainer";
+import PcProjectsContainer from "./style/PcProjectsContainer";
+import PcProfileContainer from "./style/PcProfileContainer";
 
 export const MAXLENGTH_TIMEBAR = 750;
 
@@ -28,8 +29,8 @@ export const ditailContext = createContext<{
 }>({});
 
 function Portfolio() {
-  const isMobile = useMediaQuery({
-    query: "(max-width:768px)",
+  const isFullScreen = useMediaQuery({
+    query: "(min-width:1500px)",
   });
 
   const TimePointDetailLength = {
@@ -43,28 +44,26 @@ function Portfolio() {
 
   return (
     <Layout>
-      {isMobile ? (
+      {isFullScreen ? (
+        <>
+          <PcProfileContainer>
+            <Profile />
+          </PcProfileContainer>
+          <PcProjectsContainer>
+            <Projects />
+          </PcProjectsContainer>
+        </>
+      ) : (
         <>
           <Profile />
           <Projects />
         </>
-      ) : (
-        <PcContainer>
-          <Profile />
-          <Projects />
-        </PcContainer>
       )}
       <a href="https://github.com/selfishAltruism" target="_blank">
         <div id="gitLink2">
           <p>Made by https://github.com/selfishAltruism</p>
         </div>
       </a>
-      {isMobile ? null : (
-        <span id="toBeContinued">
-          To Be Continued.. To Be Continued.. To Be Continued.. To Be
-          Continued.. To Be Continued.. To Be Continued..
-        </span>
-      )}
     </Layout>
   );
 }

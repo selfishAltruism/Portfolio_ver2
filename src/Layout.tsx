@@ -25,12 +25,14 @@ function Layout({ children }: Props) {
     left: 0px;
 
     width: 100vw;
-    height: 50px;
+    height: 45px;
 
     background-color: #434343;
     font-weight: bold;
 
     color: white;
+
+    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
 
   const MainContent = styled.div`
@@ -51,7 +53,7 @@ function Layout({ children }: Props) {
           navigate("/");
         }}
       >
-        <p>Kang Min Kyu's Portfolio Ver II</p>
+        <p style={{ marginTop: "10px" }}>Kang Min Kyu's Portfolio</p>
       </PortfolioTitle>
       <MainContent>{children}</MainContent>
     </>

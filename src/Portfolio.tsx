@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import Profile from "./Profile";
 import Projects from "./Projects";
 import Layout from "./Layout";
+import PcContainer from "./style/PcContainer";
 
 export const MAXLENGTH_TIMEBAR = 750;
 
@@ -42,8 +43,17 @@ function Portfolio() {
 
   return (
     <Layout>
-      <Profile />
-      <Projects />
+      {isMobile ? (
+        <>
+          <Profile />
+          <Projects />
+        </>
+      ) : (
+        <PcContainer>
+          <Profile />
+          <Projects />
+        </PcContainer>
+      )}
       <a href="https://github.com/selfishAltruism" target="_blank">
         <div id="gitLink2">
           <p>Made by https://github.com/selfishAltruism</p>

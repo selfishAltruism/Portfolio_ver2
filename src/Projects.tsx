@@ -21,8 +21,8 @@ const Projects = () => {
       <Title1>Dev Record</Title1>
       <Project
         period="2023.12.23 ~ Now"
-        title="CAUSW Project"
-        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 서비스를 제공하는 동문 네트워크 서비스, Web App Front-end 개발"
+        title="CAUSW Service"
+        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 서비스를 제공하는 동문 네트워크 서비스, Front-end 팀장"
         githubURL="https://github.com/CAUCSE/CAUSW_frontend"
         notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
         techStack={[
@@ -37,7 +37,7 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="During Capstone, 2023.02.13 ~ Now"
+        period="During Capstone, 2023.02.13 ~ 24.06.21"
         title="Dyslexia Zoo Project"
         content="난독증 소아 치료 웹 게임 서비스, Web Front-end 개발"
         githubURL="https://github.com/Capstone-team02-Dyslexia-Cure-Service/Dyslexia_Zoo_FE"
@@ -54,7 +54,22 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="2024.04.01 ~ Now"
+        period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
+        title="Grid Project"
+        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
+        techStack={[
+          "Redux",
+          "React",
+          "React Context",
+          "React Hook Form",
+          "TypeScripts",
+          "JavaScript",
+        ]}
+      />
+      <Project
+        period="2024.02.25 ~ 2024.06.12"
         title="Convo Persona Project"
         content="Chat GPT와 성격 분석 모델을 활용한 사적 대화 서비스, Web Front-end 개발"
         githubURL="https://github.com/2024-1-Open-source-Project-team11/Convo_Persona_FE"
@@ -69,18 +84,19 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
-        title="Grid Project"
-        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
-        githubURL="none"
-        notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
+        period="2024.05.28 ~ 2024.06.01"
+        title="CITS Project"
+        content="프로젝트 이슈 추적 시스템 웹 서비스, Web Front-end 개발"
+        githubURL="https://github.com/CAU-SE-ITS/SE_ITS_Front-End"
+        notionURL="https://officialkyus.notion.site/CITS-Project-c2a3213faae44ad490282cf871a02861?pvs=4"
+        isSub={true}
         techStack={[
-          "Redux",
+          "Zustand",
           "React",
-          "React Context",
+          "React Router",
           "React Hook Form",
-          "TypeScripts",
-          "JavaScript",
+          "Emotion",
+          "Vite",
         ]}
       />
       <Project

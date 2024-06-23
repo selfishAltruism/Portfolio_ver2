@@ -26,7 +26,7 @@ function Project(prop: Prop) {
     isStudy,
     techStack,
   } = prop;
-  const isHalfScreen = useMediaQuery({ query: "(max-width: 1100px)" });
+  const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
 
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
@@ -52,7 +52,7 @@ function Project(prop: Prop) {
   const Content = styled.div`
     position: relative;
 
-    width: ${isMobile ? "95%" : "71%"};
+    width: 95%;
     height: 80%;
 
     display: flex;
@@ -93,10 +93,10 @@ function Project(prop: Prop) {
       transition: all ease 0.3s;
     }
 
-    width: ${isHalfScreen ? "50px" : "130px"};
-    height: ${isHalfScreen ? "22px" : ""};
+    width: ${isHalfScreen ? "100px" : "130px"};
+    height: ${isHalfScreen ? "28px" : ""};
     color: white;
-    margin-left: 8px;
+    margin-left: ${isMobile ? "8px" : ""};
     border-color: white;
     box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
@@ -109,11 +109,13 @@ function Project(prop: Prop) {
       transition: all ease 0.3s;
     }
 
-    width: ${isHalfScreen ? "50px" : "130px"};
-    height: ${isHalfScreen ? "22px" : ""};
+    width: ${isHalfScreen ? "100px" : "130px"};
+    height: ${isHalfScreen ? "28px" : ""};
     color: #434343;
-    margin-left: 8px;
-    margin-right: 20px;
+    margin-left: ${isMobile ? "8px" : ""};
+    margin-right: ${isMobile ? "20px" : ""};
+    margin-top: ${isMobile ? "" : "7px"};
+
     background-color: white;
     border-color: white;
     box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
@@ -220,13 +222,22 @@ function Project(prop: Prop) {
       </Content>
 
       {!isMobile ? (
-        <>
+        <ButtonContainer>
           <GitButton />
           <DetailButton />
-        </>
+        </ButtonContainer>
       ) : null}
     </Container>
   );
 }
+
+const ButtonContainer = styled.div`
+  margin-right: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 export default Project;

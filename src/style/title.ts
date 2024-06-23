@@ -4,7 +4,7 @@ export const Title1 = styled.span`
   font-size: 35px;
   font-weight: bolder;
 
-  margin-top: 27px;
+  margin-top: 20px;
   margin-bottom: 5px;
 `;
 

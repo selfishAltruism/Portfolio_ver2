@@ -23,9 +23,9 @@ function Profile() {
 
   const Img = styled(Avatar)`
     position: absolute;
-    top: ${isMobile ? "20px" : "35px"};
+    top: ${isMobile ? "15px" : "20px"};
 
-    right: ${isMobile ? "10%" : "10%"};
+    right: ${isMobile ? "10%" : "70px"};
   `;
 
   const Info = styled.span`
@@ -109,12 +109,13 @@ function Profile() {
         <RowBar width={isMobile ? "100%" : "85%"} />
         <MainContent>안전지대를 넘어서는 개발자</MainContent>
         <SubContent>
-          변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, 강민규입니다.
+          변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자,
         </SubContent>
+        <SubContent>강민규입니다.</SubContent>
         <SubContent>
-          즐겁게 코딩하는 자세와, 의사소통할 수 있는 능력이 개발의 본질이라고
-          생각합니다.
+          즐겁게 코딩하는 자세와 의사소통할 수 있는 능력이
         </SubContent>
+        <SubContent>개발의 본질이라고 생각합니다.</SubContent>
         <Title1>Tech Stack</Title1>
         <Title2>Well Used</Title2>
         <Stacks>
@@ -196,7 +197,7 @@ function Profile() {
         className="profile-img"
         alt="Kang Min Kyu"
         src="img/profile.jpg"
-        sx={{ width: isMobile ? 70 : 120, height: isMobile ? 70 : 120 }}
+        sx={{ width: isMobile ? 70 : 100, height: isMobile ? 70 : 100 }}
       />
     </>
   );

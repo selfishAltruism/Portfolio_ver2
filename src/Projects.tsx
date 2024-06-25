@@ -89,7 +89,6 @@ const Projects = () => {
         content="프로젝트 이슈 추적 시스템 웹 서비스, Web Front-end 개발"
         githubURL="https://github.com/CAU-SE-ITS/SE_ITS_Front-End"
         notionURL="https://officialkyus.notion.site/CITS-Project-c2a3213faae44ad490282cf871a02861?pvs=4"
-        isSub={true}
         techStack={[
           "Zustand",
           "React",
@@ -100,15 +99,6 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="During Internship, 2023.11.21 ~ 2023.11.29"
-        title="Severless Social Login Development"
-        content="NextAuth.js를 활용하여 Kakao, Google, Naver 계정으로 로그인 가능한 Serverless Social Login System 구현"
-        githubURL="none"
-        notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
-        isSub={true}
-        techStack={["Next.js", "Redux", "React", "TypeScripts"]}
-      />
-      <Project
         period="During OS Subject, 2024.04.28 ~ 2024.05.05"
         title="Multi Thread Automated Logistics Center Simulator System"
         content="PintOS 환경에서 Multi Thread 구조를 구성하고, 이를 바탕으로 자동화 물류 센터 시뮬레이터 개발"
@@ -116,6 +106,15 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/2024-OS-1st-Assignment-Report-79b42cdeb81d48da89cccef575f04b83?pvs=4"
         isSub={true}
         techStack={["Ubuntu", "C", "PintOS"]}
+      />
+      <Project
+        period="During Internship, 2023.11.21 ~ 2023.11.29"
+        title="Severless Social Login Development"
+        content="NextAuth.js를 활용하여 Kakao, Google, Naver 계정으로 로그인 가능한 Serverless Social Login System 구현"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
+        isSub={true}
+        techStack={["Next.js", "Redux", "React", "TypeScripts"]}
       />
       <Project
         period="2021.06.23 ~ 2021.12.20"

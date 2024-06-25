@@ -132,6 +132,12 @@ function Profile() {
             React
           </Stack>
           <Stack
+            href="https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170"
+            target="_blank"
+          >
+            C
+          </Stack>
+          <Stack
             href="https://ko.redux.js.org/introduction/getting-started/"
             target="_blank"
           >
@@ -166,6 +172,12 @@ function Profile() {
           </SubStack>
           <SubStack href="https://ko.mobx.js.org/README.html" target="_blank">
             MobX
+          </SubStack>
+          <SubStack
+            href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html"
+            target="_blank"
+          >
+            PintOS
           </SubStack>
           <SubStack
             href="https://next-auth.js.org/getting-started/example"

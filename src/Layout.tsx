@@ -11,41 +11,6 @@ function Layout({ children }: Props) {
   const { setPageChangeState } = useContext(context);
   const navigate = useNavigate();
 
-  const PortfolioTitle = styled.div`
-    -webkit-touch-callout: none;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-
-    position: fixed;
-    z-index: 99;
-
-    top: 0px;
-    left: 0px;
-
-    width: 100vw;
-    height: 45px;
-
-    background-color: #434343;
-    font-weight: bold;
-
-    color: white;
-
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
-  `;
-
-  const MainContent = styled.div`
-    width: 100%;
-    position: absolute;
-    top: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  `;
-
   return (
     <>
       <PortfolioTitle
@@ -59,5 +24,39 @@ function Layout({ children }: Props) {
     </>
   );
 }
+
+const PortfolioTitle = styled.div`
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+
+  position: fixed;
+  z-index: 99;
+
+  top: 0px;
+  left: 0px;
+
+  width: 100vw;
+  height: 45px;
+
+  background-color: #434343;
+  font-weight: bold;
+
+  color: white;
+
+  box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+`;
+
+const MainContent = styled.div`
+  position: absolute;
+  top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default Layout;

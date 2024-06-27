@@ -59,11 +59,6 @@ function Portfolio() {
           <Projects />
         </>
       )}
-      <a href="https://github.com/selfishAltruism" target="_blank">
-        <div id="gitLink2">
-          <p>Made by https://github.com/selfishAltruism</p>
-        </div>
-      </a>
     </Layout>
   );
 }

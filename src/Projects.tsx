@@ -69,11 +69,11 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="2024.02.25 ~ 2024.06.12"
-        title="Convo Persona Project"
-        content="Chat GPT와 성격 분석 모델을 활용한 사적 대화 서비스, Web Front-end 개발"
-        githubURL="https://github.com/2024-1-Open-source-Project-team11/Convo_Persona_FE"
-        notionURL="https://officialkyus.notion.site/Convo-Persona-Project-7d91b4ce9be54f1db0446424f073d351?pvs=4"
+        period="2024.05.28 ~ 2024.06.01"
+        title="CITS Project"
+        content="프로젝트 이슈 추적 시스템 웹 서비스, Web Front-end 개발"
+        githubURL="https://github.com/CAU-SE-ITS/SE_ITS_Front-End"
+        notionURL="https://officialkyus.notion.site/CITS-Project-c2a3213faae44ad490282cf871a02861?pvs=4"
         techStack={[
           "Zustand",
           "React",
@@ -84,12 +84,13 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="2024.05.28 ~ 2024.06.01"
-        title="CITS Project"
-        content="프로젝트 이슈 추적 시스템 웹 서비스, Web Front-end 개발"
-        githubURL="https://github.com/CAU-SE-ITS/SE_ITS_Front-End"
-        notionURL="https://officialkyus.notion.site/CITS-Project-c2a3213faae44ad490282cf871a02861?pvs=4"
+        period="2024.02.25 ~ 2024.06.12"
+        title="Convo Persona Project"
+        content="Chat GPT와 성격 분석 모델을 활용한 사적 대화 서비스, Web Front-end 개발"
+        githubURL="https://github.com/2024-1-Open-source-Project-team11/Convo_Persona_FE"
+        notionURL="https://officialkyus.notion.site/Convo-Persona-Project-7d91b4ce9be54f1db0446424f073d351?pvs=4"
         techStack={[
+          "GPT Prompting",
           "Zustand",
           "React",
           "React Router",

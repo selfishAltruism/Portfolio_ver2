@@ -131,11 +131,14 @@ function Profile() {
           >
             React
           </Stack>
+          <Stack href="https://nextjs.org/docs" target="_blank">
+            Next.js
+          </Stack>
           <Stack
             href="https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170"
             target="_blank"
           >
-            C
+            C & C++
           </Stack>
           <Stack
             href="https://ko.redux.js.org/introduction/getting-started/"
@@ -149,8 +152,11 @@ function Profile() {
           <Stack href="https://reactrouter.com/en/main" target="_blank">
             React Router
           </Stack>
-          <SmallStack href="https://styled-components.com/docs" target="_blank">
-            styled-component
+          <SmallStack
+            href="https://emotion.sh/docs/introduction"
+            target="_blank"
+          >
+            Emotion
           </SmallStack>
           <SmallStack
             href="https://react-hook-form.com/get-started"
@@ -167,11 +173,14 @@ function Profile() {
         </Stacks>
         <Title2>Ever Used</Title2>
         <Stacks>
-          <SubStack href="https://nextjs.org/docs" target="_blank">
-            Next.js
-          </SubStack>
           <SubStack href="https://ko.mobx.js.org/README.html" target="_blank">
             MobX
+          </SubStack>
+          <SubStack href="https://tanstack.com" target="_blank">
+            React Query
+          </SubStack>
+          <SubStack href="https://tailwindcss.com" target="_blank">
+            Tailwind
           </SubStack>
           <SubStack
             href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html"

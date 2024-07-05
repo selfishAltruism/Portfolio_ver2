@@ -27,13 +27,28 @@ const Projects = () => {
         notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
         techStack={[
           "MobX",
-          "React",
           "React Router",
+          "Axios",
           "React Hook Form",
           "Playwright",
           "Emotion",
           "MSW",
           "Vite",
+        ]}
+      />
+      <Project
+        period="2024.05.13 ~ Now"
+        title="CAUSW Service V2"
+        content="CAUSW Service Framework & Design & Flow Update Version, Front-end 팀장"
+        githubURL="https://github.com/CAUCSE/CAUSW_frontend_V2"
+        notionURL="https://www.notion.so/officialkyus/CAUSW-V2-5be14925742048dcb37d880f2a9b1cbd?pvs=4"
+        techStack={[
+          "Next.js",
+          "Zustand",
+          "React Query",
+          "Axios",
+          "React Hook Form",
+          "Tailwind",
         ]}
       />
       <Project
@@ -44,7 +59,7 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/Dyslexia-Zoo-Project-68e0f0aadb614bd192e501bc77575dad?pvs=4"
         techStack={[
           "Zustand",
-          "React",
+          "Axios",
           "React Router",
           "React Hook Form",
           "Emotion",
@@ -76,7 +91,7 @@ const Projects = () => {
         notionURL="https://officialkyus.notion.site/CITS-Project-c2a3213faae44ad490282cf871a02861?pvs=4"
         techStack={[
           "Zustand",
-          "React",
+          "Axios",
           "React Router",
           "React Hook Form",
           "Emotion",
@@ -92,7 +107,7 @@ const Projects = () => {
         techStack={[
           "GPT Prompting",
           "Zustand",
-          "React",
+          "Axios",
           "React Router",
           "React Hook Form",
           "Emotion",

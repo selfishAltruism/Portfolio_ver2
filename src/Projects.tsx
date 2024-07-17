@@ -37,21 +37,6 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="2024.05.13 ~ Now"
-        title="CAUSW Service V2"
-        content="CAUSW Service Framework & Design & Flow Update Version, Front-end 팀장"
-        githubURL="https://github.com/CAUCSE/CAUSW_frontend_V2"
-        notionURL="https://www.notion.so/officialkyus/CAUSW-V2-5be14925742048dcb37d880f2a9b1cbd?pvs=4"
-        techStack={[
-          "Next.js",
-          "Zustand",
-          "React Query",
-          "Axios",
-          "React Hook Form",
-          "Tailwind",
-        ]}
-      />
-      <Project
         period="During Capstone, 2023.02.13 ~ 24.06.21"
         title="Dyslexia Zoo Project"
         content="난독증 소아 치료 웹 게임 서비스, Web Front-end 개발"
@@ -81,6 +66,21 @@ const Projects = () => {
           "React Hook Form",
           "TypeScripts",
           "JavaScript",
+        ]}
+      />
+      <Project
+        period="2024.05.13 ~ Now"
+        title="CAUSW Service V2"
+        content="CAUSW Service Framework & Design & Flow Update Version, Front-end 팀장"
+        githubURL="https://github.com/CAUCSE/CAUSW_frontend_V2"
+        notionURL="https://www.notion.so/officialkyus/CAUSW-V2-5be14925742048dcb37d880f2a9b1cbd?pvs=4"
+        techStack={[
+          "Next.js",
+          "Zustand",
+          "React Query",
+          "Axios",
+          "React Hook Form",
+          "Tailwind",
         ]}
       />
       <Project

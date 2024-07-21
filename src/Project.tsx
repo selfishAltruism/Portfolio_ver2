@@ -86,12 +86,16 @@ function Project(prop: Prop) {
   `;
 
   const StyleGitButton = styled(Button)`
-    &:hover {
-      color: #434343;
-      background-color: white;
+    ${isMobile
+      ? `&:hover {
+        border-color: white;
+      }`
+      : `&:hover {
+      box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 60%);
+      margin-top: -4px;
+      margin-bottom: 4px;e;
       border-color: white;
-      transition: all ease 0.3s;
-    }
+    }`}
 
     width: ${isHalfScreen ? "100px" : "130px"};
     height: ${isHalfScreen ? "28px" : ""};
@@ -102,12 +106,18 @@ function Project(prop: Prop) {
   `;
 
   const StyleDetailButton = styled(Button)`
-    &:hover {
-      color: white;
-      background-color: #${isStudy ? "#9b9b9b" : isSub ? "#6d6d6d" : "#434343"};
+    ${isMobile
+      ? `&:hover {
+        background-color: white;
+        border-color: white;
+      }`
+      : `&:hover {
+      box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 60%);
+      margin-top: ${isMobile ? "-4px" : "3px"};
+      margin-bottom: 4px;
+      background-color: white;
       border-color: white;
-      transition: all ease 0.3s;
-    }
+    }`}
 
     width: ${isHalfScreen ? "100px" : "130px"};
     height: ${isHalfScreen ? "28px" : ""};

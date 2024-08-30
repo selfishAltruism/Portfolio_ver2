@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from "react";
+import React, { useRef, useMemo, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { Edges, Text } from "@react-three/drei";
@@ -31,13 +31,18 @@ const getUniqueDodecahedronVertexPositions = (): THREE.Vector3[] => {
 
 export const TechStack: React.FC = () => {
   const groupRef = useRef<THREE.Group>(null);
-  const cameraRef = useRef<THREE.PerspectiveCamera>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   // 회전 애니메이션
   useFrame(({ camera }) => {
-    if (groupRef.current) {
-      groupRef.current.rotation.x += 0.005;
-      groupRef.current.rotation.y += 0.005;
+    if (!isHovered && groupRef.current) {
+      groupRef.current.rotation.x += 0.007;
+      groupRef.current.rotation.y += 0.007;
+    }
+
+    if (isHovered && groupRef.current) {
+      groupRef.current.rotation.x += 0.001;
+      groupRef.current.rotation.y += 0.001;
     }
 
     // 각 텍스트가 항상 카메라를 향하도록 회전
@@ -55,7 +60,11 @@ export const TechStack: React.FC = () => {
   );
 
   return (
-    <group ref={groupRef}>
+    <group
+      ref={groupRef}
+      onPointerOver={() => setIsHovered(true)} // 마우스 오버 시
+      onPointerOut={() => setIsHovered(false)} // 마우스 아웃 시
+    >
       <mesh>
         {/* 정12면체 Geometry */}
         <dodecahedronGeometry args={[5, 0]} />
@@ -68,22 +77,22 @@ export const TechStack: React.FC = () => {
         />
 
         {/* 테두리 (Wireframe) 추가 */}
-        <Edges visible lineWidth={3} scale={1} color="#646363" />
+        <Edges visible lineWidth={3} scale={0.85} color="#646363" />
       </mesh>
 
-      {vertexPositions.map((position, index) => (
+      {/* {vertexPositions.map((position, index) => (
         <mesh key={`dot-${index}`} position={position}>
           <sphereGeometry args={[0.1]} />
           <meshStandardMaterial color="#969696" />
         </mesh>
-      ))}
+      ))} */}
 
       {/* 꼭지점에 텍스트 추가 */}
       {vertexPositions.map((position, index) =>
         index < 20 ? (
           <Text
             key={index}
-            position={[position.x, position.y + 0.5, position.z]}
+            position={[position.x, position.y, position.z]}
             fontSize={0.7}
             color="#383838"
             anchorX="center"

@@ -122,7 +122,7 @@ function Profile() {
         <SubContent>개발의 본질이라고 생각합니다.</SubContent>
         <Title1>Tech Stack</Title1>
         <Canvas
-          camera={{ position: [0, 0, 15], fov: 60 }} // 카메라 위치와 fov 조정
+          camera={{ position: [0, 0, 15], fov: 70 }} // 카메라 위치와 fov 조정
           style={{
             width: "500px",
             height: "600px",

@@ -7,6 +7,10 @@ import { Title1, Title2 } from "./style/title";
 
 import Button from "@mui/material/Button";
 
+import { TechStack } from "./entities";
+
+import { Canvas } from "@react-three/fiber";
+
 function Profile() {
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
@@ -117,7 +121,20 @@ function Profile() {
         </SubContent>
         <SubContent>개발의 본질이라고 생각합니다.</SubContent>
         <Title1>Tech Stack</Title1>
-        <Title2>Well Used</Title2>
+        <Canvas
+          camera={{ position: [0, 0, 15], fov: 60 }} // 카메라 위치와 fov 조정
+          style={{
+            width: "500px",
+            height: "600px",
+            zIndex: 10,
+          }}
+        >
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <TechStack />
+        </Canvas>
+
+        {/*         <Title2>Well Used</Title2>
         <Stacks>
           <Stack href="https://ecma-international.org/" target="_blank">
             Java Script
@@ -212,7 +229,7 @@ function Profile() {
           <SubStack href="https://recharts.org/en-US/" target="_blank">
             Recharts
           </SubStack>
-        </Stacks>
+        </Stacks> */}
       </Container>
       <Img
         className="profile-img"

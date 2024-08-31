@@ -88,7 +88,7 @@ function Profile() {
     transform: translate(-50%, -50%);
     position: fixed;
 
-    top: 50%;
+    top: 55%;
     left: 50%;
 
     background-color: white;
@@ -98,6 +98,8 @@ function Profile() {
     z-index: 20;
 
     padding: 20px;
+
+    width: 83%;
   `;
 
   const GrayBackGround = styled.div`
@@ -109,7 +111,7 @@ function Profile() {
     height: calc(100vh - 45px);
     z-index: 19;
 
-    background-color: #00000092;
+    background-color: #000000b5;
   `;
 
   const Stacks = styled.div`

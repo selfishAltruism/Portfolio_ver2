@@ -27,16 +27,7 @@ function App() {
       >
         <Router>
           <Routes>
-            <Route
-              path="*"
-              element={
-                pageChangeState === 0 && !isMobile ? (
-                  <FirstPage />
-                ) : (
-                  <Portfolio />
-                )
-              }
-            ></Route>
+            <Route path="*" element={<Portfolio />}></Route>
           </Routes>
         </Router>
       </context.Provider>

@@ -52,6 +52,9 @@ const PortfolioTitle = styled.div`
 const MainContent = styled.div`
   position: absolute;
   top: 50px;
+  left: 0px;
+
+  width: 100vw;
 
   display: flex;
   flex-direction: column;

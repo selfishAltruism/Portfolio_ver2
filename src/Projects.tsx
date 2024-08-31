@@ -6,6 +6,7 @@ import { useState } from "react";
 import Project from "./Project";
 
 import { Title1 } from "./style/title";
+import RowBar from "./style/component/RowBar";
 
 const Projects = () => {
   const [seeMore, setSeeMore] = useState(false);
@@ -15,7 +16,7 @@ const Projects = () => {
   });
 
   const Container = styled.div`
-    width: 80%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,23 +25,7 @@ const Projects = () => {
   return (
     <Container>
       <Title1>Dev Record</Title1>
-      <Project
-        period="2023.12.23 ~ Now"
-        title="CAUSW Service"
-        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 서비스를 제공하는 동문 네트워크 서비스, Front-end 팀장"
-        githubURL="https://github.com/CAUCSE/CAUSW_frontend"
-        notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
-        techStack={[
-          "MobX",
-          "React Router",
-          "Axios",
-          "React Hook Form",
-          "Playwright",
-          "Emotion",
-          "MSW",
-          "Vite",
-        ]}
-      />
+      <RowBar width="100%" />
       <Project
         period="During Capstone, 2023.02.13 ~ 24.06.21"
         title="Dyslexia Zoo Project"
@@ -59,18 +44,20 @@ const Projects = () => {
         ]}
       />
       <Project
-        period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
-        title="Grid Project"
-        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
-        githubURL="none"
-        notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
+        period="2023.12.23 ~ Now"
+        title="CAUSW Service V1"
+        content="중앙대학교 소프트웨어학과 학생이 학교 생활에 도움을 받을 수 있는 서비스를 제공하는 동문 네트워크 서비스, Front-end 팀장"
+        githubURL="https://github.com/CAUCSE/CAUSW_frontend"
+        notionURL="https://www.notion.so/officialkyus/93bf29c840d648368181851d2fae3797"
         techStack={[
-          "Redux",
-          "React",
-          "React Context",
+          "MobX",
+          "React Router",
+          "Axios",
           "React Hook Form",
-          "TypeScripts",
-          "JavaScript",
+          "Playwright",
+          "Emotion",
+          "MSW",
+          "Vite",
         ]}
       />
       <Project
@@ -86,6 +73,21 @@ const Projects = () => {
           "Axios",
           "React Hook Form",
           "Tailwind",
+        ]}
+      />
+      <Project
+        period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
+        title="Grid Project"
+        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
+        techStack={[
+          "Redux",
+          "React",
+          "React Context",
+          "React Hook Form",
+          "TypeScripts",
+          "JavaScript",
         ]}
       />
       <Project

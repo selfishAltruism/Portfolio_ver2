@@ -44,21 +44,8 @@ function Portfolio() {
 
   return (
     <Layout>
-      {isFullScreen ? (
-        <>
-          <PcProfileContainer>
-            <Profile />
-          </PcProfileContainer>
-          <PcProjectsContainer>
-            <Projects />
-          </PcProjectsContainer>
-        </>
-      ) : (
-        <>
-          <Profile />
-          <Projects />
-        </>
-      )}
+      <Profile />
+      <Projects />
     </Layout>
   );
 }

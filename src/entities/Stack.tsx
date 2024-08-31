@@ -77,7 +77,7 @@ export const TechStack: React.FC = () => {
         />
 
         {/* 테두리 (Wireframe) 추가 */}
-        <Edges visible lineWidth={3} scale={0.85} color="#646363" />
+        <Edges visible lineWidth={3} scale={0.85} color="#8a8a8a" />
       </mesh>
 
       {/* {vertexPositions.map((position, index) => (

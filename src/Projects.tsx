@@ -6,6 +6,7 @@ import { useState } from "react";
 import Project from "./Project";
 
 import { Title1 } from "./style/title";
+import RowBar from "./style/component/RowBar";
 
 const Projects = () => {
   const [seeMore, setSeeMore] = useState(false);
@@ -15,7 +16,7 @@ const Projects = () => {
   });
 
   const Container = styled.div`
-    width: 80%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +25,7 @@ const Projects = () => {
   return (
     <Container>
       <Title1>Dev Record</Title1>
+      <RowBar width="100%" />
       <Project
         period="During Capstone, 2023.02.13 ~ 24.06.21"
         title="Dyslexia Zoo Project"

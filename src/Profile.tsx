@@ -340,7 +340,7 @@ function Profile() {
           <SubElement>
             <Title1>Resume</Title1>
             <a href="/경력기술서_강민규.pdf" download="경력기술서_강민규.pdf">
-              <SeeMoreButton>PDF Downroad..</SeeMoreButton>
+              <SeeMoreButton>PDF Download..</SeeMoreButton>
             </a>
 
             <RowBar width={"100%"} />

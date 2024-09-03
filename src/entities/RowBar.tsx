@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const RowBar = ({ width }: { width: string }) => {
+export const RowBar = ({ width }: { width: string }) => {
   const Bar = styled.div`
     width: ${width};
     height: 2px;
@@ -11,5 +11,3 @@ const RowBar = ({ width }: { width: string }) => {
   `;
   return <Bar />;
 };
-
-export default RowBar;

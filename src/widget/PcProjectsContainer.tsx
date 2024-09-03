@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
-const PcProjectsContainer = ({ children }: { children: ReactNode }) => {
+export const PcProjectsContainer = ({ children }: { children: ReactNode }) => {
   return (
     <Colum>
       <ColumContainer>{children}</ColumContainer>

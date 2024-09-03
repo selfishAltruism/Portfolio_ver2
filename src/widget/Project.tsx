@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 
-import ColumnBar from "./style/component/ColumnBar";
+import { ColumnBar } from "src/entities";
 
 type Prop = {
   period: string;
@@ -15,7 +15,7 @@ type Prop = {
   techStack?: string[];
 };
 
-function Project(prop: Prop) {
+export const Project = (prop: Prop) => {
   const {
     period,
     title,
@@ -239,7 +239,7 @@ function Project(prop: Prop) {
       ) : null}
     </Container>
   );
-}
+};
 
 const ButtonContainer = styled.div`
   margin-right: 30px;
@@ -249,5 +249,3 @@ const ButtonContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-
-export default Project;

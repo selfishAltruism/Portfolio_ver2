@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const ColumnBar = ({ height }: { height: string }) => {
+export const ColumnBar = ({ height }: { height: string }) => {
   const Bar = styled.div`
     width: 3px;
     height: ${height};
@@ -12,5 +12,3 @@ const ColumnBar = ({ height }: { height: string }) => {
   `;
   return <Bar />;
 };
-
-export default ColumnBar;

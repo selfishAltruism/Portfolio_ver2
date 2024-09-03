@@ -1,5 +1,5 @@
 import React, { useRef, useMemo, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { Edges, Text } from "@react-three/drei";
 
@@ -100,7 +100,7 @@ export const TechStack: React.FC = () => {
             // 각 Text에 userData를 추가하여 나중에 참조할 수 있도록 설정
             userData={{ text: true }}
           >
-            {stack[index]}
+            {stack[index].name}
           </Text>
         ) : null
       )}

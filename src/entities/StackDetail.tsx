@@ -2,6 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import styled from "@emotion/styled";
 
 import { Title2 } from "src/entities";
+import { mainstack, substack } from "src/shared";
 
 export const StackDetail = ({
   onStackDetail,
@@ -110,99 +111,39 @@ export const StackDetail = ({
       <StackContainer>
         <Title2>Well Used</Title2>
         <Stacks>
-          <Stack href="https://ecma-international.org/" target="_blank">
-            Java Script
-          </Stack>
-          <Stack href="https://www.typescriptlang.org/docs/" target="_blank">
-            Type Script
-          </Stack>
-          <Stack
-            href="https://ko.legacy.reactjs.org/docs/getting-started.html"
-            target="_blank"
-          >
-            React
-          </Stack>
-          <Stack href="https://nextjs.org/docs" target="_blank">
-            Next.js
-          </Stack>
-          <Stack
-            href="https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170"
-            target="_blank"
-          >
-            C & C++
-          </Stack>
-          <Stack
-            href="https://ko.redux.js.org/introduction/getting-started/"
-            target="_blank"
-          >
-            Redux
-          </Stack>
-          <Stack href="https://axios-http.com/kr/docs/intro" target="_blank">
-            Axios
-          </Stack>
-          <Stack href="https://reactrouter.com/en/main" target="_blank">
-            React Router
-          </Stack>
-          <SmallStack
-            href="https://emotion.sh/docs/introduction"
-            target="_blank"
-          >
-            Emotion
-          </SmallStack>
-          <SmallStack
-            href="https://react-hook-form.com/get-started"
-            target="_blank"
-          >
-            React Hook Form
-          </SmallStack>
-          <Stack href="https://zustand-demo.pmnd.rs/" target="_blank">
-            Zustand
-          </Stack>
-          <Stack href="https://mswjs.io/" target="_blank">
-            MSW
-          </Stack>
+          {mainstack.map((element) =>
+            element.name.length < 13 ? (
+              <Stack href={element.href} target="_blank" key={element.name}>
+                {element.name}
+              </Stack>
+            ) : (
+              <SmallStack
+                href={element.href}
+                target="_blank"
+                key={element.name}
+              >
+                {element.name}
+              </SmallStack>
+            )
+          )}
         </Stacks>
         <Title2>Ever Used</Title2>
         <Stacks>
-          <SubStack href="https://ko.mobx.js.org/README.html" target="_blank">
-            MobX
-          </SubStack>
-          <SubStack href="https://tanstack.com" target="_blank">
-            React Query
-          </SubStack>
-          <SubStack href="https://tailwindcss.com" target="_blank">
-            Tailwind
-          </SubStack>
-          <SubStack
-            href="https://web.stanford.edu/class/cs140/projects/pintos/pintos.html"
-            target="_blank"
-          >
-            PintOS
-          </SubStack>
-          <SubStack
-            href="https://next-auth.js.org/getting-started/example"
-            target="_blank"
-          >
-            NextAuth.js
-          </SubStack>
-          <SmallSubStack
-            href="https://www.npmjs.com/package/react-responsive"
-            target="_blank"
-          >
-            react-responsive
-          </SmallSubStack>
-          <SubStack href="https://playwright.dev/docs/intro" target="_blank">
-            Playwright
-          </SubStack>
-          <SubStack
-            href="https://docs.cypress.io/guides/overview/why-cypress"
-            target="_blank"
-          >
-            Cypress
-          </SubStack>
-          <SubStack href="https://recharts.org/en-US/" target="_blank">
-            Recharts
-          </SubStack>
+          {substack.map((element) =>
+            element.name.length < 13 ? (
+              <SubStack href={element.href} target="_blank" key={element.name}>
+                {element.name}
+              </SubStack>
+            ) : (
+              <SmallSubStack
+                href={element.href}
+                target="_blank"
+                key={element.name}
+              >
+                {element.name}
+              </SmallSubStack>
+            )
+          )}
         </Stacks>
       </StackContainer>
     </>

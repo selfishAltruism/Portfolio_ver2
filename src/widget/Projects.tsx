@@ -3,12 +3,10 @@ import { useMediaQuery } from "react-responsive";
 
 import { useState } from "react";
 
-import Project from "./Project";
+import { Project } from "src/widget";
+import { Title1, RowBar } from "src/entities";
 
-import { Title1 } from "./style/title";
-import RowBar from "./style/component/RowBar";
-
-const Projects = () => {
+export const Projects = () => {
   const [seeMore, setSeeMore] = useState(false);
 
   const isMobile = useMediaQuery({
@@ -250,5 +248,3 @@ const SeeMoreButton = styled.div`
   font-size: 20px;
   font-weight: bold;
 `;
-
-export default Projects;

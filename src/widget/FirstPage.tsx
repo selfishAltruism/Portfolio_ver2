@@ -1,9 +1,9 @@
 import { useState, useContext } from "react";
-import { context } from "./App";
+import { context } from "src/App";
 
-import "./style/FirstPage.css";
+import "src/shared/style/FirstPage.css";
 
-function FirstPage() {
+export const FirstPage = () => {
   const { setPageChangeState } = useContext(context);
 
   const [cilckBlock1TopState, setCilckBlock1TopState] = useState("70vh");
@@ -96,6 +96,4 @@ function FirstPage() {
       </div>
     </div>
   );
-}
-
-export default FirstPage;
+};

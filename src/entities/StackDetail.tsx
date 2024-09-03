@@ -1,8 +1,7 @@
-import Button from "@mui/material/Button";
 import { useMediaQuery } from "react-responsive";
 import styled from "@emotion/styled";
 
-import { Title2 } from "src/style/title";
+import { Title2 } from "src/entities";
 
 export const StackDetail = ({
   onStackDetail,

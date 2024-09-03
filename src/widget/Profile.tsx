@@ -5,12 +5,9 @@ import { Canvas } from "@react-three/fiber";
 import Avatar from "@mui/material/Avatar";
 import styled from "@emotion/styled";
 
-import RowBar from "./style/component/RowBar";
-import { Title1, Title2 } from "./style/title";
+import { TechStack, StackDetail, RowBar, Title1, Title2 } from "src/entities";
 
-import { TechStack, StackDetail } from "./entities";
-
-function Profile() {
+export const Profile = () => {
   const [isStackDetail, onStackDetail] = useState(false);
 
   const isMobile = useMediaQuery({
@@ -162,6 +159,4 @@ function Profile() {
       </Container>
     </>
   );
-}
-
-export default Profile;
+};

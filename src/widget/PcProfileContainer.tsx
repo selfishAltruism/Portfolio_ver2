@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
-const PcProjectsContainer = ({ children }: { children: ReactNode }) => {
+export const PcProfileContainer = ({ children }: { children: ReactNode }) => {
   return (
     <Colum>
       <ColumContainer>{children}</ColumContainer>
@@ -12,10 +12,10 @@ const PcProjectsContainer = ({ children }: { children: ReactNode }) => {
 const Colum = styled.div`
   position: fixed;
 
-  right: 0px;
-  top: 30px;
+  left: -20px;
+  top: 44px;
 
-  width: 80vw;
+  width: 36vw;
   height: 100vh;
 
   overflow-y: auto;
@@ -34,7 +34,7 @@ const Colum = styled.div`
 
 const ColumContainer = styled.div`
   position: absolute;
-  right: -85px;
+  left: 0px;
 
   width: 100%;
 
@@ -43,4 +43,4 @@ const ColumContainer = styled.div`
   flex-direction: column;
 `;
 
-export default PcProjectsContainer;
+export default PcProfileContainer;

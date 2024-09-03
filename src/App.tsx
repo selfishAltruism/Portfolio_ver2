@@ -1,18 +1,18 @@
 import * as React from "react";
-import { useState, createContext, useReducer } from "react";
+import { useState, createContext } from "react";
 import { useMediaQuery } from "react-responsive";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import "./style/App.css";
+import "src/shared/style/App.css";
 
-import FirstPage from "./FirstPage";
-import Portfolio from "./Portfolio";
+import { FirstPage } from "src/widget";
+import Portfolio from "src/Portfolio";
 
 export const context = createContext<{
   setPageChangeState?: React.Dispatch<React.SetStateAction<number>>;
 }>({});
 
-function App() {
+const App = () => {
   const [pageChangeState, setPageChangeState] = useState(0);
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
@@ -42,6 +42,6 @@ function App() {
       </context.Provider>
     </>
   );
-}
+};
 
 export default App;

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { useContext } from "react";
-import { context } from "./App";
+import { context } from "src/App";
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
@@ -8,7 +8,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-function Layout({ children }: Props) {
+const Layout = ({ children }: Props) => {
   const { setPageChangeState } = useContext(context);
   const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ function Layout({ children }: Props) {
           navigate("/");
         }}
       >
-        <p style={{ marginTop: "10px" }}>Kang Min Kyu's Portfolio</p>
+        <p style={{ marginTop: "8px" }}>Kang Min Kyu's Portfolio</p>
         {isMobile ? null : (
           <div>
             <div
@@ -61,7 +61,7 @@ function Layout({ children }: Props) {
       <MainContent>{children}</MainContent>
     </>
   );
-}
+};
 
 const PortfolioTitle = styled.div`
   -webkit-touch-callout: none;
@@ -84,6 +84,7 @@ const PortfolioTitle = styled.div`
 
   color: #434343;
   font-weight: bold;
+  font-size: 18px;
 
   box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
 

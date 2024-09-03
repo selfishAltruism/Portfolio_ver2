@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { Edges, Text } from "@react-three/drei";
 
-import { stack } from "../shared";
+import { stack } from "src/shared";
 
 // 정12면체의 꼭지점 좌표를 가져오는 함수
 const getUniqueDodecahedronVertexPositions = (): THREE.Vector3[] => {

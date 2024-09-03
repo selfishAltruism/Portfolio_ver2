@@ -41,10 +41,11 @@ const PortfolioTitle = styled.div`
   width: 100vw;
   height: 45px;
 
-  background-color: #434343;
+  background-color: #ffffff;
   font-weight: bold;
 
-  color: white;
+  color: #434343;
+  font-weight: bold;
 
   box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
 `;

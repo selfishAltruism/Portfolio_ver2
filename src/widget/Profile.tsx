@@ -70,12 +70,12 @@ export const Profile = () => {
 
   const MainContent = styled.span`
     color: #434343;
-    font-size: ${isMobile ? "17px" : "23px"};
+    font-size: ${isMobile ? "20px" : "23px"};
   `;
 
   const SubContent = styled.span`
     color: #434343;
-    font-size: ${isMobile ? "11px" : "17px"};
+    font-size: ${isMobile ? "15px" : "17px"};
   `;
 
   return (
@@ -98,7 +98,7 @@ export const Profile = () => {
         <Title1>강민규</Title1>
         <Info>Front-End Developer / officialkyus@gmail.com</Info>
         <RowBar width={"90%"} />
-        <MainContent>안전지대를 넘어서는 개발자</MainContent>
+        <MainContent>안전지대를 넘어서는 개발자 😎</MainContent>
         <SubContent>
           변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, 강민규입니다.
         </SubContent>
@@ -138,22 +138,21 @@ export const Profile = () => {
             </a>
 
             <RowBar width={"100%"} />
-            <SubContent>2021년 하반기</SubContent>
+            <SubContent>2021년</SubContent>
             <Title2>
-              중앙대학교 2021년 다빈치 SW AI TECH FAIR-SW AI 창업 아이디어
+              💻 중앙대학교 2021년 다빈치 SW AI TECH FAIR-SW AI 창업 아이디어
               경진대회 최우수상
             </Title2>
             <Title2>
-              교육부 2021년도 학생 창업 유망팀 300 경진대회 예비 창업 유망팀
+              💻 교육부 2021년도 학생 창업 유망팀 300 경진대회 예비 창업 유망팀
               최종선정
             </Title2>
-            <Title2>2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
-            <SubContent>2023년 하반기</SubContent>
-            <Title2>비즈피어(주) 프론트엔드 개발 인턴</Title2>
-            <SubContent>2024년 상반기</SubContent>
-            <Title2>중앙대학교 ICT 위원회 프론트엔드 개발 팀장</Title2>
-            <SubContent>2024년 하반기</SubContent>
-            <Title2>제6회 Future Finance A.I. Challenge 본선 진출</Title2>
+            <Title2>💻 2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
+            <SubContent>2023년</SubContent>
+            <Title2>💻 비즈피어(주) 프론트엔드 개발 인턴</Title2>
+            <SubContent>2024년</SubContent>
+            <Title2>💻 중앙대학교 ICT 위원회 프론트엔드 개발 팀장</Title2>
+            <Title2>💻 제6회 Future Finance A.I. Challenge 본선 진출</Title2>
           </SubElement>
         </SubContainer>
       </Container>

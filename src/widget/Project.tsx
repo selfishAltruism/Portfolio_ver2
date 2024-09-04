@@ -144,15 +144,18 @@ export const Project = (prop: Prop) => {
       </StyleGitButton>
     );
 
-  const DetailButton = () => (
-    <StyleDetailButton
-      variant="outlined"
-      color="secondary"
-      onClick={() => window.open(notionURL)}
-    >
-      {isHalfScreen ? "Detail" : "Detail Page"}
-    </StyleDetailButton>
-  );
+  const DetailButton = () =>
+    notionURL === "none" ? (
+      <div style={{ width: isHalfScreen ? "20px" : "138px" }}></div>
+    ) : (
+      <StyleDetailButton
+        variant="outlined"
+        color="secondary"
+        onClick={() => window.open(notionURL)}
+      >
+        {isHalfScreen ? "Detail" : "Detail Page"}
+      </StyleDetailButton>
+    );
 
   const ButtonDiv = styled.div`
     position: absolute;

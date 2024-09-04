@@ -8,6 +8,7 @@ import { Title1, RowBar } from "src/entities";
 
 export const Projects = () => {
   const [seeMore, setSeeMore] = useState(false);
+  const [seeMoreStudy, setSeeMoreStudy] = useState(false);
 
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
@@ -22,23 +23,21 @@ export const Projects = () => {
 
   return (
     <Container>
-      <Title1>Dev Record</Title1>
+      <Title1>Service Develop Record</Title1>
       <RowBar width="100%" />
       <Project
-        period="During Capstone, 2023.02.13 ~ 24.06.21"
-        title="Dyslexia Zoo Project"
-        content="난독증 소아 치료 웹 게임 서비스, Web Front-end 개발"
-        githubURL="https://github.com/Capstone-team02-Dyslexia-Cure-Service/Dyslexia_Zoo_FE"
-        notionURL="https://officialkyus.notion.site/Dyslexia-Zoo-Project-68e0f0aadb614bd192e501bc77575dad?pvs=4"
+        period="2024.05.13 ~ Now"
+        title="CAUSW Service V2"
+        content="CAUSW Service Framework & Design & Flow Update Version, Front-end 팀장"
+        githubURL="https://github.com/CAUCSE/CAUSW_frontend_V2"
+        notionURL="https://www.notion.so/officialkyus/CAUSW-V2-5be14925742048dcb37d880f2a9b1cbd?pvs=4"
         techStack={[
+          "Next.js",
           "Zustand",
+          "React Query",
           "Axios",
-          "React Router",
           "React Hook Form",
-          "Emotion",
-          "Recharts",
-          "MSW",
-          "Vite",
+          "Tailwind",
         ]}
       />
       <Project
@@ -59,23 +58,8 @@ export const Projects = () => {
         ]}
       />
       <Project
-        period="2024.05.13 ~ Now"
-        title="CAUSW Service V2"
-        content="CAUSW Service Framework & Design & Flow Update Version, Front-end 팀장"
-        githubURL="https://github.com/CAUCSE/CAUSW_frontend_V2"
-        notionURL="https://www.notion.so/officialkyus/CAUSW-V2-5be14925742048dcb37d880f2a9b1cbd?pvs=4"
-        techStack={[
-          "Next.js",
-          "Zustand",
-          "React Query",
-          "Axios",
-          "React Hook Form",
-          "Tailwind",
-        ]}
-      />
-      <Project
         period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
-        title="Grid Project"
+        title="Grid Library Development"
         content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
@@ -86,6 +70,56 @@ export const Projects = () => {
           "React Hook Form",
           "TypeScripts",
           "JavaScript",
+        ]}
+      />
+      <Title1>Project Develop Record</Title1>
+      <RowBar width="100%" />
+      <Project
+        period="During Capstone, 2023.02.13 ~ 24.06.21"
+        title="Dyslexia Zoo Project"
+        content="난독증 소아 치료 웹 게임 서비스, Web Front-end 개발"
+        githubURL="https://github.com/Capstone-team02-Dyslexia-Cure-Service/Dyslexia_Zoo_FE"
+        notionURL="https://officialkyus.notion.site/Dyslexia-Zoo-Project-68e0f0aadb614bd192e501bc77575dad?pvs=4"
+        techStack={[
+          "Zustand",
+          "Axios",
+          "React Router",
+          "React Hook Form",
+          "Emotion",
+          "Recharts",
+          "MSW",
+          "Vite",
+        ]}
+      />
+      <Project
+        period="During KB Future Finance A.I. Challenge, 2023.07.24 ~ 24.08.27"
+        title="KB-HI"
+        content="민감한 개인 데이터를 안전하게 처리하고 보호함과 동시에 기업에서 데이터를 Training 및 Inference에 활용할 수 있도록 지원하는 AI 보안 인프라"
+        githubURL="https://github.com/KB-HI-Service/KB-HI-Service-FE"
+        notionURL="https://officialkyus.notion.site/KB-HI-089f2695badb496cbc383fb23e650e8a?pvs=4"
+        techStack={[
+          "Web Socket",
+          "Snowflake",
+          "Zustand",
+          "Axios",
+          "React Router",
+          "Emotion",
+          "Vite",
+        ]}
+      />
+      <Project
+        period="During UMC, 2023.07.01 ~ 24.08.21"
+        title="Prototyne Project"
+        content="기업과 소비자를 잇는 시제품 소비자 반응 테스트 서비스, Front-end 팀장"
+        githubURL="https://github.com/KB-HI-Service/KB-HI-Service-FE"
+        notionURL="none"
+        techStack={[
+          "Zustand",
+          "Axios",
+          "React Router",
+          "React Hook Form",
+          "Emotion",
+          "Vite",
         ]}
       />
       <Project
@@ -151,24 +185,7 @@ export const Projects = () => {
           "react-responsive",
         ]}
       />
-      <Project
-        period="2024.04.20 ~ 2024.04.24"
-        title="Chat GPT Detail Study"
-        content="Chat GPT 활용 서비스 개발을 위한 Prompt, LLM 공부"
-        githubURL="none"
-        notionURL="https://officialkyus.notion.site/GPT-Practice-ddef649016a6425194b4641fac9fd3e5?pvs=4"
-        isStudy={true}
-        techStack={["Chat GPT", "Prompt", "NLP", "ML"]}
-      />
-      <Project
-        period="2024.04.02 ~ Now"
-        title="Algorithm Study"
-        content="Sort, Dynamic Programming 등 다방면 Algorithm 공부"
-        githubURL="https://github.com/selfishAltruism/2024_Algorithm_Assignment"
-        notionURL="https://officialkyus.notion.site/Algorithm-324d3a8ff3f74234b17c2e5d074f91da?pvs=4"
-        isStudy={true}
-        techStack={["Ubuntu", "Python", "JavaScript"]}
-      />
+
       {seeMore ? (
         <>
           <div style={{ height: "15px" }}></div>
@@ -208,6 +225,40 @@ export const Projects = () => {
             isSub={true}
             techStack={["React", "React Context", "JavaScript"]}
           />
+        </>
+      ) : null}
+      <SeeMoreButton
+        onClick={() => {
+          setSeeMore(!seeMore);
+        }}
+      >
+        {seeMore ? "See Simply.." : "See More.."}
+      </SeeMoreButton>
+
+      <Title1>Study Record</Title1>
+      <RowBar width="100%" />
+      <Project
+        period="2024.04.20 ~ 2024.04.24"
+        title="Chat GPT Detail Study"
+        content="Chat GPT 활용 서비스 개발을 위한 Prompt, LLM 공부"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/GPT-Practice-ddef649016a6425194b4641fac9fd3e5?pvs=4"
+        isStudy={true}
+        techStack={["Chat GPT", "Prompt", "NLP", "ML"]}
+      />
+      <Project
+        period="2024.04.02 ~ Now"
+        title="Algorithm Study"
+        content="Sort, Dynamic Programming 등 다방면 Algorithm 공부"
+        githubURL="https://github.com/selfishAltruism/2024_Algorithm_Assignment"
+        notionURL="https://officialkyus.notion.site/Algorithm-324d3a8ff3f74234b17c2e5d074f91da?pvs=4"
+        isStudy={true}
+        techStack={["Ubuntu", "Python", "JavaScript"]}
+      />
+
+      {seeMoreStudy ? (
+        <>
+          <div style={{ height: "15px" }}></div>
           <Project
             period="2023.12.04"
             title="Front-end TDD Study"
@@ -230,12 +281,11 @@ export const Projects = () => {
       ) : null}
       <SeeMoreButton
         onClick={() => {
-          setSeeMore(!seeMore);
+          setSeeMoreStudy(!seeMoreStudy);
         }}
       >
-        {seeMore ? "See Simply.." : "See More.."}
+        {seeMoreStudy ? "See Simply.." : "See More.."}
       </SeeMoreButton>
-
       <div style={{ height: "40px" }}></div>
     </Container>
   );

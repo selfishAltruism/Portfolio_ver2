@@ -31,9 +31,16 @@ const Layout = ({ children }: Props) => {
           navigate("/");
         }}
       >
-        <p style={{ marginTop: "8px" }}>Kang Min Kyu's Portfolio</p>
+        <p
+          style={{ marginTop: "8px" }}
+          onClick={() => {
+            handleScroll(0);
+          }}
+        >
+          Kang Min Kyu's Portfolio
+        </p>
         {isMobile ? null : (
-          <div>
+          <div style={{ width: "260px" }}>
             <div
               onClick={() => {
                 handleScroll(240);
@@ -53,7 +60,21 @@ const Layout = ({ children }: Props) => {
                 handleScroll(800);
               }}
             >
-              Dev Record
+              Service
+            </div>
+            <div
+              onClick={() => {
+                handleScroll(1280);
+              }}
+            >
+              Project
+            </div>
+            <div
+              onClick={() => {
+                handleScroll(2500);
+              }}
+            >
+              Study
             </div>
           </div>
         )}

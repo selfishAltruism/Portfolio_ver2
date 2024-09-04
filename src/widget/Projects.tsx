@@ -111,7 +111,7 @@ export const Projects = () => {
         period="During UMC, 2023.07.01 ~ 24.08.21"
         title="Prototyne Project"
         content="기업과 소비자를 잇는 시제품 소비자 반응 테스트 서비스, Front-end 팀장"
-        githubURL="https://github.com/KB-HI-Service/KB-HI-Service-FE"
+        githubURL="https://github.com/UMC-PROTOTYNE"
         notionURL="none"
         techStack={[
           "Zustand",

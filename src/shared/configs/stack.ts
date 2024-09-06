@@ -41,6 +41,10 @@ export const mainstack = [
     href: "https://zustand-demo.pmnd.rs/",
   },
   { name: "MSW", href: "https://mswjs.io/" },
+  {
+    name: "FSD Architecture",
+    href: "https://www.youtube.com/watch?v=64Fx5Y1gEOA",
+  },
 ];
 
 export const substack = [
@@ -57,10 +61,6 @@ export const substack = [
   {
     name: "NextAuth.js",
     href: "https://next-auth.js.org/getting-started/example",
-  },
-  {
-    name: "react-responsive",
-    href: "https://www.npmjs.com/package/react-responsive",
   },
   {
     name: "Playwright",

@@ -33,6 +33,7 @@ export const Projects = () => {
         notionURL="https://www.notion.so/officialkyus/CAUSW-V2-5be14925742048dcb37d880f2a9b1cbd?pvs=4"
         techStack={[
           "Next.js",
+          "FSD",
           "Zustand",
           "React Query",
           "Axios",
@@ -81,6 +82,7 @@ export const Projects = () => {
         githubURL="https://github.com/Capstone-team02-Dyslexia-Cure-Service/Dyslexia_Zoo_FE"
         notionURL="https://officialkyus.notion.site/Dyslexia-Zoo-Project-68e0f0aadb614bd192e501bc77575dad?pvs=4"
         techStack={[
+          "FSD",
           "Zustand",
           "Axios",
           "React Router",
@@ -98,6 +100,7 @@ export const Projects = () => {
         githubURL="https://github.com/KB-HI-Service/KB-HI-Service-FE"
         notionURL="https://officialkyus.notion.site/KB-HI-089f2695badb496cbc383fb23e650e8a?pvs=4"
         techStack={[
+          "FSD",
           "Web Socket",
           "Snowflake",
           "Zustand",
@@ -114,6 +117,7 @@ export const Projects = () => {
         githubURL="https://github.com/UMC-PROTOTYNE"
         notionURL="none"
         techStack={[
+          "FSD",
           "Zustand",
           "Axios",
           "React Router",
@@ -129,6 +133,7 @@ export const Projects = () => {
         githubURL="https://github.com/CAU-SE-ITS/SE_ITS_Front-End"
         notionURL="https://officialkyus.notion.site/CITS-Project-c2a3213faae44ad490282cf871a02861?pvs=4"
         techStack={[
+          "FSD",
           "Zustand",
           "Axios",
           "React Router",

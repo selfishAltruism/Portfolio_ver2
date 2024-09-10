@@ -168,15 +168,6 @@ export const Projects = () => {
         techStack={["Ubuntu", "C", "PintOS"]}
       />
       <Project
-        period="During Army, 2023.02.21 ~ 2023.02.25"
-        title="ShipList Development"
-        content="군대 내부에서 사용되는 선박일지 프로그램 개발"
-        githubURL="https://github.com/selfishAltruism/ShipList"
-        notionURL="https://www.notion.so/officialkyus/ShipList-4fc012ceae984959a73ca235dc42d444"
-        isSub={true}
-        techStack={["JavaScript"]}
-      />
-      <Project
         period="2023.11.25 ~ Now"
         title="Portfolio Ver II"
         content="현재 Page, 자기소개와 개발 기록을 포함한 PC, Mobile 반응형 Web 개발"
@@ -190,7 +181,15 @@ export const Projects = () => {
           "react-responsive",
         ]}
       />
-
+      <Project
+        period="2021.06.23 ~ 2021.12.20"
+        title="IT_DA Project"
+        content="대학생 카페 공부를 돕는 카페 빈자리 공유 서비스 개발"
+        githubURL="https://github.com/selfishAltruism/IT_DA_web_front"
+        notionURL="https://officialkyus.notion.site/IT_DA-0977623d68144f3fbb70cd32f5fa7977?pvs=4"
+        isSub={true}
+        techStack={["JavaScript", "OpenCV", "Apps Script"]}
+      />
       {seeMore ? (
         <>
           <div style={{ height: "15px" }}></div>
@@ -204,13 +203,13 @@ export const Projects = () => {
             techStack={["Next.js", "Redux", "React", "TypeScripts"]}
           />
           <Project
-            period="2021.06.23 ~ 2021.12.20"
-            title="IT_DA Project"
-            content="대학생 카페 공부를 돕는 카페 빈자리 공유 서비스 개발"
-            githubURL="https://github.com/selfishAltruism/IT_DA_web_front"
-            notionURL="https://officialkyus.notion.site/IT_DA-0977623d68144f3fbb70cd32f5fa7977?pvs=4"
+            period="During Army, 2023.02.21 ~ 2023.02.25"
+            title="ShipList Development"
+            content="군대 내부에서 사용되는 선박일지 프로그램 개발"
+            githubURL="https://github.com/selfishAltruism/ShipList"
+            notionURL="https://www.notion.so/officialkyus/ShipList-4fc012ceae984959a73ca235dc42d444"
             isSub={true}
-            techStack={["JavaScript", "OpenCV", "Apps Script"]}
+            techStack={["JavaScript"]}
           />
           <Project
             period="During Hackathon, 2023.11.12 ~ 2023.11.13"

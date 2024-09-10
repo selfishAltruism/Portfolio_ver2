@@ -10,8 +10,15 @@ export const Title1 = styled.span`
 
 export const Title2 = styled.span`
   font-size: 20px;
+
   font-weight: bolder;
 
   margin-top: 0px;
   margin-bottom: 5px;
+
+  > span {
+    color: gray;
+    font-weight: normal;
+    margin-left: 5px;
+  }
 `;

@@ -8,16 +8,26 @@ import styled from "@emotion/styled";
 import { TechStack, StackDetail, RowBar, Title1, Title2 } from "src/entities";
 
 export const Profile = () => {
+  const handleScroll = (top: number) => {
+    // window.scrollTo로 특정 좌표로 스크롤 (예: 1000px 아래로)
+    window.scrollTo({
+      top: top,
+      behavior: "smooth",
+    });
+  };
+
   const [isStackDetail, onStackDetail] = useState(false);
 
   const isMobile = useMediaQuery({
     query: "(max-width:700px)",
   });
 
+  const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
+
   const Container = styled.div`
-    margin-top: ${isMobile ? "auto" : "-60px"};
+    margin-top: ${isHalfScreen ? "auto" : "-60px"};
     width: 90vw;
-    height: ${isMobile ? "auto" : "93vh"};
+    height: ${isHalfScreen ? "auto" : "93vh"};
 
     display: flex;
     flex-direction: column;
@@ -29,7 +39,7 @@ export const Profile = () => {
     width: 100%;
 
     display: flex;
-    flex-direction: ${isMobile ? "column" : "row"};
+    flex-direction: ${isHalfScreen ? "column" : "row"};
 
     margin-top: 30px;
 
@@ -38,7 +48,7 @@ export const Profile = () => {
 
   const SubElement = styled.div`
     position: relative;
-    width: ${isMobile ? "100%" : "50%"};
+    width: ${isHalfScreen ? "100%" : "50%"};
 
     display: flex;
     flex-direction: column;
@@ -71,11 +81,17 @@ export const Profile = () => {
   const MainContent = styled.span`
     color: #434343;
     font-size: ${isMobile ? "20px" : "23px"};
+    font-weight: bold;
   `;
 
   const SubContent = styled.span`
     color: #434343;
     font-size: ${isMobile ? "15px" : "17px"};
+    font-weight: bold;
+
+    > span {
+      font-weight: normal;
+    }
   `;
 
   return (
@@ -138,21 +154,63 @@ export const Profile = () => {
             </a>
 
             <RowBar width={"100%"} />
+
+            <SubContent>
+              <span>클릭 시 관련 서비스 및 프로젝트로 이동할 수 있습니다.</span>
+            </SubContent>
+
             <SubContent>2021년</SubContent>
-            <Title2>
-              💻 중앙대학교 2021년 다빈치 SW AI TECH FAIR-SW AI 창업 아이디어
-              경진대회 최우수상
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 2900 : 2500);
+              }}
+            >
+              💻 교육부 학생 창업 유망팀 300 경진대회 예비 창업 유망팀 최종선정
+              <span> IT-DA Project</span>
             </Title2>
-            <Title2>
-              💻 교육부 2021년도 학생 창업 유망팀 300 경진대회 예비 창업 유망팀
-              최종선정
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 2900 : 2500);
+              }}
+            >
+              💻 중앙대학교 LINC+ 사업단 Start-up Members 중간평가 S등급
+              <span> IT-DA Project</span>
+            </Title2>
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 2900 : 2500);
+              }}
+            >
+              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW AI 창업 아이디어 경진대회
+              최우수상 <span> IT-DA Project</span>
             </Title2>
             <Title2>💻 2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
             <SubContent>2023년</SubContent>
-            <Title2>💻 비즈피어(주) 프론트엔드 개발 인턴</Title2>
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 1200 : 800);
+              }}
+            >
+              💻 비즈피어(주) 프론트엔드 개발 인턴
+              <span> Grid Library</span>
+            </Title2>
             <SubContent>2024년</SubContent>
-            <Title2>💻 중앙대학교 ICT 위원회 프론트엔드 개발 팀장</Title2>
-            <Title2>💻 제6회 Future Finance A.I. Challenge 본선 진출</Title2>
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 1200 : 800);
+              }}
+            >
+              💻 중앙대학교 ICT 위원회 프론트엔드 개발 팀장
+              <span> CAUSW Service</span>
+            </Title2>
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 1680 : 1280);
+              }}
+            >
+              💻 제6회 Future Finance A.I. Challenge 본선 진출
+              <span> KB-HI Project</span>
+            </Title2>
           </SubElement>
         </SubContainer>
       </Container>

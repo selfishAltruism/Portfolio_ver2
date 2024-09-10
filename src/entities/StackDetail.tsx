@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "@emotion/styled";
 
-import { Title2 } from "src/entities";
+import { Title1, Title2 } from "src/entities";
 import { mainstack, substack } from "src/shared";
 
 export const StackDetail = ({
@@ -109,7 +109,7 @@ export const StackDetail = ({
         }}
       />
       <StackContainer>
-        <Title2>Well Used</Title2>
+        <Title1>Well Used</Title1>
         <Stacks>
           {mainstack.map((element) =>
             element.name.length < 13 ? (
@@ -127,7 +127,7 @@ export const StackDetail = ({
             )
           )}
         </Stacks>
-        <Title2>Ever Used</Title2>
+        <Title1>Ever Used</Title1>
         <Stacks>
           {substack.map((element) =>
             element.name.length < 13 ? (

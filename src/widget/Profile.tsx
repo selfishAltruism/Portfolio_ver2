@@ -98,7 +98,7 @@ export const Profile = () => {
     <>
       <Img
         className="profile-img"
-        alt="Kang Min Kyu"
+        alt=""
         src="img/profile.jpg"
         sx={{ width: isMobile ? 100 : 200, height: isMobile ? 100 : 200 }}
       />
@@ -111,12 +111,13 @@ export const Profile = () => {
         />
       ) : null}
       <Container>
-        <Title1>강민규</Title1>
-        <Info>Front-End Developer / officialkyus@gmail.com</Info>
+        <Title1>(성명 제외)</Title1>
+        <Info>Front-End Developer / (이메일 제외)</Info>
         <RowBar width={"90%"} />
         <MainContent>안전지대를 넘어서는 개발자 😎</MainContent>
         <SubContent>
-          변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, 강민규입니다.
+          변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, (성명
+          제외)입니다.
         </SubContent>
         <SubContent>
           즐겁게 코딩하는 자세와 의사소통할 수 있는 능력이 개발의 본질이라고
@@ -149,9 +150,6 @@ export const Profile = () => {
           </SubElement>
           <SubElement>
             <Title1>Resume</Title1>
-            <a href="/경력기술서_강민규.pdf" download="경력기술서_강민규.pdf">
-              <SeeMoreButton>PDF Download..</SeeMoreButton>
-            </a>
 
             <RowBar width={"100%"} />
 

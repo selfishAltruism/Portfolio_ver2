@@ -75,7 +75,7 @@ export const FirstPage = () => {
         <div id="titleText2">Welcome!</div>
         {/*         <div id="titleText2">Kang MinKyu's Portfolio</div> */}
         <div id="titleText1">
-          프론트 엔드 개발자, <span className="borderText">강민규</span>{" "}
+          프론트 엔드 개발자, <span className="borderText">(성명 제외)</span>{" "}
           포트폴리오입니다.
         </div>
         <div id="block"></div>
@@ -89,10 +89,6 @@ export const FirstPage = () => {
       <div id="cilckBlock2" style={cilckBlock2Style}>
         Click anywhere Click anywhere Click anywhere Click anywhere Click
         anywhere Click anywhere Click anywhere Click anywhere
-      </div>
-
-      <div id="gitLink">
-        <p>Made by https://github.com/selfishAltruism</p>
       </div>
     </div>
   );

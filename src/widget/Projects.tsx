@@ -114,8 +114,8 @@ export const Projects = () => {
         period="During UMC, 2023.07.01 ~ 24.08.21"
         title="Prototyne Project"
         content="기업과 소비자를 잇는 시제품 소비자 반응 테스트 서비스, Front-end 팀장"
-        githubURL="https://github.com/UMC-PROTOTYNE"
-        notionURL="none"
+        githubURL="https://github.com/PROTOTYNE"
+        notionURL="https://www.notion.so/Prototyne-110239e193bd80a78de0f8d2b11bf30c"
         techStack={[
           "FSD",
           "Zustand",

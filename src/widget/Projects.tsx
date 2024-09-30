@@ -111,7 +111,7 @@ export const Projects = () => {
         ]}
       />
       <Project
-        period="During UMC, 2023.07.01 ~ 24.08.21"
+        period="2023.07.01 ~ Now"
         title="Prototyne Project"
         content="기업과 소비자를 잇는 시제품 소비자 반응 테스트 서비스, Front-end 팀장"
         githubURL="https://github.com/PROTOTYNE"

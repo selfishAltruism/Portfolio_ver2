@@ -26,6 +26,24 @@ export const Projects = () => {
       <Title1>Service Develop Record</Title1>
       <RowBar width="100%" />
       <Project
+        period="2024.11.25 ~ Now"
+        title="AKEO Web Service"
+        content=""
+        site
+        githubURL="none"
+        notionURL="https://www.akeoedu.com/"
+        techStack={["Next.js", "Zustand", "Tailwind"]}
+      />
+      <Project
+        period="2024.08.28 ~ Now"
+        title="Fitrace App Service"
+        content=""
+        site
+        githubURL="none"
+        notionURL="https://www.fitrace.co.kr/ko/"
+        techStack={["React-Native"]}
+      />
+      <Project
         period="2024.05.13 ~ Now"
         title="CAUSW Service V2"
         content="CAUSW Service Framework & Design & Flow Update Version, Front-end 팀장"

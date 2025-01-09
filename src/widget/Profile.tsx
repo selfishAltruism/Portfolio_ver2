@@ -160,22 +160,7 @@ export const Profile = () => {
             </SubContent>
 
             <SubContent>2021년</SubContent>
-            <Title2
-              onClick={() => {
-                handleScroll(isHalfScreen ? 2900 : 2500);
-              }}
-            >
-              💻 교육부 학생 창업 유망팀 300 경진대회 예비 창업 유망팀 최종선정
-              <span> IT-DA Project</span>
-            </Title2>
-            <Title2
-              onClick={() => {
-                handleScroll(isHalfScreen ? 2900 : 2500);
-              }}
-            >
-              💻 중앙대학교 LINC+ 사업단 Start-up Members 중간평가 S등급
-              <span> IT-DA Project</span>
-            </Title2>
+
             <Title2
               onClick={() => {
                 handleScroll(isHalfScreen ? 2900 : 2500);
@@ -191,25 +176,33 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 비즈피어(주) 프론트엔드 개발 인턴
+              💻 비즈피어(주) : 프론트엔드 개발 인턴
               <span> Grid Library</span>
             </Title2>
-            <SubContent>2024년</SubContent>
+            <SubContent>2024 & 2025년</SubContent>
             <Title2
               onClick={() => {
                 handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
               💻 중앙대학교 ICT 위원회 프론트엔드 개발 팀장
-              <span> CAUSW Service</span>
+              <span> CAUSW Web Service</span>
             </Title2>
             <Title2
               onClick={() => {
-                handleScroll(isHalfScreen ? 1680 : 1280);
+                handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 제6회 Future Finance A.I. Challenge 본선 진출
-              <span> KB-HI Project</span>
+              💻 스타트업 Fitrace : 앱 개발 직무
+              <span> Fitrace App Service</span>
+            </Title2>
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 1200 : 800);
+              }}
+            >
+              💻 주식회사 악어에듀 : 웹 개발 직무
+              <span> AKEO Web Service</span>
             </Title2>
           </SubElement>
         </SubContainer>

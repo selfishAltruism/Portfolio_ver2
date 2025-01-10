@@ -23,7 +23,7 @@ export const Projects = () => {
 
   return (
     <Container>
-      <Title1>Service Develop Record</Title1>
+      <Title1>Career History</Title1>
       <RowBar width="100%" />
       <Project
         period="2024.11.25 ~ Now"
@@ -43,6 +43,23 @@ export const Projects = () => {
         notionURL="https://www.fitrace.co.kr/ko/"
         techStack={["React-Native"]}
       />
+      <Project
+        period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
+        title="Grid Library Development"
+        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
+        githubURL="none"
+        notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
+        techStack={[
+          "Redux",
+          "React",
+          "React Context",
+          "React Hook Form",
+          "TypeScripts",
+          "JavaScript",
+        ]}
+      />
+      <Title1>Service Develop Record</Title1>
+      <RowBar width="100%" />
       <Project
         period="2024.05.13 ~ Now"
         title="CAUSW Service V2"
@@ -76,21 +93,7 @@ export const Projects = () => {
           "Vite",
         ]}
       />
-      <Project
-        period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
-        title="Grid Library Development"
-        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
-        githubURL="none"
-        notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
-        techStack={[
-          "Redux",
-          "React",
-          "React Context",
-          "React Hook Form",
-          "TypeScripts",
-          "JavaScript",
-        ]}
-      />
+
       <Title1>Project Develop Record</Title1>
       <RowBar width="100%" />
       <Project

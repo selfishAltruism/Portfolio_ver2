@@ -5,9 +5,9 @@ import { Edges, Text } from "@react-three/drei";
 
 import { stack } from "src/shared";
 
-// 정12면체의 꼭지점 좌표를 가져오는 함수
-const getUniqueDodecahedronVertexPositions = (): THREE.Vector3[] => {
-  const geometry = new THREE.DodecahedronGeometry(5, 0);
+// 정20면체의 꼭지점 좌표를 가져오는 함수
+const getUniqueIcosahedronVertexPositions = (): THREE.Vector3[] => {
+  const geometry = new THREE.IcosahedronGeometry(5, 0); // 정20면체 지오메트리 생성
   const positions = geometry.attributes.position.array;
 
   // 중복을 피하기 위한 Map 객체 생성
@@ -53,9 +53,9 @@ export const TechStack: React.FC = () => {
     });
   });
 
-  // 정12면체의 꼭지점 좌표를 가져옵니다
+  // 정20면체의 꼭지점 좌표를 가져옵니다
   const vertexPositions = useMemo(
-    () => getUniqueDodecahedronVertexPositions(),
+    () => getUniqueIcosahedronVertexPositions(),
     []
   );
 
@@ -66,8 +66,8 @@ export const TechStack: React.FC = () => {
       onPointerOut={() => setIsHovered(false)} // 마우스 아웃 시
     >
       <mesh>
-        {/* 정12면체 Geometry */}
-        <dodecahedronGeometry args={[5, 0]} />
+        {/* 정20면체 Geometry */}
+        <icosahedronGeometry args={[5, 0]} />
         {/* 면을 투명하게 설정 */}
         <meshStandardMaterial
           color="white"
@@ -77,30 +77,23 @@ export const TechStack: React.FC = () => {
         />
 
         {/* 테두리 (Wireframe) 추가 */}
-        <Edges visible lineWidth={3} scale={0.85} color="#8a8a8a" />
+        <Edges visible lineWidth={1} scale={0.85} color="#8a8a8a" />
       </mesh>
-
-      {/* {vertexPositions.map((position, index) => (
-        <mesh key={`dot-${index}`} position={position}>
-          <sphereGeometry args={[0.1]} />
-          <meshStandardMaterial color="#969696" />
-        </mesh>
-      ))} */}
 
       {/* 꼭지점에 텍스트 추가 */}
       {vertexPositions.map((position, index) =>
-        index < 20 ? (
+        index < 12 ? (
           <Text
             key={index}
             position={[position.x, position.y, position.z]}
             fontSize={0.7}
-            color="#383838"
+            color="#222222"
             anchorX="center"
             anchorY="middle"
             // 각 Text에 userData를 추가하여 나중에 참조할 수 있도록 설정
             userData={{ text: true }}
           >
-            {stack[index].name}
+            {stack[index]?.name || `Item ${index + 1}`}
           </Text>
         ) : null
       )}

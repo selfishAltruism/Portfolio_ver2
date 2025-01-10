@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import styled from "@emotion/styled";
 
 import { Title1, Title2 } from "src/entities";
-import { mainstack, substack } from "src/shared";
+import { mainstack, substack, everstack } from "src/shared";
 
 export const StackDetail = ({
   onStackDetail,
@@ -44,6 +44,8 @@ export const StackDetail = ({
   `;
 
   const Stacks = styled.div`
+    margin-top: 10px;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -77,7 +79,7 @@ export const StackDetail = ({
     font-size: ${isMobile ? "12px" : "16px"};
 
     background-color: #434343;
-    border: 2px solid #434343;
+    border: 1px solid #434343;
 
     box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
@@ -91,13 +93,28 @@ export const StackDetail = ({
       color: white;
       transition: all ease 0.3s;
     }
-    color: #434343;
+    color: white;
 
-    background-color: white;
-    border: 2px solid #434343;
+    background-color: #727272;
+    border: 1px solid #434343;
   `;
 
   const SmallSubStack = styled(SubStack)`
+    font-size: ${isMobile ? "8px" : "13px"};
+  `;
+
+  const EvenStack = styled(Stack)`
+    &:hover {
+      color: white;
+      transition: all ease 0.3s;
+    }
+    color: #434343;
+
+    background-color: white;
+    border: 1px solid #434343;
+  `;
+
+  const SmallEvenStack = styled(EvenStack)`
     font-size: ${isMobile ? "8px" : "13px"};
   `;
 
@@ -109,7 +126,7 @@ export const StackDetail = ({
         }}
       />
       <StackContainer>
-        <Title1>Well Used</Title1>
+        <Title2>Pretty well-used</Title2>
         <Stacks>
           {mainstack.map((element) =>
             element.name.length < 13 ? (
@@ -127,7 +144,7 @@ export const StackDetail = ({
             )
           )}
         </Stacks>
-        <Title1>Ever Used</Title1>
+        <Title2>Well-used</Title2>
         <Stacks>
           {substack.map((element) =>
             element.name.length < 13 ? (
@@ -142,6 +159,24 @@ export const StackDetail = ({
               >
                 {element.name}
               </SmallSubStack>
+            )
+          )}
+        </Stacks>
+        <Title2>Ever-used</Title2>
+        <Stacks>
+          {everstack.map((element) =>
+            element.name.length < 13 ? (
+              <EvenStack href={element.href} target="_blank" key={element.name}>
+                {element.name}
+              </EvenStack>
+            ) : (
+              <SmallEvenStack
+                href={element.href}
+                target="_blank"
+                key={element.name}
+              >
+                {element.name}
+              </SmallEvenStack>
             )
           )}
         </Stacks>

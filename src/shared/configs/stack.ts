@@ -12,17 +12,15 @@ export const mainstack = [
     href: "https://ko.legacy.reactjs.org/docs/getting-started.html",
   },
   { name: "Next.js", href: "https://nextjs.org/docs", component: "Stack" },
-  {
-    name: "C & C++",
-    href: "https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170",
-  },
-  {
-    name: "Redux",
-    href: "https://ko.redux.js.org/introduction/getting-started/",
-  },
+  { name: "React Native", href: "" },
+  { name: "ESLint", href: "" },
   {
     name: "Axios",
     href: "https://axios-http.com/kr/docs/intro",
+  },
+  {
+    name: "Zustand",
+    href: "https://zustand-demo.pmnd.rs/",
   },
   {
     name: "React Router",
@@ -32,31 +30,40 @@ export const mainstack = [
     name: "Emotion",
     href: "https://emotion.sh/docs/introduction",
   },
+  { name: "Tailwind", href: "https://tailwindcss.com", component: "SubStack" },
+
   {
-    name: "React Hook Form",
-    href: "https://react-hook-form.com/get-started",
-  },
-  {
-    name: "Zustand",
-    href: "https://zustand-demo.pmnd.rs/",
-  },
-  { name: "MSW", href: "https://mswjs.io/" },
-  {
-    name: "FSD Architecture",
+    name: "FSD Arch",
     href: "https://www.youtube.com/watch?v=64Fx5Y1gEOA",
   },
 ];
 
 export const substack = [
+  { name: "Recoil", href: "" },
+  {
+    name: "Redux",
+    href: "https://ko.redux.js.org/introduction/getting-started/",
+  },
+  { name: "React Query", href: "https://tanstack.com", component: "SubStack" },
+  {
+    name: "react-hook-form",
+    href: "https://react-hook-form.com/get-started",
+  },
+  {
+    name: "C & C++",
+    href: "https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170",
+  },
+  { name: "Tiptap", href: "" },
+  { name: "react-doc-viewer", href: "" },
+  { name: "RN-async-storage", href: "" },
+  { name: "RN-ble-manager", href: "" },
+];
+
+export const everstack = [
+  { name: "PDF.js", href: "" },
   {
     name: "MobX",
     href: "https://ko.mobx.js.org/README.html",
-  },
-  { name: "React Query", href: "https://tanstack.com", component: "SubStack" },
-  { name: "Tailwind", href: "https://tailwindcss.com", component: "SubStack" },
-  {
-    name: "PintOS",
-    href: "https://web.stanford.edu/class/cs140/projects/pintos/pintos.html",
   },
   {
     name: "NextAuth.js",
@@ -74,6 +81,9 @@ export const substack = [
     name: "Recharts",
     href: "https://recharts.org/en-US/",
   },
+  { name: "MSW", href: "https://mswjs.io/" },
+  { name: "RN-wifi-reborn", href: "" },
+  { name: "RN-sensors", href: "" },
 ];
 
-export const stack = [...mainstack, ...substack];
+export const stack = [...mainstack, ...substack, ...everstack];

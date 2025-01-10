@@ -26,22 +26,34 @@ export const Projects = () => {
       <Title1>Career History</Title1>
       <RowBar width="100%" />
       <Project
-        period="2024.11.25 ~ Now"
+        period="Working, 2024.11.25 ~ Now"
         title="AKEO Web Service"
-        content=""
+        content="AI 코딩 교육 웹 서비스, AKEO 내부 마크다운, 코드 에디터, 파일 뷰어 개발"
         site
         githubURL="none"
         notionURL="https://www.akeoedu.com/"
-        techStack={["Next.js", "Zustand", "Tailwind"]}
+        techStack={[
+          "Next.js",
+          "Zustand",
+          "Tailwind",
+          "ESLint",
+          "Tiptap",
+          "react-doc-viewer",
+        ]}
       />
       <Project
         period="2024.08.28 ~ Now"
         title="Fitrace App Service"
-        content=""
+        content="운동 도움 IoT 서비스, Fitrace 내부 성능 개선, UI/UX 개발, 영문 버전 개발"
         site
         githubURL="none"
         notionURL="https://www.fitrace.co.kr/ko/"
-        techStack={["React-Native"]}
+        techStack={[
+          "React-Native",
+          "Recoil",
+          "RN-async-storage",
+          "RN-ble-manager",
+        ]}
       />
       <Project
         period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
@@ -53,7 +65,7 @@ export const Projects = () => {
           "Redux",
           "React",
           "React Context",
-          "React Hook Form",
+          "react-hook-form",
           "TypeScripts",
           "JavaScript",
         ]}
@@ -72,7 +84,7 @@ export const Projects = () => {
           "Zustand",
           "React Query",
           "Axios",
-          "React Hook Form",
+          "react-hook-form",
           "Tailwind",
         ]}
       />
@@ -86,7 +98,7 @@ export const Projects = () => {
           "MobX",
           "React Router",
           "Axios",
-          "React Hook Form",
+          "react-hook-form",
           "Playwright",
           "Emotion",
           "MSW",
@@ -107,7 +119,7 @@ export const Projects = () => {
           "Zustand",
           "Axios",
           "React Router",
-          "React Hook Form",
+          "react-hook-form",
           "Emotion",
           "Recharts",
           "MSW",
@@ -142,7 +154,7 @@ export const Projects = () => {
           "Zustand",
           "Axios",
           "React Router",
-          "React Hook Form",
+          "react-hook-form",
           "Emotion",
           "Vite",
         ]}
@@ -158,7 +170,7 @@ export const Projects = () => {
           "Zustand",
           "Axios",
           "React Router",
-          "React Hook Form",
+          "react-hook-form",
           "Emotion",
           "Vite",
         ]}
@@ -174,7 +186,7 @@ export const Projects = () => {
           "Zustand",
           "Axios",
           "React Router",
-          "React Hook Form",
+          "react-hook-form",
           "Emotion",
           "Vite",
         ]}

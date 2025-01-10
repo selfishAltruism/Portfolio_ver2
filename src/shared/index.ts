@@ -1,1 +1,1 @@
-export { stack, mainstack, substack } from "./configs/stack";
+export { stack, mainstack, substack, everstack } from "./configs/stack";

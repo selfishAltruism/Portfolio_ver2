@@ -40,7 +40,7 @@ const Layout = ({ children }: Props) => {
           Kang Min Kyu's Portfolio
         </p>
         {isMobile ? null : (
-          <div style={{ width: "260px" }}>
+          <div style={{ width: "300px" }}>
             <div
               onClick={() => {
                 handleScroll(240);
@@ -60,11 +60,18 @@ const Layout = ({ children }: Props) => {
                 handleScroll(800);
               }}
             >
-              Service
+              Career
             </div>
             <div
               onClick={() => {
                 handleScroll(1280);
+              }}
+            >
+              Service
+            </div>
+            <div
+              onClick={() => {
+                handleScroll(1630);
               }}
             >
               Project

@@ -112,7 +112,13 @@ export const Profile = () => {
       ) : null}
       <Container>
         <Title1>강민규</Title1>
-        <Info>Front-End Developer / officialkyus@gmail.com</Info>
+        <Info>
+          Front-End Developer / officialkyus@gmail.com /{" "}
+          <a href="https://github.com/selfishAltruism/selfishAltruism">
+            Github profile
+          </a>
+        </Info>
+
         <RowBar width={"90%"} />
         <MainContent>안전지대를 넘어서는 개발자 😎</MainContent>
         <SubContent>

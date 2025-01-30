@@ -1,10 +1,11 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import { context } from "src/App";
 
 import "src/shared/style/FirstPage.css";
 
 export const FirstPage = () => {
   const { setPageChangeState } = useContext(context);
+  const clicked = useRef(false);
 
   const [cilckBlock1TopState, setCilckBlock1TopState] = useState("70vh");
   const [cilckBlock1LeftState, setCilckBlock1LeftState] = useState("-1vw");
@@ -31,16 +32,19 @@ export const FirstPage = () => {
   };
 
   const mainClickHandler = () => {
+    if (clicked.current) return;
+    clicked.current = true;
+
     const ele1 = document.getElementById("cilckBlock1");
     const ele1PositionTop = window.scrollY + ele1!.getBoundingClientRect().top;
-    let cilckBlock1TopPosition = ele1PositionTop + 55; // element에 기울기를 줬기 때문에 오차가 생겨 보정값이 필요: 55
+    let cilckBlock1TopPosition = ele1PositionTop + 80; // element에 기울기를 줬기 때문에 오차가 생겨 보정값이 필요: 55
     const ele1PositionLeft =
       window.scrollX + ele1!.getBoundingClientRect().left;
     let cilckBlock1LeftPosition = ele1PositionLeft;
 
     const ele2 = document.getElementById("cilckBlock2");
     const ele2PositionTop = window.scrollY + ele2!.getBoundingClientRect().top;
-    let cilckBlock2TopPosition = ele2PositionTop + 70; // element에 기울기를 줬기 때문에 오차가 생겨 보정값이 필요: 70
+    let cilckBlock2TopPosition = ele2PositionTop + 100; // element에 기울기를 줬기 때문에 오차가 생겨 보정값이 필요: 70
     const ele2PositionLeft =
       window.scrollX + ele2!.getBoundingClientRect().left;
     let cilckBlock2LeftPosition = ele2PositionLeft;
@@ -48,13 +52,13 @@ export const FirstPage = () => {
     let Opacity = 1.0;
 
     const interval = setInterval(() => {
-      cilckBlock1TopPosition = cilckBlock1TopPosition - 1;
-      cilckBlock1LeftPosition = cilckBlock1LeftPosition + 16;
+      cilckBlock1TopPosition = cilckBlock1TopPosition - 2;
+      cilckBlock1LeftPosition = cilckBlock1LeftPosition + 32;
       setCilckBlock1TopState(`${cilckBlock1TopPosition}px`);
       setCilckBlock1LeftState(`${cilckBlock1LeftPosition}px`);
 
-      cilckBlock2TopPosition = cilckBlock2TopPosition - 1;
-      cilckBlock2LeftPosition = cilckBlock2LeftPosition - 14;
+      cilckBlock2TopPosition = cilckBlock2TopPosition - 2;
+      cilckBlock2LeftPosition = cilckBlock2LeftPosition - 28;
       setCilckBlock2TopState(`${cilckBlock2TopPosition}px`);
       setCilckBlock2LeftState(`${cilckBlock2LeftPosition}px`);
 
@@ -66,7 +70,7 @@ export const FirstPage = () => {
     setTimeout(() => {
       clearInterval(interval);
       setPageChangeState!(1);
-    }, 2200);
+    }, 1500);
   };
 
   return (

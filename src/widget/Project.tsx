@@ -13,7 +13,7 @@ type Prop = {
   isSub?: boolean;
   isStudy?: boolean;
   techStack?: string[];
-  site?: boolean;
+  company?: boolean;
 };
 
 export const Project = ({
@@ -25,7 +25,7 @@ export const Project = ({
   isSub,
   isStudy,
   techStack,
-  site,
+  company,
 }: Prop) => {
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
 
@@ -42,7 +42,7 @@ export const Project = ({
     align-items: center;
     justify-content: space-between;
 
-    background-color: ${site
+    background-color: ${company
       ? "#000000"
       : isStudy
       ? "#9b9b9b"
@@ -138,7 +138,7 @@ export const Project = ({
     box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
   `;
 
-  const GitButton = () =>
+  const GitButton = ({ company }: { company?: boolean }) =>
     githubURL === "none" ? (
       <div style={{ width: isHalfScreen ? "58px" : "138px" }}></div>
     ) : (
@@ -147,11 +147,17 @@ export const Project = ({
         color="secondary"
         onClick={() => window.open(githubURL)}
       >
-        {isHalfScreen ? "Git" : "Git Hub"}
+        {company && isHalfScreen
+          ? "Company"
+          : company
+          ? "Company Info"
+          : isHalfScreen
+          ? "Git"
+          : "Git Hub"}
       </StyleGitButton>
     );
 
-  const DetailButton = ({ site }: { site?: boolean }) =>
+  const DetailButton = () =>
     notionURL === "none" ? (
       <div style={{ width: isHalfScreen ? "20px" : "138px" }}></div>
     ) : (
@@ -160,13 +166,7 @@ export const Project = ({
         color="secondary"
         onClick={() => window.open(notionURL)}
       >
-        {site && isHalfScreen
-          ? "Company"
-          : site
-          ? "Company Info"
-          : isHalfScreen
-          ? "Detail"
-          : "Detail Page"}
+        {isHalfScreen ? "Detail" : "Detail Page"}
       </StyleDetailButton>
     );
 
@@ -231,8 +231,8 @@ export const Project = ({
 
         {isMobile ? (
           <ButtonDiv>
-            <GitButton />
-            <DetailButton site={site} />
+            <GitButton company={company} />
+            <DetailButton />
           </ButtonDiv>
         ) : (
           <SubTitle>{content}</SubTitle>
@@ -241,8 +241,8 @@ export const Project = ({
 
       {!isMobile ? (
         <ButtonContainer>
-          <GitButton />
-          <DetailButton site={site} />
+          <GitButton company={company} />
+          <DetailButton />
         </ButtonContainer>
       ) : null}
     </Container>

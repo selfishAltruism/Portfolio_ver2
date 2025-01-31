@@ -29,8 +29,8 @@ export const Projects = () => {
         period="Working, 2024.11.25 ~ Now"
         title="AKEO Web Service"
         content="AI 코딩 교육 웹 서비스, AKEO 내부 마크다운, 코드 에디터, 파일 뷰어 개발"
-        site
-        githubURL="none"
+        company
+        githubURL="https://www.akeoedu.com/"
         notionURL="https://www.akeoedu.com/"
         techStack={[
           "Next.js",
@@ -45,8 +45,8 @@ export const Projects = () => {
         period="2024.08.28 ~ Now"
         title="Fitrace App Service"
         content="운동 도움 IoT 서비스, Fitrace 내부 성능 개선, UI/UX 개발, 영문 버전 개발"
-        site
-        githubURL="none"
+        company
+        githubURL="https://www.fitrace.co.kr/ko/"
         notionURL="https://www.fitrace.co.kr/ko/"
         techStack={[
           "React-Native",
@@ -59,6 +59,7 @@ export const Projects = () => {
         period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
         title="Grid Library Devment"
         content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
+        company
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
         techStack={[

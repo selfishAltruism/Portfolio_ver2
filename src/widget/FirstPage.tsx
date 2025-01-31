@@ -70,13 +70,13 @@ export const FirstPage = () => {
     setTimeout(() => {
       clearInterval(interval);
       setPageChangeState!(1);
-    }, 1500);
+    }, 1700);
   };
 
   return (
     <div className="titleBody" onClick={mainClickHandler}>
       <div id="container" style={containerStyle}>
-        <div id="titleText2">Welcome!</div>
+        <div id="titleText2">Welcome.</div>
         {/*         <div id="titleText2">Kang MinKyu's Portfolio</div> */}
         <div id="titleText1">
           프론트 엔드 개발자, <span className="borderText">강민규</span>{" "}

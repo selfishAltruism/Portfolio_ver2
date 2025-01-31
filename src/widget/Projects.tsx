@@ -23,7 +23,7 @@ export const Projects = () => {
 
   return (
     <Container>
-      <Title1>Career History</Title1>
+      <Title1>Career Log</Title1>
       <RowBar width="100%" />
       <Project
         period="Working, 2024.11.25 ~ Now"
@@ -57,7 +57,7 @@ export const Projects = () => {
       />
       <Project
         period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
-        title="Grid Library Development"
+        title="Grid Library Devment"
         content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
         githubURL="none"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
@@ -70,7 +70,7 @@ export const Projects = () => {
           "JavaScript",
         ]}
       />
-      <Title1>Service Develop Record</Title1>
+      <Title1>Service Dev Log</Title1>
       <RowBar width="100%" />
       <Project
         period="2024.05.13 ~ Now"
@@ -106,7 +106,7 @@ export const Projects = () => {
         ]}
       />
 
-      <Title1>Project Develop Record</Title1>
+      <Title1>Project Dev Log</Title1>
       <RowBar width="100%" />
       <Project
         period="During Capstone, 2023.02.13 ~ 24.06.21"
@@ -228,7 +228,7 @@ export const Projects = () => {
           <div style={{ height: "15px" }}></div>
           <Project
             period="During Internship, 2023.11.21 ~ 2023.11.29"
-            title="Severless Social Login Development"
+            title="Severless Social Login Devment"
             content="NextAuth.js를 활용하여 Kakao, Google, Naver 계정으로 로그인 가능한 Serverless Social Login System 구현"
             githubURL="none"
             notionURL="https://officialkyus.notion.site/Sever-Less-Social-Login-458b881bf2984563ac951bb4f9d7e9ba?pvs=4"
@@ -237,7 +237,7 @@ export const Projects = () => {
           />
           <Project
             period="During Army, 2023.02.21 ~ 2023.02.25"
-            title="ShipList Development"
+            title="ShipList Devment"
             content="군대 내부에서 사용되는 선박일지 프로그램 개발"
             githubURL="https://github.com/selfishAltruism/ShipList"
             notionURL="https://www.notion.so/officialkyus/ShipList-4fc012ceae984959a73ca235dc42d444"
@@ -246,7 +246,7 @@ export const Projects = () => {
           />
           <Project
             period="During Hackathon, 2023.11.12 ~ 2023.11.13"
-            title="Talent Save Service Development"
+            title="Talent Save Service Devment"
             content="대학생 사회적 안전망 구축을 위한 학비 투자 Platform Prototype Front-end 개발"
             githubURL="https://github.com/UniD3-Hackathon-Team2/TalentStock-fe"
             notionURL="https://www.notion.so/officialkyus/Talent-Save-bba1f23dbd2c4d0989d7f91f94a1b02a"
@@ -272,7 +272,7 @@ export const Projects = () => {
         {seeMore ? "See Simply.." : "See More.."}
       </SeeMoreButton>
 
-      <Title1>Study Record</Title1>
+      <Title1>Study Log</Title1>
       <RowBar width="100%" />
       <Project
         period="2024.04.20 ~ 2024.04.24"

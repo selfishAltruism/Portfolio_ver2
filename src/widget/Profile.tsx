@@ -115,7 +115,7 @@ export const Profile = () => {
         <Info>
           Front-End Developer / officialkyus@gmail.com /{" "}
           <a href="https://github.com/selfishAltruism/selfishAltruism">
-            Github profile
+            Github Profile
           </a>
         </Info>
 

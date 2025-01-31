@@ -42,12 +42,18 @@ export const Project = ({
     align-items: center;
     justify-content: space-between;
 
-    background-color: ${isStudy ? "#9b9b9b" : isSub ? "#6d6d6d" : "#434343"};
+    background-color: ${site
+      ? "#000000"
+      : isStudy
+      ? "#9b9b9b"
+      : isSub
+      ? "#6d6d6d"
+      : "#434343"};
 
     margin-bottom: ${isMobile ? "7px" : "10px"};
 
     border-radius: 5px;
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+    box-shadow: 1px 7px 7px 0 rgb(0 0 0 / 60%);
   `;
 
   const Content = styled.div`
@@ -191,8 +197,8 @@ export const Project = ({
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
     height: 16px;
 
     border-radius: 1px;
@@ -208,10 +214,6 @@ export const Project = ({
     border: 2px solid white;
   `;
 
-  const SmallStack = styled(Stack)`
-    font-size: 10px;
-  `;
-
   return (
     <Container>
       <ColumnBar height="84%" />
@@ -221,13 +223,9 @@ export const Project = ({
 
         {!isHalfScreen && techStack ? (
           <Stacks>
-            {techStack.map((tech) => {
-              return tech.length >= 12 ? (
-                <SmallStack>{tech}</SmallStack>
-              ) : (
-                <Stack>{tech}</Stack>
-              );
-            })}
+            {techStack.map((tech) => (
+              <Stack>{tech}</Stack>
+            ))}
           </Stacks>
         ) : null}
 

@@ -270,7 +270,7 @@ export const Projects = () => {
           setSeeMore(!seeMore);
         }}
       >
-        {seeMore ? "See Simply.." : "See More.."}
+        {seeMore ? "See simply" : "See more"}
       </SeeMoreButton>
 
       <Title1>Study Log</Title1>
@@ -322,7 +322,7 @@ export const Projects = () => {
           setSeeMoreStudy(!seeMoreStudy);
         }}
       >
-        {seeMoreStudy ? "See Simply.." : "See More.."}
+        {seeMoreStudy ? "See simply" : "See more"}
       </SeeMoreButton>
       <div style={{ height: "40px" }}></div>
     </Container>
@@ -330,9 +330,13 @@ export const Projects = () => {
 };
 
 const SeeMoreButton = styled.div`
+  &:hover {
+    font-weight: bold;
+    color: #000000;
+  }
+
   color: #494949;
   width: 100%;
   text-align: right;
   font-size: 20px;
-  font-weight: bold;
 `;

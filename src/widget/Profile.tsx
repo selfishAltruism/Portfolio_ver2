@@ -55,9 +55,13 @@ export const Profile = () => {
   `;
 
   const SeeMoreButton = styled.div`
+    &:hover {
+      font-weight: bold;
+      color: #000000;
+    }
+
     color: #494949;
     font-size: 20px;
-    font-weight: bold;
 
     position: absolute;
     top: 42px;
@@ -137,7 +141,7 @@ export const Profile = () => {
                 onStackDetail(true);
               }}
             >
-              See Detail..
+              🌟See detail🌟
             </SeeMoreButton>
             <Canvas
               camera={{ position: [0, 0, 15], fov: 43 }} // 카메라 위치와 fov 조정
@@ -156,7 +160,7 @@ export const Profile = () => {
           <SubElement>
             <Title1>Resume</Title1>
             <a href="/경력기술서_강민규.pdf" download="경력기술서_강민규.pdf">
-              <SeeMoreButton>PDF Download..</SeeMoreButton>
+              <SeeMoreButton>PDF download</SeeMoreButton>
             </a>
 
             <RowBar width={"100%"} />

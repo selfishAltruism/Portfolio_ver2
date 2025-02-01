@@ -1,4 +1,4 @@
-export const mainstack = [
+export const mainLanuage = [
   {
     name: "Java Script",
     href: "https://ecma-international.org/",
@@ -7,12 +7,18 @@ export const mainstack = [
     name: "Type Script",
     href: "https://www.typescriptlang.org/docs/",
   },
+];
+
+export const mainFramework = [
   {
     name: "React",
     href: "https://ko.legacy.reactjs.org/docs/getting-started.html",
   },
   { name: "Next.js", href: "https://nextjs.org/docs", component: "Stack" },
   { name: "React Native", href: "" },
+];
+
+export const mainLibrary = [
   { name: "ESLint", href: "" },
   {
     name: "Axios",
@@ -31,14 +37,26 @@ export const mainstack = [
     href: "https://emotion.sh/docs/introduction",
   },
   { name: "Tailwind", href: "https://tailwindcss.com", component: "SubStack" },
+];
 
+export const subLanuage = [
   {
-    name: "FSD Arch",
-    href: "https://www.youtube.com/watch?v=64Fx5Y1gEOA",
+    name: "C++",
+    href: "https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170",
+  },
+  {
+    name: "Python",
+    href: "",
+  },
+  {
+    name: "Dart",
+    href: "",
   },
 ];
 
-export const substack = [
+export const subFramework = [{ name: "Flutter", href: "" }];
+
+export const subLibrary = [
   { name: "Recoil", href: "" },
   {
     name: "Redux",
@@ -49,17 +67,15 @@ export const substack = [
     name: "react-hook-form",
     href: "https://react-hook-form.com/get-started",
   },
-  {
-    name: "C & C++",
-    href: "https://learn.microsoft.com/ko-kr/cpp/c-language/?view=msvc-170",
-  },
   { name: "Tiptap", href: "" },
   { name: "react-doc-viewer", href: "" },
   { name: "RN-async-storage", href: "" },
   { name: "RN-ble-manager", href: "" },
 ];
 
-export const everstack = [
+export const evenLanuage = [];
+export const evenFramework = [];
+export const evenLibrary = [
   { name: "PDF.js", href: "" },
   {
     name: "MobX",
@@ -86,4 +102,12 @@ export const everstack = [
   { name: "RN-sensors", href: "" },
 ];
 
-export const stack = [...mainstack, ...substack, ...everstack];
+export const stack = [
+  ...mainLanuage,
+  ...mainFramework,
+  ...mainLibrary,
+  ...subLanuage,
+  ...subFramework,
+  ...subLibrary,
+  ...evenLibrary,
+];

@@ -37,7 +37,7 @@ const Layout = ({ children }: Props) => {
             handleScroll(0);
           }}
         >
-          Kang Min Kyu's Portfolio
+          MinKyu Kang's Portfolio
         </p>
         {isMobile ? null : (
           <div style={{ width: "300px" }}>

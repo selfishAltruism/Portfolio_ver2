@@ -8,8 +8,6 @@
   width: 100%;
   height: 100%;
 
-  background-color: #434343;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +17,6 @@
 #titleText1 {
   z-index: 101;
 
-  color: rgb(255, 255, 255);
   font-size: 25px;
 
   margin-top: -10px;
@@ -28,7 +25,6 @@
 #titleText2 {
   z-index: 101;
 
-  color: white;
   font-size: 105px;
   font-weight: bold;
 
@@ -42,7 +38,7 @@
 #block {
   z-index: 101;
 
-  height: 20vh;
+  height: 10vh;
 }
 
 #cilckBlock1 {
@@ -57,9 +53,9 @@
 
   color: black;
   font-size: 6vh;
+  box-shadow: 1px 7px 7px 0 rgb(0 0 0 / 60%);
 
   overflow: hidden;
-  box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
 }
 
 #cilckBlock2 {
@@ -74,9 +70,9 @@
 
   color: black;
   font-size: 6vh;
+  box-shadow: 1px 7px 7px 0 rgb(0 0 0 / 60%);
 
   overflow: hidden;
-  box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
 }
 
 #gitLink {
@@ -86,7 +82,6 @@
   bottom: 0px;
 
   width: 100vw;
-  height: 7vh;
 
   color: #828282;
 }

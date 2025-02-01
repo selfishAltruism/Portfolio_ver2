@@ -6,8 +6,8 @@ export const RowBar = ({ width }: { width: string }) => {
     height: 2px;
     background-color: #434343;
 
-    margin-top: 3px;
-    margin-bottom: 13px;
+    margin-top: 7px;
+    margin-bottom: 15px;
   `;
   return <Bar />;
 };

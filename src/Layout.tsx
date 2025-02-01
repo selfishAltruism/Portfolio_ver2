@@ -107,19 +107,18 @@ const PortfolioTitle = styled.div`
   width: 100vw;
   height: 45px;
 
-  background-color: #ffffff;
+  background-color: #000000;
   font-weight: bold;
 
-  color: #434343;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
-
-  box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+  box-shadow: 1px 7px 7px 0 rgb(0 0 0 / 60%);
+  padding-top: 3px;
 
   > div {
     font-size: 12px;
-
-    color: #646464;
+    color: #ffffff;
 
     position: absolute;
     right: 50px;

@@ -2,8 +2,6 @@ import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 
-import { ColumnBar } from "src/entities";
-
 type Prop = {
   period: string;
   title: string;
@@ -13,7 +11,7 @@ type Prop = {
   isSub?: boolean;
   isStudy?: boolean;
   techStack?: string[];
-  site?: boolean;
+  company?: boolean;
 };
 
 export const Project = ({
@@ -25,7 +23,7 @@ export const Project = ({
   isSub,
   isStudy,
   techStack,
-  site,
+  company,
 }: Prop) => {
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
 
@@ -34,20 +32,36 @@ export const Project = ({
   });
 
   const Container = styled.div`
-    width: 100%;
-    height: ${isMobile ? "90px" : "120px"};
+    & {
+      transition: border-radius 0.2s ease-in-out;
+    }
+    &:hover {
+      border-radius: 15px;
+    }
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 13px;
+
+    width: calc(100% - 13px);
+    height: ${isMobile ? "90px" : "none"};
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    background-color: ${isStudy ? "#9b9b9b" : isSub ? "#6d6d6d" : "#434343"};
+    background-color: ${company
+      ? "#000000"
+      : isStudy
+      ? "#9b9b9b"
+      : isSub
+      ? "#6d6d6d"
+      : "#434343"};
 
-    margin-bottom: ${isMobile ? "7px" : "10px"};
+    margin-bottom: ${isMobile ? "7px" : "17px"};
 
-    border-radius: 5px;
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+    box-shadow: 1px 7px 7px 0 rgb(0 0 0 / 60%);
   `;
 
   const Content = styled.div`
@@ -67,9 +81,9 @@ export const Project = ({
     color: white;
     opacity: 0.8;
 
-    margin-bottom: -2px;
+    margin-bottom: 0px;
 
-    font-size: ${isMobile ? "12px" : "16px"};
+    font-size: ${isMobile ? "12px" : "14px"};
   `;
 
   const Title = styled.span`
@@ -77,13 +91,19 @@ export const Project = ({
     font-size: ${isMobile ? "17px" : "22px"};
 
     font-weight: bold;
+    margin-bottom: 1px;
   `;
 
   const SubTitle = styled.span`
     font-size: ${isMobile ? "17px" : "14px"};
     color: white;
 
-    margin-top: 8px;
+    margin-top: 18px;
+
+    border-left: 2px solid white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
   `;
 
   const StyleGitButton = styled(Button)`
@@ -92,18 +112,20 @@ export const Project = ({
         border-color: white;
       }`
       : `&:hover {
-      box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 60%);
-      margin-top: -4px;
-      margin-bottom: 4px;e;
-      border-color: white;
+        border-color: white;
+        border-radius: 12px;
     }`}
 
-    width: ${isHalfScreen ? "100px" : "200px"};
-    height: ${isHalfScreen ? "28px" : ""};
+    & {
+      transition: border-radius 0.2s ease-in-out;
+    }
+
+    width: ${isHalfScreen ? "150px" : "200px"};
+    height: ${isHalfScreen ? "34px" : "40px"};
     color: white;
     margin-left: ${isMobile ? "8px" : ""};
     border-color: white;
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+    border-radius: 0px;
   `;
 
   const StyleDetailButton = styled(Button)`
@@ -113,26 +135,29 @@ export const Project = ({
         border-color: white;
       }`
       : `&:hover {
-      box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 60%);
-      margin-top: ${isMobile ? "-4px" : "3px"};
-      margin-bottom: 4px;
-      background-color: white;
-      border-color: white;
+        background-color: white;
+        border-color: white;
+        border-radius: 12px;
     }`}
 
-    width: ${isHalfScreen ? "100px" : "200px"};
-    height: ${isHalfScreen ? "28px" : ""};
+    & {
+      transition: border-radius 0.2s ease-in-out;
+    }
+
+    width: ${isHalfScreen ? "150px" : "200px"};
+    height: ${isHalfScreen ? "34px" : "40px"};
     color: #434343;
     margin-left: ${isMobile ? "8px" : ""};
     margin-right: ${isMobile ? "20px" : ""};
-    margin-top: ${isMobile ? "" : "7px"};
+    margin-top: ${isMobile || githubURL === "none" ? "" : "17px"};
 
     background-color: white;
     border-color: white;
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+
+    border-radius: 0px;
   `;
 
-  const GitButton = () =>
+  const GitButton = ({ company }: { company?: boolean }) =>
     githubURL === "none" ? (
       <div style={{ width: isHalfScreen ? "58px" : "138px" }}></div>
     ) : (
@@ -141,11 +166,17 @@ export const Project = ({
         color="secondary"
         onClick={() => window.open(githubURL)}
       >
-        {isHalfScreen ? "Git" : "Git Hub"}
+        {company && isHalfScreen
+          ? "Company"
+          : company
+          ? "Company Info"
+          : isHalfScreen
+          ? "Git"
+          : "Git Hub"}
       </StyleGitButton>
     );
 
-  const DetailButton = ({ site }: { site?: boolean }) =>
+  const DetailButton = () =>
     notionURL === "none" ? (
       <div style={{ width: isHalfScreen ? "20px" : "138px" }}></div>
     ) : (
@@ -154,13 +185,7 @@ export const Project = ({
         color="secondary"
         onClick={() => window.open(notionURL)}
       >
-        {site && isHalfScreen
-          ? "Company"
-          : site
-          ? "Company Info"
-          : isHalfScreen
-          ? "Detail"
-          : "Detail Page"}
+        {isHalfScreen ? "Detail" : "Detail Page"}
       </StyleDetailButton>
     );
 
@@ -191,11 +216,13 @@ export const Project = ({
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 80px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-top: 2px;
     height: 16px;
 
-    border-radius: 1px;
+    // border-radius: 1px;
     margin-right: 5px;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -208,33 +235,24 @@ export const Project = ({
     border: 2px solid white;
   `;
 
-  const SmallStack = styled(Stack)`
-    font-size: 10px;
-  `;
-
   return (
     <Container>
-      <ColumnBar height="84%" />
       <Content>
         <Period>{period}</Period>
         <Title>{title}</Title>
 
         {!isHalfScreen && techStack ? (
           <Stacks>
-            {techStack.map((tech) => {
-              return tech.length >= 12 ? (
-                <SmallStack>{tech}</SmallStack>
-              ) : (
-                <Stack>{tech}</Stack>
-              );
-            })}
+            {techStack.map((tech) => (
+              <Stack>{tech}</Stack>
+            ))}
           </Stacks>
         ) : null}
 
         {isMobile ? (
           <ButtonDiv>
-            <GitButton />
-            <DetailButton site={site} />
+            <GitButton company={company} />
+            <DetailButton />
           </ButtonDiv>
         ) : (
           <SubTitle>{content}</SubTitle>
@@ -243,8 +261,8 @@ export const Project = ({
 
       {!isMobile ? (
         <ButtonContainer>
-          <GitButton />
-          <DetailButton site={site} />
+          <GitButton company={company} />
+          <DetailButton />
         </ButtonContainer>
       ) : null}
     </Container>

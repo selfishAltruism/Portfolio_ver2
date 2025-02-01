@@ -25,7 +25,7 @@ export const Profile = () => {
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
 
   const Container = styled.div`
-    margin-top: ${isHalfScreen ? "auto" : "-60px"};
+    margin-top: ${isHalfScreen ? "auto" : "-40px"};
     width: 90vw;
     height: ${isHalfScreen ? "auto" : "93vh"};
 
@@ -96,6 +96,7 @@ export const Profile = () => {
     > span {
       font-weight: normal;
     }
+    margin-top: 8px;
   `;
 
   return (
@@ -176,8 +177,8 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 2900 : 2500);
               }}
             >
-              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW AI 창업 아이디어 경진대회
-              최우수상 <span> IT-DA Project</span>
+              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW 창업 경진대회 최우수상{" "}
+              <span> IT-DA Project</span>
             </Title2>
             <Title2>💻 2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
             <SubContent>2023년</SubContent>
@@ -195,7 +196,7 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 중앙대학교 ICT 위원회 프론트엔드 개발 팀장
+              💻 중앙대학교 ICT 위원회 : 프론트엔드 개발 팀장
               <span> CAUSW Web Service</span>
             </Title2>
             <Title2
@@ -203,7 +204,7 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 스타트업 Fitrace : 앱 개발 직무
+              💻 스타트업 Fity : 앱 개발 직무
               <span> Fitrace App Service</span>
             </Title2>
             <Title2

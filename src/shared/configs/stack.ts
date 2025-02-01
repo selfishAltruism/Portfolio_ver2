@@ -19,7 +19,6 @@ export const mainFramework = [
 ];
 
 export const mainLibrary = [
-  { name: "ESLint", href: "" },
   {
     name: "Axios",
     href: "https://axios-http.com/kr/docs/intro",
@@ -32,6 +31,7 @@ export const mainLibrary = [
     name: "React Router",
     href: "https://reactrouter.com/en/main",
   },
+  { name: "ESLint", href: "" },
   {
     name: "Emotion",
     href: "https://emotion.sh/docs/introduction",
@@ -100,14 +100,16 @@ export const evenLibrary = [
   { name: "MSW", href: "https://mswjs.io/" },
   { name: "RN-wifi-reborn", href: "" },
   { name: "RN-sensors", href: "" },
+  { name: "Firebase", href: "" },
+  { name: "Firestore DB", href: "" },
 ];
 
 export const stack = [
   ...mainLanuage,
   ...mainFramework,
-  ...mainLibrary,
   ...subLanuage,
   ...subFramework,
+  ...mainLibrary,
   ...subLibrary,
   ...evenLibrary,
 ];

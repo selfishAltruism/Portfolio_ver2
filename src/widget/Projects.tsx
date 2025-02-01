@@ -28,10 +28,16 @@ export const Projects = () => {
       <Project
         period="Working, 2024.11.25 ~ Now"
         title="AKEO Web Service"
-        content="AI 코딩 교육 웹 서비스, AKEO 내부 마크다운, 코드 에디터, 파일 뷰어 개발"
+        content={
+          <span>
+            AI 코딩 교육 웹 서비스, AKEO
+            <br /> Markdown & 코드 에디터 개발, 파일 뷰어 개발, 웹 서비스 내부
+            렌더링 개선
+          </span>
+        }
         company
         githubURL="https://www.akeoedu.com/"
-        notionURL="https://www.akeoedu.com/"
+        notionURL="https://officialkyus.notion.site/AKEO-Service-Dev-Log-18b48a0856d4807eb047cfd137ca18db?pvs=4"
         techStack={[
           "Next.js",
           "Zustand",
@@ -42,23 +48,29 @@ export const Projects = () => {
         ]}
       />
       <Project
-        period="2024.08.28 ~ Now"
+        period="2024.09.28 ~ Now"
         title="Fitrace App Service"
-        content="운동 도움 IoT 서비스, Fitrace 내부 성능 개선, UI/UX 개발, 영문 버전 개발"
+        content={
+          <span>
+            운동 도움 IoT 서비스, Fitrace <br />앱 성능 개선, 운동 데이터 시각화
+            및 알고리즘 개발, UI/UX 개발, 영문 버전 개발
+          </span>
+        }
         company
         githubURL="https://www.fitrace.co.kr/ko/"
-        notionURL="https://www.fitrace.co.kr/ko/"
+        notionURL="https://officialkyus.notion.site/Fitrace-Service-Dev-Log-18b48a0856d48026af2beb4dc3ec6450?pvs=4"
         techStack={[
           "React-Native",
           "Recoil",
           "RN-async-storage",
           "RN-ble-manager",
+          "Python 데이터 시각화",
         ]}
       />
       <Project
         period="During Internship, 2023.09.08 ~ 2023.11.10, 2023.12.04 ~ 2023.12.20"
         title="Grid Library Devment"
-        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
+        content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid library 개발"
         company
         githubURL="https://www.bizpeer.co.kr/main/main.php"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
@@ -110,7 +122,7 @@ export const Projects = () => {
       <Title1>Project Dev Log</Title1>
       <RowBar width="100%" />
       <Project
-        period="During Capstone, 2023.02.13 ~ 24.06.21"
+        period="During Capstone, 2024.02.13 ~ 24.06.21"
         title="Dyslexia Zoo Project"
         content="난독증 소아 치료 웹 게임 서비스, Web Front-end 개발"
         githubURL="https://github.com/Capstone-team02-Dyslexia-Cure-Service/Dyslexia_Zoo_FE"
@@ -128,7 +140,7 @@ export const Projects = () => {
         ]}
       />
       <Project
-        period="During KB Future Finance A.I. Challenge, 2023.07.24 ~ 24.08.27"
+        period="During KB Future Finance A.I. Challenge, 2024.07.24 ~ 24.08.27"
         title="KB-HI"
         content="민감한 개인 데이터를 안전하게 처리하고 보호함과 동시에 기업에서 데이터를 Training 및 Inference에 활용할 수 있도록 지원하는 AI 보안 인프라"
         githubURL="https://github.com/KB-HI-Service/KB-HI-Service-FE"
@@ -145,7 +157,7 @@ export const Projects = () => {
         ]}
       />
       <Project
-        period="2023.07.01 ~ Now"
+        period="2024.07.01 ~ 2024.12.31"
         title="Prototyne Project"
         content="기업과 소비자를 잇는 시제품 소비자 반응 테스트 서비스, Front-end 팀장"
         githubURL="https://github.com/PROTOTYNE"
@@ -158,6 +170,41 @@ export const Projects = () => {
           "react-hook-form",
           "Emotion",
           "Vite",
+        ]}
+      />
+      <Project
+        period="2024.09.01 ~ 2024.11.30"
+        title="YagSa Project"
+        content={
+          <span>
+            모바일 앱 개발 과목 팀 프로젝트: 약물 관리 앱, 약사 개발
+            <br />
+            알림, 사진 촬영 및 관리
+          </span>
+        }
+        githubURL="https://github.com/YagSa/YagSa-FE"
+        notionURL="https://officialkyus.notion.site/YagSa-Log-14b48a0856d480f49525ff002395018a?pvs=4"
+        techStack={["Flutter", "Dart", "Firebase", "Firestore DB"]}
+      />
+      <Project
+        period="2024.09.01 ~ 2024.11.30"
+        title="Sensor-Based-Positioning-App Project"
+        content={
+          <span>
+            융합 IoT 프로젝트 과목 팀 프로젝트: 모바일 센서 기반 데이터 수집 &
+            위치 추정 앱 개발
+            <br />
+            모바일 블루투스, 와이파이, IMU 센서 활용
+          </span>
+        }
+        githubURL="https://github.com/selfishAltruism/Sensor-Based-Positioning-App"
+        notionURL="none"
+        techStack={[
+          "React Native",
+          "RN-async-storage",
+          "RN-ble-manager",
+          "RN-wifi-reborn",
+          "RN-sensors",
         ]}
       />
       <Project
@@ -201,24 +248,11 @@ export const Projects = () => {
         isSub={true}
         techStack={["Ubuntu", "C", "PintOS"]}
       />
-      <Project
-        period="2023.11.25 ~ Now"
-        title="Portfolio Ver II"
-        content="현재 Page, 자기소개와 개발 기록을 포함한 PC, Mobile 반응형 Web 개발"
-        githubURL="https://github.com/selfishAltruism/Portfolio_ver2"
-        notionURL="https://www.notion.so/officialkyus/Portfolio-53c3fa8d76d64c3a825b789d66978a73"
-        isSub={true}
-        techStack={[
-          "React",
-          "React Context",
-          "TypeScripts",
-          "react-responsive",
-        ]}
-      />
+
       <Project
         period="2021.06.23 ~ 2021.12.20"
         title="IT_DA Project"
-        content="대학생 카페 공부를 돕는 카페 빈자리 공유 서비스 개발"
+        content="대학생 카페 공부를 돕는 카페 빈자리 공유 웹 서비스 개발"
         githubURL="https://github.com/selfishAltruism/IT_DA_web_front"
         notionURL="https://officialkyus.notion.site/IT_DA-0977623d68144f3fbb70cd32f5fa7977?pvs=4"
         isSub={true}
@@ -227,6 +261,20 @@ export const Projects = () => {
       {seeMore ? (
         <>
           <div style={{ height: "15px" }}></div>
+          <Project
+            period="2023.11.25 ~ Now"
+            title="Portfolio Ver II"
+            content="현재 Page, 자기소개와 개발 기록을 포함한 PC, Mobile 반응형 Web 개발"
+            githubURL="https://github.com/selfishAltruism/Portfolio_ver2"
+            notionURL="https://www.notion.so/officialkyus/Portfolio-53c3fa8d76d64c3a825b789d66978a73"
+            isSub={true}
+            techStack={[
+              "React",
+              "React Context",
+              "TypeScripts",
+              "react-responsive",
+            ]}
+          />
           <Project
             period="During Internship, 2023.11.21 ~ 2023.11.29"
             title="Severless Social Login Devment"
@@ -270,7 +318,7 @@ export const Projects = () => {
           setSeeMore(!seeMore);
         }}
       >
-        {seeMore ? "See Simply.." : "See More.."}
+        {seeMore ? "See simply" : "See more"}
       </SeeMoreButton>
 
       <Title1>Study Log</Title1>
@@ -322,7 +370,7 @@ export const Projects = () => {
           setSeeMoreStudy(!seeMoreStudy);
         }}
       >
-        {seeMoreStudy ? "See Simply.." : "See More.."}
+        {seeMoreStudy ? "See simply" : "See more"}
       </SeeMoreButton>
       <div style={{ height: "40px" }}></div>
     </Container>
@@ -330,9 +378,13 @@ export const Projects = () => {
 };
 
 const SeeMoreButton = styled.div`
+  &:hover {
+    font-weight: bold;
+    color: #000000;
+  }
+
   color: #494949;
   width: 100%;
   text-align: right;
   font-size: 20px;
-  font-weight: bold;
 `;

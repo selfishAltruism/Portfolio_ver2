@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 type Prop = {
   period: string;
   title: string;
-  content: string;
+  content: JSX.Element | string;
   notionURL: string;
   githubURL: string;
   isSub?: boolean;

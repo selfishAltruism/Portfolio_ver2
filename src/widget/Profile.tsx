@@ -25,7 +25,7 @@ export const Profile = () => {
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
 
   const Container = styled.div`
-    margin-top: ${isHalfScreen ? "auto" : "-60px"};
+    margin-top: ${isHalfScreen ? "auto" : "-40px"};
     width: 90vw;
     height: ${isHalfScreen ? "auto" : "93vh"};
 
@@ -55,9 +55,13 @@ export const Profile = () => {
   `;
 
   const SeeMoreButton = styled.div`
+    &:hover {
+      font-weight: bold;
+      color: #000000;
+    }
+
     color: #494949;
     font-size: 20px;
-    font-weight: bold;
 
     position: absolute;
     top: 42px;
@@ -92,6 +96,7 @@ export const Profile = () => {
     > span {
       font-weight: normal;
     }
+    margin-top: 8px;
   `;
 
   return (
@@ -137,7 +142,7 @@ export const Profile = () => {
                 onStackDetail(true);
               }}
             >
-              See Detail..
+              🌟See detail🌟
             </SeeMoreButton>
             <Canvas
               camera={{ position: [0, 0, 15], fov: 43 }} // 카메라 위치와 fov 조정
@@ -156,7 +161,7 @@ export const Profile = () => {
           <SubElement>
             <Title1>Resume</Title1>
             <a href="/경력기술서_강민규.pdf" download="경력기술서_강민규.pdf">
-              <SeeMoreButton>PDF Download..</SeeMoreButton>
+              <SeeMoreButton>PDF download</SeeMoreButton>
             </a>
 
             <RowBar width={"100%"} />
@@ -172,8 +177,8 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 2900 : 2500);
               }}
             >
-              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW AI 창업 아이디어 경진대회
-              최우수상 <span> IT-DA Project</span>
+              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW 창업 경진대회 최우수상{" "}
+              <span> IT-DA Project</span>
             </Title2>
             <Title2>💻 2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
             <SubContent>2023년</SubContent>
@@ -191,7 +196,7 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 중앙대학교 ICT 위원회 프론트엔드 개발 팀장
+              💻 중앙대학교 ICT 위원회 : 프론트엔드 개발 팀장
               <span> CAUSW Web Service</span>
             </Title2>
             <Title2
@@ -199,7 +204,7 @@ export const Profile = () => {
                 handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 스타트업 Fitrace : 앱 개발 직무
+              💻 스타트업 Fity : 앱 개발 직무
               <span> Fitrace App Service</span>
             </Title2>
             <Title2

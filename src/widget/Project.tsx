@@ -2,8 +2,6 @@ import Button from "@mui/material/Button";
 import styled from "@emotion/styled";
 import { useMediaQuery } from "react-responsive";
 
-import { ColumnBar } from "src/entities";
-
 type Prop = {
   period: string;
   title: string;
@@ -34,8 +32,19 @@ export const Project = ({
   });
 
   const Container = styled.div`
-    width: 100%;
-    height: ${isMobile ? "90px" : "120px"};
+    & {
+      transition: border-radius 0.2s ease-in-out;
+    }
+    &:hover {
+      border-radius: 15px;
+    }
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 13px;
+
+    width: calc(100% - 13px);
+    height: ${isMobile ? "90px" : "none"};
 
     display: flex;
     flex-direction: row;
@@ -50,9 +59,8 @@ export const Project = ({
       ? "#6d6d6d"
       : "#434343"};
 
-    margin-bottom: ${isMobile ? "7px" : "10px"};
+    margin-bottom: ${isMobile ? "7px" : "17px"};
 
-    border-radius: 5px;
     box-shadow: 1px 7px 7px 0 rgb(0 0 0 / 60%);
   `;
 
@@ -73,9 +81,9 @@ export const Project = ({
     color: white;
     opacity: 0.8;
 
-    margin-bottom: -2px;
+    margin-bottom: 0px;
 
-    font-size: ${isMobile ? "12px" : "16px"};
+    font-size: ${isMobile ? "12px" : "14px"};
   `;
 
   const Title = styled.span`
@@ -83,13 +91,19 @@ export const Project = ({
     font-size: ${isMobile ? "17px" : "22px"};
 
     font-weight: bold;
+    margin-bottom: 1px;
   `;
 
   const SubTitle = styled.span`
     font-size: ${isMobile ? "17px" : "14px"};
     color: white;
 
-    margin-top: 8px;
+    margin-top: 18px;
+
+    border-left: 2px solid white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
   `;
 
   const StyleGitButton = styled(Button)`
@@ -98,18 +112,20 @@ export const Project = ({
         border-color: white;
       }`
       : `&:hover {
-      box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 60%);
-      margin-top: -4px;
-      margin-bottom: 4px;e;
-      border-color: white;
+        border-color: white;
+        border-radius: 12px;
     }`}
 
-    width: ${isHalfScreen ? "100px" : "200px"};
-    height: ${isHalfScreen ? "28px" : ""};
+    & {
+      transition: border-radius 0.2s ease-in-out;
+    }
+
+    width: ${isHalfScreen ? "150px" : "200px"};
+    height: ${isHalfScreen ? "34px" : "40px"};
     color: white;
     margin-left: ${isMobile ? "8px" : ""};
     border-color: white;
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+    border-radius: 0px;
   `;
 
   const StyleDetailButton = styled(Button)`
@@ -119,23 +135,26 @@ export const Project = ({
         border-color: white;
       }`
       : `&:hover {
-      box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 60%);
-      margin-top: ${isMobile ? "-4px" : "3px"};
-      margin-bottom: 4px;
-      background-color: white;
-      border-color: white;
+        background-color: white;
+        border-color: white;
+        border-radius: 12px;
     }`}
 
-    width: ${isHalfScreen ? "100px" : "200px"};
-    height: ${isHalfScreen ? "28px" : ""};
+    & {
+      transition: border-radius 0.2s ease-in-out;
+    }
+
+    width: ${isHalfScreen ? "150px" : "200px"};
+    height: ${isHalfScreen ? "34px" : "40px"};
     color: #434343;
     margin-left: ${isMobile ? "8px" : ""};
     margin-right: ${isMobile ? "20px" : ""};
-    margin-top: ${isMobile ? "" : "7px"};
+    margin-top: ${isMobile || githubURL === "none" ? "" : "17px"};
 
     background-color: white;
     border-color: white;
-    box-shadow: 1px 3px 3px 0 rgb(0 0 0 / 60%);
+
+    border-radius: 0px;
   `;
 
   const GitButton = ({ company }: { company?: boolean }) =>
@@ -197,11 +216,13 @@ export const Project = ({
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-top: 2px;
     height: 16px;
 
-    border-radius: 1px;
+    // border-radius: 1px;
     margin-right: 5px;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -216,7 +237,6 @@ export const Project = ({
 
   return (
     <Container>
-      <ColumnBar height="84%" />
       <Content>
         <Period>{period}</Period>
         <Title>{title}</Title>

@@ -60,7 +60,7 @@ export const Projects = () => {
         title="Grid Library Devment"
         content="타사 Grid Library 사용으로 인한 고정 지출 해소와 기능 및 디자인 개선을 위한 다기능 Grid 개발"
         company
-        githubURL="none"
+        githubURL="https://www.bizpeer.co.kr/main/main.php"
         notionURL="https://officialkyus.notion.site/Grid-Project-69e19185b25e47c9be9c6288495f5f08?pvs=4"
         techStack={[
           "Redux",

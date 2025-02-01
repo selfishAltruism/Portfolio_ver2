@@ -78,7 +78,7 @@ const Layout = ({ children }: Props) => {
             </div>
             <div
               onClick={() => {
-                handleScroll(2500);
+                handleScroll(3500);
               }}
             >
               Study

@@ -159,28 +159,43 @@ export const Profile = () => {
             </Canvas>
           </SubElement>
           <SubElement>
-            <Title1>Resume</Title1>
+            <Title1>Career</Title1>
             <a href="/경력기술서_강민규.pdf" download="경력기술서_강민규.pdf">
               <SeeMoreButton>PDF download</SeeMoreButton>
             </a>
-
             <RowBar width={"100%"} />
-
             <SubContent>
               <span>클릭 시 관련 서비스 및 프로젝트로 이동할 수 있습니다.</span>
             </SubContent>
 
-            <SubContent>2021년</SubContent>
+            <SubContent>2024 & 2025년</SubContent>
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 1200 : 800);
+              }}
+            >
+              💻 주식회사 악어에듀 : 웹 개발 직무
+              <span> AKEO Web Service</span>
+            </Title2>
 
             <Title2
               onClick={() => {
-                handleScroll(isHalfScreen ? 2900 : 2500);
+                handleScroll(isHalfScreen ? 1200 : 800);
               }}
             >
-              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW 창업 경진대회 최우수상{" "}
-              <span> IT-DA Project</span>
+              💻 스타트업 Fity : 앱 개발 직무
+              <span> Fitrace App Service</span>
             </Title2>
-            <Title2>💻 2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
+
+            <Title2
+              onClick={() => {
+                handleScroll(isHalfScreen ? 1200 : 1300);
+              }}
+            >
+              💻 중앙대학교 ICT 위원회 : 프론트엔드 개발 팀장
+              <span> CAUSW Web Service</span>
+            </Title2>
+
             <SubContent>2023년</SubContent>
             <Title2
               onClick={() => {
@@ -190,31 +205,16 @@ export const Profile = () => {
               💻 비즈피어(주) : 프론트엔드 개발 인턴
               <span> Grid Library</span>
             </Title2>
-            <SubContent>2024 & 2025년</SubContent>
+            <SubContent>2021년</SubContent>
             <Title2
               onClick={() => {
-                handleScroll(isHalfScreen ? 1200 : 800);
+                handleScroll(isHalfScreen ? 2900 : 3250);
               }}
             >
-              💻 중앙대학교 ICT 위원회 : 프론트엔드 개발 팀장
-              <span> CAUSW Web Service</span>
+              💻 중앙대학교 다빈치 SW AI TECH FAIR-SW 창업 경진대회 최우수상
+              <span> IT-DA Project</span>
             </Title2>
-            <Title2
-              onClick={() => {
-                handleScroll(isHalfScreen ? 1200 : 800);
-              }}
-            >
-              💻 스타트업 Fity : 앱 개발 직무
-              <span> Fitrace App Service</span>
-            </Title2>
-            <Title2
-              onClick={() => {
-                handleScroll(isHalfScreen ? 1200 : 800);
-              }}
-            >
-              💻 주식회사 악어에듀 : 웹 개발 직무
-              <span> AKEO Web Service</span>
-            </Title2>
+            <Title2>💻 2021년 Uni-DTOHON 중앙대학교 대표 주최진</Title2>
           </SubElement>
         </SubContainer>
       </Container>

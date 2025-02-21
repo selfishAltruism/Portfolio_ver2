@@ -37,7 +37,8 @@ export const Projects = () => {
         }
         company
         githubURL="https://www.akeoedu.com/"
-        notionURL="https://officialkyus.notion.site/AKEO-Service-Dev-Log-18b48a0856d4807eb047cfd137ca18db?pvs=4"
+        notionURL="none"
+        // notionURL="https://officialkyus.notion.site/AKEO-Service-Dev-Log-18b48a0856d4807eb047cfd137ca18db?pvs=4"
         techStack={[
           "Next.js",
           "Zustand",

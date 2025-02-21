@@ -74,7 +74,8 @@ export const Project = ({
     flex-direction: column;
     justify-content: ${isMobile ? "" : "center"};
 
-    margin-left: 8px;
+    margin-left: ${isMobile ? "2px" : "8px"};
+    margin-top: ${isMobile ? "-20px" : "0px"};
   `;
 
   const Period = styled.span`
@@ -83,12 +84,12 @@ export const Project = ({
 
     margin-bottom: 0px;
 
-    font-size: ${isMobile ? "12px" : "14px"};
+    font-size: ${isMobile ? "11px" : "14px"};
   `;
 
   const Title = styled.span`
     color: white;
-    font-size: ${isMobile ? "17px" : "22px"};
+    font-size: ${isMobile ? "22px" : "22px"};
 
     font-weight: bold;
     margin-bottom: 1px;
@@ -120,8 +121,14 @@ export const Project = ({
       transition: border-radius 0.2s ease-in-out;
     }
 
-    width: ${isHalfScreen ? "150px" : "200px"};
-    height: ${isHalfScreen ? "34px" : "40px"};
+    width: ${isHalfScreen
+      ? company
+        ? "130px"
+        : "85px"
+      : company
+      ? "170px"
+      : "125px"};
+    height: ${isHalfScreen ? "36px" : "40px"};
     color: white;
     margin-left: ${isMobile ? "8px" : ""};
     border-color: white;
@@ -144,8 +151,8 @@ export const Project = ({
       transition: border-radius 0.2s ease-in-out;
     }
 
-    width: ${isHalfScreen ? "150px" : "200px"};
-    height: ${isHalfScreen ? "34px" : "40px"};
+    width: ${isHalfScreen ? "150px" : "240px"};
+    height: ${isHalfScreen ? "36px" : "40px"};
     color: #434343;
     margin-left: ${isMobile ? "8px" : ""};
     margin-right: ${isMobile ? "20px" : ""};
@@ -185,14 +192,14 @@ export const Project = ({
         color="secondary"
         onClick={() => window.open(notionURL)}
       >
-        {isHalfScreen ? "Dev Detail" : "Dev Details"}
+        {isHalfScreen ? "Dev Details" : "Development Details"}
       </StyleDetailButton>
     );
 
   const ButtonDiv = styled.div`
     position: absolute;
-    right: -10px;
-    bottom: 0px;
+    right: -27px;
+    bottom: -20px;
 
     display: flex;
     flex-direction: row;
@@ -273,7 +280,7 @@ const ButtonContainer = styled.div`
   margin-right: 30px;
 
   display: flex;
-  align-items: center;
+  align-items: end;
   flex-direction: column;
   justify-content: center;
 `;

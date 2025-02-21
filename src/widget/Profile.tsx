@@ -22,6 +22,10 @@ export const Profile = () => {
     query: "(max-width:700px)",
   });
 
+  const isWild = useMediaQuery({
+    query: "(max-height:1000px)",
+  });
+
   const isHalfScreen = useMediaQuery({ query: "(max-width: 1300px)" });
 
   const Container = styled.div`
@@ -70,7 +74,7 @@ export const Profile = () => {
 
   const Img = styled(Avatar)`
     position: absolute;
-    top: ${isMobile ? "17px" : "30px"};
+    top: ${isMobile ? "17px" : isWild ? "30px" : "160px"};
 
     right: 5%;
 
@@ -124,7 +128,7 @@ export const Profile = () => {
           </a>
         </Info>
 
-        <RowBar width={"90%"} />
+        <RowBar width={"97%"} />
         <MainContent>안전지대를 넘어서는 개발자 😎</MainContent>
         <SubContent>
           변화와 문제를 두려워 하지 않고 계속해서 성장하는 개발자, 강민규입니다.

@@ -185,7 +185,7 @@ export const Project = ({
         color="secondary"
         onClick={() => window.open(notionURL)}
       >
-        {isHalfScreen ? "Detail" : "Detail Page"}
+        {isHalfScreen ? "Dev Detail" : "Dev Details"}
       </StyleDetailButton>
     );
 
